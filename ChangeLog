@@ -1,5 +1,12 @@
 2023-12-28 Sergey Smolov <smolov@ispras.ru>
 
+The commit includes test suite that is based on IEEE 1800-2012 standard
+for SystemVerilog language and covers SystemVerilog Assertions only.
+
+	* ieee-1800-2012/*: Created.
+
+2023-12-28 Sergey Smolov <smolov@ispras.ru>
+
 Initial commit includes test suite that is based on IEEE 1364-2005 standard.
 
 	* BSD-3-Clause: Added.
