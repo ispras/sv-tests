@@ -1,0 +1,8 @@
+2023-12-28 Sergey Smolov <smolov@ispras.ru>
+
+Initial commit includes test suite that is based on IEEE 1364-2005 standard.
+
+	* BSD-3-Clause: Added.
+	* ChangeLog: Created.
+	* README.md: Created.
+	* ieee-1364-2005/*: Created.
