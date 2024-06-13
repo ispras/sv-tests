@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,8 +20,7 @@
 //       Example 3 — To perform the previous sample setup check on the positive clk edge only when
 //       clr and set are high, add the following statement outside the specify block.
 
-module test(clk, data, clr, set, clr_and_set);
-  input clk, data, clr, set, clr_and_set;
+module test(clk, data, clr, set, inout clr_and_set);
 
   and new_gate(clr_and_set, clr, set);
 

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,9 +19,10 @@
 //     15.5 Notifiers: user-defined responses to timing violations
 //       Example 1.
 
-primitive posdff_udp(q, clock, data, preset, clear, notifier);
+primitive posdff_udp(q, clock, data, preset, clear);
   output q; reg q;
-  input clock, data, preset, clear, notifier;
+  input clock, data, preset, clear;
+  reg notifier;
   table
   //clock data   p c notifier state  q
   //-------------------------------------
