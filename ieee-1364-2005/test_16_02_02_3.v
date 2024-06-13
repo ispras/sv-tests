@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,9 @@ module test(clk, mode, data, ntfr);
   input clk, mode, data, ntfr;
 
   specify
+`ifdef NEGATIVE_TEST
     $setuphold (posedge clk &&&  mode, data, 1, 1, ntfr); // Not annotated
     $setuphold (negedge clk &&& !mode, data, 1, 1, ntfr); // Not annotated
+`endif
   endspecify
 endmodule

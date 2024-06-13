@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +18,4 @@
 //   16. Backannotation using the standard delay format (SDF)
 //     16.2 Mapping of SDF constructs to Verilog
 //       16.2.2 Mapping of SDF timing check constructs to Verilog
-
-module test(clk, mode, data, ntfr);
-  input clk, mode, data, ntfr;
-
-  specify
-    $setuphold (posedge clk &&&  mode, data, 1, 1, ntfr); // Annotated
-`ifdef NEGATIVE_TEST
-    $setuphold (negedge clk &&& !mode, data, 1, 1, ntfr); // Not annotated
-`endif
-  endspecify
-endmodule
+(SETUPHOLD data ( posedge clk) (3) (4))
