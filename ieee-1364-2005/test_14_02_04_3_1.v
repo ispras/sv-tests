@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,9 @@
 //           are low, a module path extends from clock  to out using a rise delay of 10 and a fall
 //           delay of 8.
 
-module test(clock, reset, clear);
-  input clock, reset, clear;
+module test(clock, reset, clear, in, out);
+  input clock, reset, clear, in;
+  output out;
 
   specify
     if (!reset && !clear)

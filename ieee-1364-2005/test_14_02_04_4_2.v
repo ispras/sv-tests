@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,8 +23,9 @@
 //           combines a state-dependent path using an ifnone condition and an unconditional path
 //           for the same module path.
 
-module test(C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D);
-  input C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D;
+module test(a, b, out);
+  input a, b;
+  output out;
 
   specify
     if (a) (b => out) = (2,2);

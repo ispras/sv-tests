@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,19 +28,19 @@ module test(C, Q);
     (C => Q) = 20;
     (C => Q) = 10:14:20;
     // two expressions specify rise and fall delays
-    specparam  tPLH01 = 12, tPHL01 = 25;
-    specparam  tPLH02 = 12:16:22, tPHL02 = 16:22:25;
-    (C => Q) = ( tPLH01, tPHL01 ) ;
-    (C => Q) = ( tPLH02, tPHL02 ) ;
+    specparam  tPLH1 = 12, tPHL1 = 25;
+    specparam  tPLH2 = 12:16:22, tPHL2 = 16:22:25;
+    (C => Q) = ( tPLH1, tPHL1 ) ;
+    (C => Q) = ( tPLH2, tPHL2 ) ;
     // three expressions specify rise, fall, and z transition delays
     specparam  tPLH1 = 12, tPHL11 = 22, tPz11 = 34;
-    specparam  tPLH12 = 12:14:30, tPHL12 = 16:22:40, tPz12 = 22:30:34;
-    (C => Q) = (tPLH11, tPHL11, tPz11);
-    (C => Q) = (tPLH12, tPHL12, tPz12);
+    specparam  tPLH2 = 12:14:30, tPHL2 = 16:22:40, tPz2 = 22:30:34;
+    (C => Q) = (tPLH1, tPHL1, tPz1);
+    (C => Q) = (tPLH2, tPHL2, tPz2);
     // six expressions specify transitions to/from 0, 1, and z
-    specparam  t001 = 12, t010 = 16, t00z = 13,
-     t0z1 = 10, t01z = 14, t0z0 = 34 ;
-    (C => Q) = ( t001, t010, t00z, t0z1, t01z, t0z0) ;
+    specparam  t01 = 12, t10 = 16, t0z = 13,
+     tz1 = 10, t1z = 14, tz0 = 34 ;
+    (C => Q) = ( t01, t10, t0z, tz1, t1z, tz0) ;
     specparam   T01 = 12:14:24, T10 = 16:18:20, T0z = 13:16:30;
     specparam   Tz1 = 10:12:16, T1z = 14:23:36, Tz0 = 15:19:34;
     (C => Q) = ( T01, T10, T0z, Tz1, T1z, Tz0);

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,9 +20,9 @@
 //       14.2.7 Module path polarity
 //         14.2.7.1 Unknown polarity
 
-module test(In1, s, q1, q2);
+module test(In1, s, q);
   input In1, s;
-  output q1, q2;
+  output q;
 
   specify
     specparam In_to_q = 100, s_to_q = 100;
