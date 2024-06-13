@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,7 +23,8 @@
 //         Therefore, the rise/fall times of 1.3 and 1.7 are annotated to the specify path.
 
 module test(sel, zout);
-  input sel, zout;
+  input sel;
+  output zout;
 
   specify
     (sel => zout) = 0;

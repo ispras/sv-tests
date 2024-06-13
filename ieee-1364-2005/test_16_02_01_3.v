@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,8 @@
 //          specify paths.
 
 module test(mode, sel, zout);
-  input mode, sel, zout;
+  input mode, sel;
+  output zout;
 
   specify
     if (!mode) (sel => zout) = 0;
