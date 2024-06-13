@@ -23,7 +23,7 @@
 //       for the current state, which is separated by colons from the inputs and the output,
 //       has been added.
 
-module test;
+module test(clock, data, q);
   input clock, data;
   output q;
   latch latch(q, clock, data);

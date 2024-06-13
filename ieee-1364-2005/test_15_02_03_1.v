@@ -21,7 +21,7 @@
 //         The $setuphold timing check combines the functionality of the $setup and $hold timing
 //         checks into a single timing check.
 
-module test;
+module test(clk, data, tSU, tHLD);
   input clk, data, tSU, tHLD;
 
   specify

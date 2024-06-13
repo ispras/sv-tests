@@ -28,6 +28,7 @@ module driver (in, out, en);
   input en;
   bufif0 ar[3:0] (out, in, en); // array of three-state buffers
 endmodule
+
 module driver_equiv (in, out, en);
   input [3:0] in;
   output [3:0] out;

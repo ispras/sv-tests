@@ -19,7 +19,7 @@
 //     14.3 Assigning delays to module paths
 //       14.3.1 Specifying transition delays on module paths
 
-module test;
+module test(C, Q);
   input C;
   output Q;
 

@@ -20,7 +20,7 @@
 //       9.8.1 Sequential blocks
 //         Delay control can be used in a sequential block to separate the two assignments in time.
 
-module test;
+module test(clock);
   input clock;
   reg areg, breg, creg;
 

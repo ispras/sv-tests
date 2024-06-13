@@ -21,7 +21,7 @@
 //         The following example illustrates the basic structure of a task definition with
 //         five arguments.
 
-module test;
+module test(a, b, c, d, e);
   task  my_task;
     input a, b;
     inout c;

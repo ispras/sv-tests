@@ -24,7 +24,7 @@
 //         identical. Once a name is used in a port declaration, it shall not be declared again in
 //         another port declaration or in a data type declaration.
 
-module test;
+module test(aport);
 
   input aport; // First declaration - okay.
   `ifdef NEGATIVE_TEST

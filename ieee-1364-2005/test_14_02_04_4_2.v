@@ -23,7 +23,7 @@
 //           combines a state-dependent path using an ifnone condition and an unconditional path
 //           for the same module path.
 
-module test;
+module test(C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D);
   input C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D;
 
   specify

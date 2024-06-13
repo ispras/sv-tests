@@ -43,7 +43,7 @@ primitive jk_edge_ff (q, clock, j, k, preset, clear);
   endtable
 endprimitive
 
-module flip;
+module flip(clock, j, k, preset, clear, q);
   input clock, j, k, preset, clear;
   output q;
 

@@ -20,7 +20,7 @@
 //       The following example declares an instance of bufif1. The output is outw, the input is inw,
 //       and the control is controlw. The instance name is bf1.
 
-module test;
+module test(inw, controlw, outw);
   input inw, controlw;
   output outw;
   bufif1 bf1 (outw, inw, controlw);

@@ -24,7 +24,7 @@
 //         the smallest of the two rise delays would be chosen, which is the rise delay from B of 5.
 //         The fall delay from A of 9 would be chosen if Y was instead to transition from 1 to 0.
 
-module test;
+module test( A, B, Y);
   input A, B;
   output Y;
 

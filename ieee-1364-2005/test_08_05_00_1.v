@@ -19,7 +19,7 @@
 //     8.5 Sequential UDP initialization
 //       The following example shows a sequential UDP that contains an initial statement.
 
-module test;
+module test(s, r, q);
   input s, r;
   output q;
   srff srff_edge(q, s, r);

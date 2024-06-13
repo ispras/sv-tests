@@ -20,7 +20,7 @@
 //       14.2.2 Simple module paths
 //         The following three examples illustrate valid simple module path declarations.
 
-module test;
+module test(A, B, C, D, Q);
   inout A, B, C, D, Q;
   specify
     (A => Q) = 10;

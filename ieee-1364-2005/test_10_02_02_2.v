@@ -21,7 +21,7 @@
 //         The following example illustrates the use of tasks by describing
 //         a traffic light sequencer.
 
-module traffic_lights;
+module traffic_lights(tics, color);
   reg clock, red, amber, green;
   parameter on = 1, off = 0, red_tics = 350,
             amber_tics = 30, green_tics = 200;

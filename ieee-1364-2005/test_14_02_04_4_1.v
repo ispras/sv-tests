@@ -21,7 +21,7 @@
 //         14.2.4.4 The ifnone condition
 //           Example 1—The following are valid state-dependent path combinations.
 
-module test;
+module test(C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D);
   input C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D;
 
   specify

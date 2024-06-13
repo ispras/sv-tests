@@ -20,7 +20,7 @@
 //       Because the numeric value of the if expression is tested for being zero, certain
 //       shortcuts are possible. For example, the following two statements express the same logic.
 
-module test;
+module test(expression);
   input expression;
   reg a;
   initial begin

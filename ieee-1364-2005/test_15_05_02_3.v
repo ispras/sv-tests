@@ -21,7 +21,7 @@
 //         The following $setuphold check is equivalent to the separate $setup and
 //         $hold checks shown above.
 
-module test;
+module test(CP, D, notifier, dCP, dD, TI, dTI, dTE, DTE, TE_cond_D, TE_Cond_TI, DXTI_cond);
   input CP, D, notifier, dCP, dD, TI, dTI, dTE, DTE;
   output TE_cond_D, TE_Cond_TI, DXTI_cond;
 

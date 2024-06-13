@@ -19,7 +19,7 @@
 //     16.2 Mapping of SDF constructs to Verilog
 //       16.2.2 Mapping of SDF timing check constructs to Verilog
 
-module test;
+module test(clk, mode, data, ntfr);
   input clk, mode, data, ntfr;
 
   specify

@@ -22,7 +22,7 @@
 //         changes while clk is high. It shall not be a violation if posedge clk and a transition
 //         on data occur simultaneously.
 
-module test;
+module test(clk, data);
   input clk, data;
 
   specify

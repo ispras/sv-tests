@@ -19,7 +19,7 @@
 //     8.2 Combinational UDPs
 //       Using ?, the description of a multiplexer can be abbreviated as follows.
 
-module test;
+module test(control, dataA, dataB, mux);
   input control, dataA, dataB;
   output mux;
   multiplexer mult(mux, control, dataA, dataB);

@@ -21,7 +21,7 @@
 //       (on the positive clk edge) only when clr is low. The second method uses the === operator,
 //       which makes the comparison deterministic.
 
-module test;
+module test(data, clk);
   input data, clk;
 
   specify

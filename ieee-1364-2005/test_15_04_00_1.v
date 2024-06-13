@@ -20,7 +20,7 @@
 //       The posedge and negedge keywords can be used as a shorthand for certain edge-control
 //       specifiers.
 
-module test;
+module test(clr, data);
   input clr, data;
 
   specify

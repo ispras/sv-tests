@@ -22,7 +22,7 @@
 //         for dCLK; therefore, output Q shall not change until 7 time units after a positive edge
 //         on CLK, rather than the 6 time units given in the specify path.
 
-module test;
+module test(CLK, D, dCLK, dD, Q);
   input CLK, D, dCLK, dD;
   output Q;
 

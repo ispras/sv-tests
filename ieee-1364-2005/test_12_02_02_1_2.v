@@ -26,14 +26,14 @@
 //           4096 due to its declaration expression.
 
 module my_mem (input addr, data);
-  
+
   parameter addr_width = 16;
   localparam mem_size = 1 << addr_width;
   parameter data_width = 8;
   // some code
 endmodule
 
-module top;
+module top(addr, data);
   input addr, data;
   // some code
   my_mem #(12, 16) m(addr,data);

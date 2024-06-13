@@ -20,7 +20,7 @@
 //       The equivalence of the cmos gate to the pairing of an nmos gate and a pmos gate is shown
 //       in the following example
 
-module test;
+module test(datain, ncontrol, pcontrol, w);
   input datain, ncontrol, pcontrol;
   output w;
   cmos  (w, datain, ncontrol, pcontrol);

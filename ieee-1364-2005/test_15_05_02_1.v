@@ -22,7 +22,7 @@
 //         a single $setuphold. clk is the timecheck event for the $setup check, while data is the
 //         timecheck event for the $hold check.
 
-module test;
+module test(clk, data, cond1, tsetup, thold, ntfr);
   input clk, data, cond1, tsetup, thold, ntfr;
 
   specify

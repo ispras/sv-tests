@@ -23,7 +23,7 @@
 //         side of assignments, or as variables in case item expressions shall all be included by
 //         these rules.
 
-module test;
+module test(go, ws, state);
   parameter IDLE = 0, READ = 1, DLY = 2, DONE = 3;
   input go, ws;
   input [3 : 0] state;

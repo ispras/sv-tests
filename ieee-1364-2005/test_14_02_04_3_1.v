@@ -23,7 +23,7 @@
 //           are low, a module path extends from clock  to out using a rise delay of 10 and a fall
 //           delay of 8.
 
-module test;
+module test(clock, reset, clear);
   input clock, reset, clear;
 
   specify

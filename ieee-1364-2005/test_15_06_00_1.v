@@ -20,7 +20,7 @@
 //       Example 1 — To illustrate the difference between conditioned and unconditioned timing
 //       check events, consider the following example with unconditioned timing check.
 
-module test;
+module test(data, clk);
   input data, clk;
 
   specify

@@ -25,7 +25,7 @@
 //         PATHPULSE$ declarations; therefore, it acquires reject and error limit of 3, as defined
 //         by the last PATHPULSE$ declaration.
 
-module test;
+module test(clk, data, clr, pre, q);
   input clk, data, clr, pre;
   output q;
 

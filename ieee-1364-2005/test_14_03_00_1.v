@@ -21,7 +21,7 @@
 //       specify values for the module path delays. The module path assignments assign those module
 //       path delays to the module paths.
 
-module test;
+module test(clk, clr, pre);
   input clk, clr, pre;
   output q;
 

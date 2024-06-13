@@ -22,7 +22,7 @@
 //           Both these specify blocks produce the same result. Outputs out and out_b are both
 //           declared showcancelled and on-detect.
 
-module test;
+module test(a, b, out, out_b);
   input a, b;
   output out, out_b;
 

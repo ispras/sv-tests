@@ -19,7 +19,7 @@
 //     8.2 Combinational UDPs
 //       The following example defines a multiplexer with two data inputs and a control input.
 
-module test;
+module test(control, dataA, dataB, mux);
   input control, dataA, dataB;
   output mux;
   multiplexer mult(mux, control, dataA, dataB);

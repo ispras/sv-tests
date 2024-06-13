@@ -22,7 +22,7 @@
 //         identifier. In this example, at any change in clock, a module path extends from clock
 //         to out.
 
-module test;
+module test(clock, in, out);
   inout clock, in, out;
   specify
     (clock => ( out : in )) = (10, 8);

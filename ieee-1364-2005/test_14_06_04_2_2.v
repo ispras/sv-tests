@@ -23,7 +23,7 @@
 //           path declaration. It would be contradictory for out to have noshowcancelled behavior
 //           from input a, but showcancelled behavior from input b.
 
-module test;
+module test(a, b, out);
   input a, b;
   output out;
 

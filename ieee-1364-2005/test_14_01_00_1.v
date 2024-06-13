@@ -24,7 +24,7 @@
 //       delays to module paths is discussed in 14.3. The line preceding the keyword endspecify
 //       instantiates one of the system timing checks, which are discussed further in Clause 15.
 
-module test;
+module test(clk, q, d);
   inout clk, q, d;
   specify
     specparam tRise_clk_q = 150, tFall_clk_q = 200;

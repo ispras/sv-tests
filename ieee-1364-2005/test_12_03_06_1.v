@@ -29,7 +29,7 @@ module ALPHA(Out, In1, In2);
 
 endmodule
 
-module test;
+module test(topA, topB);
   input topA, topB;
 
   ALPHA instance1 (.Out(topB),.In1(topA),.In2());

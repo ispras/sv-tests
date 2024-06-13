@@ -20,7 +20,7 @@
 //       15.3.4 $width
 //          The following example demonstrates some examples of legal and illegal calls.
 
-module test;
+module test(clr, lim, thresh, notif);
   input clr, lim, thresh, notif;
 
   specify

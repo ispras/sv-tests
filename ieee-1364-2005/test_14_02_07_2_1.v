@@ -20,7 +20,7 @@
 //       14.2.7 Module path polarity
 //         14.2.7.2 Positive polarity
 
-module test;
+module test(In1, s, q1, q2);
   input In1, s;
   output q1, q2;
 

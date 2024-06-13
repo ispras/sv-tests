@@ -26,7 +26,7 @@
 //          — 1 sets position to current location plus offset;
 //          — 2 sets position to EOF plus offset.
 
-module test;
+module test(operation);
   input operation;
   integer fd, offset, code;
 

@@ -25,7 +25,7 @@
 //         triggered again. At every 10000 time steps, the current values of all VCD variables
 //         are dumped.
 
-module dump;
+module dump(clock);
   input clock;
   event do_dump;
 

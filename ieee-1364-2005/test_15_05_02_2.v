@@ -21,7 +21,7 @@
 //         The following $setuphold check is equivalent to the separate $setup and
 //         $hold checks shown above.
 
-module test;
+module test(clk, data, tsetup, thold, ntfr, cond1);
   input clk, data, tsetup, thold, ntfr, cond1;
 
   specify

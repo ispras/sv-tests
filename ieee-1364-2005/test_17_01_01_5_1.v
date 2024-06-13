@@ -20,7 +20,7 @@
 //       17.1.1 The display and write tasks
 //         17.1.1.5 Strength format
 
-module test;
+module test(s1, s2, s3);
   input s1, s2, s3;
 
   always

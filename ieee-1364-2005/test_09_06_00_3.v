@@ -20,7 +20,7 @@
 //       The for statement accomplishes the same results as the following pseudo-code
 //       that is based on the while loop.
 
-module test;
+module test(rega);
   input [7:0] rega;
   reg count;
   reg [7:0] tempreg;

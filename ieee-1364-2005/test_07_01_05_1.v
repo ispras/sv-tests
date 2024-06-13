@@ -23,7 +23,7 @@
 //         The range specification shall be optional. If no range specification is given, a single
 //         instance shall be created.
 
-module test;
+module test(in1, in2, out1);
   input in1, in2;
   output out1;
   `ifdef NEGATIVE_TEST

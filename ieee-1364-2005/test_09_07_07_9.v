@@ -23,7 +23,7 @@
 //          the assignment is encountered. After the number of transitions of clk equals the value
 //          of num, a is assigned the value of data.
 
-module test;
+module test(clk);
   input clk;
   reg a, data, num;
 

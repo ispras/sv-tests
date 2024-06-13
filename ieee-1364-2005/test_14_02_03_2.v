@@ -23,7 +23,7 @@
 //         extends from clock[0] to out using a rise delay of 10 and a fall delay of 8. The data
 //         path is from in to out, and in is inverted as it propagates to out.
 
-module test;
+module test(clock, in, out);
   inout clock, in, out;
   specify
     ( negedge clock[0] => ( out -: in )) = (10, 8);

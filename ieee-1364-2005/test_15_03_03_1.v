@@ -19,7 +19,7 @@
 //     15.3 Timing checks for clock and control signals
 //       15.3.3 $fullskew
 
-module test;
+module test(CP, MODE, CPN, event_based_flag, remian_active_flag);
   input CP, MODE, CPN, event_based_flag, remian_active_flag;
 
   specify

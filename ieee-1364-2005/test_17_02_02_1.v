@@ -19,7 +19,7 @@
 //     17.2 File input-output system tasks and functions
 //       17.2.2 File output system tasks
 
-module test;
+module test(clock);
   input clock;
   integer messages, broadcast, cpu_chann, alu_chann, mem_chann;
   reg address, acc, f, a, b;

@@ -20,7 +20,7 @@
 //       9.7.4 Event or operator
 //         The next two examples show the logical or of two and three events, respectively
 
-module test;
+module test(clk_a, clk_b, trig, enable);
   input clk_a, clk_b, trig, enable;
   reg r, rega, regb;
 

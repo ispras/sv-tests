@@ -20,9 +20,8 @@
 //       The following example declares a two-output buf. The input is in. The outputs are out1
 //       and out2. The instance name is b1.
 
-module test;
+module test(in, out1, out2);
   input in;
   output out1, out2;
   buf b1 (out1, out2, in);
 endmodule
-

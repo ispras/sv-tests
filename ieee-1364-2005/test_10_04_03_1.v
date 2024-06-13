@@ -21,7 +21,7 @@
 //         The following example creates a word by concatenating the results of two calls
 //         to the function getbyte.
 
-module test;
+module test(control);
 
   input control;
   reg [15:0] msbyte, lsbyte;

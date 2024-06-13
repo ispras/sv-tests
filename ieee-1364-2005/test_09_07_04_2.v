@@ -20,7 +20,7 @@
 //       9.7.4 Event or operator
 //         The following examples show the use of the comma (,) as an event logical or operator.
 
-module test;
+module test(a, b, c, d, e, clk, rstn);
   input a, b, c, d, e, clk, rstn;
   reg r, rega, regb, regc;
 

@@ -24,7 +24,7 @@
 //         delay among the first three. A fall transition would select a delay of 5 because that is
 //         the smallest fall delay among the first three.
 
-module test;
+module test(A, MODE, Y);
   input A;
   input [15:0] MODE;
   output Y;

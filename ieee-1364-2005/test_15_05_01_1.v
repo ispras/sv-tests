@@ -23,7 +23,7 @@
 //         shall not always be accurate. The old DATA value shall be incorrectly clocked in if DATA
 //         transitions between posedge CLK and 10 time units later.
 
-module test;
+module test(CLK, DATA);
   input CLK, DATA;
 
   specify

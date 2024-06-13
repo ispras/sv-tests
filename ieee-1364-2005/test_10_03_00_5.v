@@ -27,7 +27,7 @@
 //       of events within the sequential block, the fork-join block terminates—including the task
 //       action.
 
-module test;
+module test(clk, reset, ev1, trig);
   parameter d = 1;
   input clk, reset, ev1, trig;
   reg areg, breg;

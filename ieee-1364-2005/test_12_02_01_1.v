@@ -29,7 +29,7 @@ module flop(
   output out1);
 endmodule
 
-module test;
+module test(in, in1, out1);
   input [7:0] in, in1;
   output [7:0] out1;
 
@@ -45,4 +45,3 @@ module test;
   endgenerate
 
 endmodule
-

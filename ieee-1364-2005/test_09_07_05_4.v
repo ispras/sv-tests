@@ -23,7 +23,7 @@
 //         side of assignments, or as variables in case item expressions shall all be included by
 //         these rules.
 
-module test;
+module test(a, b, c, d);
 
   input a, b, c, d;
   reg x;

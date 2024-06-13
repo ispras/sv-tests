@@ -20,7 +20,7 @@
 //       15.3.4 $width
 //          Here is a legal $width check when the notifier is required and the threshold is not.
 
-module test;
+module test(clk, ntfr_reg);
   input clk, ntfr_reg;
 
   specify

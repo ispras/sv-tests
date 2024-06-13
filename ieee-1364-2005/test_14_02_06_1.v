@@ -20,7 +20,7 @@
 //       14.2.6 Declaring multiple module paths in a single statement
 //
 
-module test;
+module test(a, b, c, q1, q2);
   input a, b, c;
   output q1, q2;
 
