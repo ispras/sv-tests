@@ -19,7 +19,7 @@
 //     9.5 Case statement
 //       The following example shows another way to use a case statement to detect x and z values.
 
-module test;
+module test(sig);
   input sig;
 
   initial begin
