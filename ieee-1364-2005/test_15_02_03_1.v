@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,11 @@
 //         The $setuphold timing check combines the functionality of the $setup and $hold timing
 //         checks into a single timing check.
 
-module test(clk, data, tSU, tHLD);
-  input clk, data, tSU, tHLD;
+module test(clk, data);
+  input clk, data;
 
   specify
+    specparam tSU = 1.5, tHLD = 2.1;
     $setuphold (posedge clk, data, tSU, tHLD);
     // is equivalent in functionality to the following, if tSU and tHLD are not negative
     $setup (data, posedge clk, tSU);

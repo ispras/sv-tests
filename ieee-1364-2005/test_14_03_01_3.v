@@ -25,7 +25,7 @@ module test(C, Q);
 
   specify
     // three expressions specify rise, fall, and z transition delays
-    specparam  tPLH1 = 12, tPHL11 = 22, tPz1 = 34;
+    specparam  tPLH1 = 12, tPHL1 = 22, tPz1 = 34;
     specparam  tPLH2 = 12:14:30, tPHL2 = 16:22:40, tPz2 = 22:30:34;
     (C => Q) = (tPLH1, tPHL1, tPz1);
     (C => Q) = (tPLH2, tPHL2, tPz2);

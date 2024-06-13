@@ -21,10 +21,11 @@
 //         The $recrem timing check combines the functionality of the $removal and $recovery timing
 //         checks into a single timing check.
 
-module test(clk, clear, tREC, tREM);
-  input clk, clear, tREC, tREM;
+module test(clk, clear);
+  input clk, clear;
 
   specify
+    specparam tREC = 1.5, tREM = 2.1;
     $recrem (posedge clear, posedge clk, tREC, tREM);
     // is equivalent in functionality to the following, if tREC and tREM are not negative
     $removal (posedge clear, posedge clk, tREM);
