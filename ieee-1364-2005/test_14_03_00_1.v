@@ -31,6 +31,6 @@ module test(clk, clr, pre, q);
     specparam  tRise_Control = 35:40:45, tFall_control=40:50:65;
     // Module Path Assignments
     (clk => q) = (tRise_clk_q, tFall_clk_q);
-    (clr, pre *> q) = (tRise_control, tFall_control);
+    (clr, pre *> q) = (tRise_Control, tFall_control);
   endspecify
 endmodule

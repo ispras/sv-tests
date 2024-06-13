@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,8 +24,10 @@ module test(C, Q);
   output Q;
 
   specify
-    // one expression specifies all transitions
-    (C => Q) = 20;
-    (C => Q) = 10:14:20;
+    // twelve expressions specify all transition delays explicitly
+    specparam  t01=10, t10=12, t0z=14, tz1=15, t1z=29, tz0=36,
+               t0x=14, tx1=15, t1x=15, tx0=14, txz=20, tzx=30;
+    (C => Q) = (t01, t10, t0z, tz1, t1z, tz0,
+                t0x, tx1, t1x, tx0, txz, tzx);
   endspecify
 endmodule

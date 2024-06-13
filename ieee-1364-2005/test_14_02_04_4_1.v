@@ -22,7 +22,7 @@
 //           Example 1—The following are valid state-dependent path combinations.
 
 module test(C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D);
-  input C1, IN, OUT, opcode, i1, i2, o1, CLK, Q, D;
+  input C1, IN, opcode, i1, i2, CLK, D;
   output OUT, o1, Q;
 
   specify
