@@ -20,20 +20,21 @@
 //       The posedge and negedge keywords can be used as a shorthand for certain edge-control
 //       specifiers.
 
-module test(clr, data);
-  input clr, data;
+module test(clr);
+  input clr;
 
   specify
+    specparam tWidth = 10;
     // For example, the construct
-    $nochange(posedge clr, data, 0, 0);
+    $width(posedge clr, tWidth);
 
     // is equivalent to the following
-    $nochange(edge [01, 0x, x1] clr, data, 0, 0);
+    $width(edge [01, 0x, x1] clr, tWidth);
 
     // Similarly, the construct
-    $nochange(negedge clr, data, 0, 0);
+    $width(negedge clr, tWidth);
 
     // is the same as the following
-    $nochange(edge [10, x0, 1x] clr, data, 0, 0);
+    $width(edge [10, x0, 1x] clr, tWidth);
   endspecify
 endmodule

@@ -21,7 +21,7 @@
 //         The following $setuphold check is equivalent to the separate $setup and
 //         $hold checks shown above.
 
-module test(input CP, D, TI, dTE, inout dTI, dD);
+module test(input CP, D, TI, inout dTE, dTI, dD);
 
   reg TE_cond_D, TE_cond_TI;
   reg DXTI_cond;

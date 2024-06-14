@@ -25,9 +25,11 @@ module DFF (Q, CLK, DAT);
   input [7:0] DAT;
   output [7:0] Q;
 
-  always @(posedge CLK)
+  always @(posedge CLK) begin
     force Q = DAT;
     release Q;
+  end
+
   specify
     $setup (DAT, posedge CLK, 10);
   endspecify
