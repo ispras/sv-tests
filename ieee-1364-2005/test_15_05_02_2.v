@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,11 @@
 //         $hold checks shown above.
 
 module test(clk, data, tsetup, thold, ntfr, cond1);
-  input clk, data, tsetup, thold, ntfr, cond1;
+  input clk, data, cond1;
+  reg ntfr;
 
   specify
+    specparam tsetup = 1.2, thold = 1.3;
     $setuphold (clk, data, tsetup, thold, ntfr, , cond1);
   endspecify
 endmodule

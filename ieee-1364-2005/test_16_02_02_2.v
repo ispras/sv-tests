@@ -19,8 +19,10 @@
 //     16.2 Mapping of SDF constructs to Verilog
 //       16.2.2 Mapping of SDF timing check constructs to Verilog
 
-module test(clk, mode, data, ntfr);
-  input clk, mode, data, ntfr;
+module test(clk, mode, data);
+  input clk, mode, data;
+
+  reg ntfr;
 
   specify
     $setuphold (posedge clk &&&  mode, data, 1, 1, ntfr); // Annotated

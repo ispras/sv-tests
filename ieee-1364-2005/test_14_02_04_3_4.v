@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,7 +24,9 @@
 //           same way: the first destination is a part-select, the second is a bit-select.
 
 module test(clk, data, q, reset, cntrl);
-  input clk, data, q, reset, cntrl;
+  input clk, reset, cntrl;
+  output data;
+  output [4:0] q;
 
   specify
     `ifdef NEGATIVE_TEST

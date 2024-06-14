@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,9 +21,11 @@
 //         The following $setuphold check is equivalent to the separate $setup and
 //         $hold checks shown above.
 
-module test(CP, D, notifier, dCP, dD, TI, dTI, dTE, DTE, TE_cond_D, TE_Cond_TI, DXTI_cond);
-  input CP, D, notifier, dCP, dD, TI, dTI, dTE, DTE;
-  output TE_cond_D, TE_Cond_TI, DXTI_cond;
+module test(input CP, D, TI, dTE, inout dTI, dD);
+
+  reg TE_cond_D, TE_cond_TI;
+  reg DXTI_cond;
+  reg notifier;
 
   assign TE_cond_D  = (dTE !== 1'b1);
   assign TE_cond_TI = (dTE !== 1'b0);

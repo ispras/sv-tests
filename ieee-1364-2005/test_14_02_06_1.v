@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ module test(a, b, c, q1, q2);
 
   specify
     (a, b, c *> q1, q2) = 10;
-    //is equivalent to the following six individual module path assignments:
+    // is equivalent to the following six individual module path assignments:
     (a *> q1) = 10;
     (b *> q1) = 10;
     (c *> q1) = 10;
