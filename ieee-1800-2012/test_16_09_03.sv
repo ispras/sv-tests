@@ -19,13 +19,14 @@
 //    16.9 Sequence operations
 //     16.9.3 Sampled value functions
 
-module test;
+module test(clk, clk1, clk2, enable);
 
-reg a, b, q, d, enable, clk, clk2, x, y;
-reg reg1, reg2, reg3;
+input clk, clk1, clk2, enable;
+reg a, q, d, x, y;
+reg reg2, reg3;
 integer i;
 reg done, out;
-reg [3:0] cond;
+reg [3:0] b, cond, reg1;
 
 a1_bad: assert property (@clk a == b)
     else $display("Different values: a = %b, b = %b", a, b);
@@ -57,15 +58,16 @@ a1: assert property
     (@(posedge clk) en && $rose(req) |=> gnt);
 
 // Event passing in function calls is not supported.
-//a2: assert property
-//    (@(posedge clk) en && $rose(req, @(posedge fclk)) |=> gnt);
+a2: assert property
+    (@(posedge clk) en && $rose(req, @(posedge fclk)) |=> gnt);
 
-//always @(posedge clk1)
-//  reg3 <= $rose(b, @(posedge clk2));
+always @(posedge clk1)
+  reg3 <= $rose(b, @(posedge clk2));
 
+// Legal for default clocking
 always @(posedge clk) begin
   @(negedge clk2);
-  x = $past(y, 5); // illegal if not within default clocking
+  x = $past(y, 5);
 end
 
 endmodule

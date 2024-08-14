@@ -21,7 +21,9 @@
 
 module test;
 
-reg rst, sig, clk;
+logic clk, rst, sig;
+
+global clocking sys @(posedge clk); endclocking
 
 a1: assert property (@clk $changing_gclk(sig) |-> $falling_gclk(clk))
   else $display("sig is not stable");

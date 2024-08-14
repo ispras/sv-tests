@@ -21,32 +21,22 @@
 
 module test;
 
-wire not_a;
-reg a, my_cond;
-integer opcode;
+reg my_cond;
+int opcode;
 
-assign not_a = !a;
-
-always begin : b1
-  a1: assert (not_a != a);
-  a2: assert #0 (not_a != a); // Should pass once values have settled
-end
-
-function integer error_type (input integer opcode);
-  begin
-    func_assert: assert (opcode < 64) else $display("Opcode error.");
-    if (opcode < 32)
-      error_type = 0;
-    else
-      error_type = 1;
-  end
+function int error_type (int opcode);
+  func_assert: assert (opcode < 64) else $display("Opcode error.");
+  if (opcode < 32)
+    return (0);
+  else
+    return (1);
 endfunction
 
-always begin : b2
+always_comb begin : b1
   a1: assert #0 (my_cond) else
-    $display("Error on operation of type %d\n", error_type(opcode));
+  $error("Error on operation of type %d\n", error_type(opcode));
   a2: assert #0 (my_cond) else
-    error_type(opcode);
+  error_type(opcode);
 end
 
 endmodule
