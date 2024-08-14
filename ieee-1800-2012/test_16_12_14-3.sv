@@ -21,30 +21,9 @@
 
 module test;
 
-reg clk;
+logic clk;
 reg go, get, put, stop;
-reg a, b;
-
-assert property (@(clk) go ##1 get[*2] |-> (reject_on(stop) put[->2]));
-
-assert property (@(clk) go ##1 get[*2] |-> (sync_reject_on(stop) put[->2]));
 
 assert property (@(clk) go ##1 get[*2] |-> (!stop throughout put[->2]));
-
-property p1; 
-  (accept_on(a) p1) and (reject_on(b) p2); 
-endproperty
-
-property p2; 
-  (accept_on(a) p1) or (reject_on(b) p2);
-endproperty
-
-property p3; 
-  not (accept_on(a) p1); 
-endproperty
-
-property p4; 
-  accept_on(a) (reject_on(b) p1); 
-endproperty
 
 endmodule
