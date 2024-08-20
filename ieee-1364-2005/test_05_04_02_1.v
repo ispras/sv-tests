@@ -25,12 +25,13 @@
 //         of a significant bit.
 
 module test;
+
   reg [15:0] a, b, answer; // 16-bit regs
 
   initial begin
-    `ifdef NEGATIVE_TEST
+`ifdef NEGATIVE_TEST
     answer = (a + b) >> 1; //will not work properly
-    `endif
+`endif
     answer = (a + b + 0) >> 1; //will work correctly
   end
 

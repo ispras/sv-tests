@@ -22,7 +22,8 @@
 //         five arguments.
 
 module test;
-  task  my_task;
+
+  task my_task;
     input a, b;
     inout c;
     reg foo1, foo2, foo3;

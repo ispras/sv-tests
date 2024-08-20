@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,11 +25,13 @@
 //       instantiates one of the system timing checks, which are discussed further in Clause 15.
 
 module test(clk, q, d);
+
   inout clk, q, d;
+
   specify
     specparam tRise_clk_q = 150, tFall_clk_q = 200;
     specparam tSetup = 70;
     (clk => q) = (tRise_clk_q, tFall_clk_q);
-    $setup (d, posedge clk, tSetup);
+    $setup(d, posedge clk, tSetup);
   endspecify
 endmodule

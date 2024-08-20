@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.7 Relational operators
 //        Table 5-10 - Definitions of relational operators
+
 module test;
+
   integer a, b, c;
 
   initial begin

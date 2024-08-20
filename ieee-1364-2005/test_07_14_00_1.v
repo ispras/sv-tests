@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +20,11 @@
 //       The following is an example of a delay specification with one, two, and three delays
 
 module test(in1, in2, in, ctrl, out);
+
   input in1, in2, in, ctrl;
   output out;
 
-  and #(10) a1 (out, in1, in2);          // only one delay
-  and #(10,12) a2 (out, in1, in2);       // rise and fall delays
-  bufif0 #(10,12,11) b3 (out, in, ctrl); // rise, fall, and turn-off delays
+  and #(10) a1(out, in1, in2);          // only one delay
+  and #(10,12) a2(out, in1, in2);       // rise and fall delays
+  bufif0 #(10,12,11) b3(out, in, ctrl); // rise, fall, and turn-off delays
 endmodule

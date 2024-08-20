@@ -22,6 +22,7 @@
 //          race condition.
 
 module test;
+
   reg a, b;
 
   initial begin

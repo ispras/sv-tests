@@ -25,6 +25,7 @@
 //         the variable a will be assigned 0 and then 1.
 
 module test;
+
   reg a;
 
   initial begin

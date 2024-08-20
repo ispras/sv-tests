@@ -27,6 +27,6 @@ module test;
   integer n, result;
 
   initial begin
-    result = $clog2 (n);
+    result = $clog2(n);
   end
 endmodule

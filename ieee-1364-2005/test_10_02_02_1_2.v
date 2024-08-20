@@ -21,9 +21,10 @@
 //         Using the second form of a task declaration, the task could be defined as follows.
 
 module test;
+
   reg foo1, foo2, foo3;
 
-  task my_task (input  a, b, inout c, output d, e);
+  task my_task(input a, b, inout c, output d, e);
     begin
       // statements that perform the work of the task
       foo1 = 0;

@@ -33,6 +33,7 @@ module adder_cla(co, sum, a, b, ci);
 endmodule
 
 module test;
+
   parameter WIDTH = 0;
   reg co, sum, a, b, ci;
   generate

@@ -27,6 +27,7 @@
 //           the o1 output.
 
 module ALU (o1, i1, i2, opcode);
+
   input [7:0] i1, i2;
   input [2:1] opcode;
   output [7:0] o1;

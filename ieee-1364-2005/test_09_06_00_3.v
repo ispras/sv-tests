@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@
 //       that is based on the while loop.
 
 module test(rega);
+
   input [7:0] rega;
   reg count;
   reg [7:0] tempreg;
@@ -34,7 +35,7 @@ module test(rega);
     end
 
     // is equivalent to
-    for (count = 0; count < 8; count = count +1)
+    for (count = 0; count < 8; count = count + 1)
       tempreg = tempreg >> 1;
   end
 endmodule

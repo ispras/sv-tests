@@ -25,7 +25,9 @@
 //         a will be forced to the new value of the expression b + 10*c.
 
 module test;
+
   reg a, b, c;
+
   initial begin
     a = 1;
     b = 0;

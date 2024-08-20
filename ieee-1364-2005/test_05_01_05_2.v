@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.5 Arithmetic operators
 //        Table 5-8 - Examples of modulus and power operators
+
 module test;
+
   reg result;
 
   initial begin

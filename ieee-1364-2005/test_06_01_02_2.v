@@ -23,6 +23,7 @@
 //         of the nets because it requires a concatenation on the left-hand side.
 
 module adder (sum_out, carry_out, carry_in, ina, inb);
+
   output [3:0] sum_out;
   output carry_out;
   input [3:0] ina, inb;

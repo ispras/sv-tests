@@ -20,7 +20,9 @@
 //       Example 2 — The following example shows usage of nested conditional compilation directive.
 
 module test(out);
+
   output out;
+
   `define wow
   `define nest_one
   `define second_nest
@@ -33,7 +35,7 @@ module test(out);
       `ifdef nest_two
         initial $display("nest_two is defined");
       `else
-        initial $display ("nest_two is not defined");
+        initial $display("nest_two is not defined");
       `endif
     `else
       initial $display("nest_one is not defined");

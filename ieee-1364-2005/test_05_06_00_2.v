@@ -24,8 +24,10 @@
 //       expression may change the sign of the result.
 
 module test;
+
   reg        [0:5] a;
   reg signed [0:4] b, c;
+
   initial begin
     a = 8'sh8f; // After the assignment, a = 6'h0f
     b = 8'sh8f; // After the assignment, b = 5'h0f

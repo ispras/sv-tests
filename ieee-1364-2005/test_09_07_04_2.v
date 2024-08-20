@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,15 +21,18 @@
 //         The following examples show the use of the comma (,) as an event logical or operator.
 
 module test(a, b, c, d, e, clk, rstn);
+
   input a, b, c, d, e, clk, rstn;
   reg r, rega, regb, regc;
 
   always @(a, b, c, d, e) begin
     r = rega;
   end
+
   always @(posedge clk, negedge rstn) begin
     r = regb;
   end
+
   always @(a or b, c, d or e) begin
     r = regc;
   end

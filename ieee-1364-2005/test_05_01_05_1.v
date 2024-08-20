@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.5 Arithmetic operators
 //        Table 5-5 - Arithmetic operators defined
+
 module test;
+
   integer a, b, c;
 
   initial begin

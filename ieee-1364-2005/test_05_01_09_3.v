@@ -19,13 +19,16 @@
 //    5.1 Operators
 //      5.1.9 Logical operators
 //        Example 3
+
 module test;
+
   reg inword;
+
   initial begin
     // A common use of ! is in constructions like the following:
-    if (!inword) ;
+    if (!inword);
     // In some cases, the preceding construct makes more sense to someone reading the code than this
     // equivalent construct:
-    if (inword == 0) ;
+    if (inword == 0);
   end
 endmodule

@@ -21,7 +21,9 @@
 //         17.1.1.3 Size of displayed data
 
 module test;
+
   reg [31:0] data, addr;
+
   initial begin
      $display ("d=%0h a=%0h", data, addr);
   end

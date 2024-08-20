@@ -28,7 +28,7 @@
 //         In the modB definition, ports wa and wb are declared as inouts while ports c and d are
 //         declared as input.
 
-module modB (wa, wb, c, d);
+module modB(wa, wb, c, d);
   inout wa, wb;
   input c, d;
   tranif1 g1(wa, wb, cinvert);
@@ -38,6 +38,6 @@ endmodule
 
 module topmod;
   wire [4:0] v;
-  wire a,b,c,w;
-  modB b1 (v[0], v[3], w, v[4]);
+  wire a, b, c, w;
+  modB b1(v[0], v[3], w, v[4]);
 endmodule

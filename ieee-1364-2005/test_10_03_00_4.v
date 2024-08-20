@@ -29,6 +29,7 @@
 //       Another set of statements executes if (a! = b).
 
 module test(clk);
+
   parameter n = 32;
   input clk;
   reg a, b, rega, regb, regc;
@@ -36,7 +37,7 @@ module test(clk);
 
   initial
     begin : break
-      for (i = 0; i < n; i = i+1) begin : continue
+      for (i = 0; i < n; i = i + 1) begin : continue
         @clk
         if (a == 0) // "continue" loop
           disable continue;

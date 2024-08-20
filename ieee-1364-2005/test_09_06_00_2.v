@@ -20,6 +20,7 @@
 //       The following example counts the number of logic 1 values in rega.
 
 module test;
+
   reg count, rega;
 
   initial

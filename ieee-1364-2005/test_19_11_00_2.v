@@ -23,9 +23,10 @@
 
 `begin_keywords "1364-2005" // use IEEE Std 1364-2005 Verilog keywords
 module m2;
-  `ifdef NEGATIVE_TEST
+
+`ifdef NEGATIVE_TEST
   wire [63:0] uwire; // ERROR: "uwire" is a keyword in 1364-2005
-  `endif
+`endif
   // ...
 endmodule
 `end_keywords

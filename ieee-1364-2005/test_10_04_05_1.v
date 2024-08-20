@@ -21,7 +21,8 @@
 //         This example defines a function called clogb2 that returns an integer with the value of
 //         the ceiling of the log base 2.
 
-module ram_model (address, write, chip_select, data);
+module ram_model(address, write, chip_select, data);
+
   parameter data_width = 8;
   parameter ram_depth = 256;
   localparam addr_width = clogb2(ram_depth);
@@ -41,5 +42,5 @@ module ram_model (address, write, chip_select, data);
 
   reg [data_width - 1:0] data_store[0:ram_depth - 1];
 
-  //the rest of the ram model
+  // the rest of the ram model
 endmodule

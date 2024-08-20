@@ -21,6 +21,7 @@
 //       a value for result as follows.
 
 module test;
+
   reg [15:0] rega;
   reg [9:0] result;
 

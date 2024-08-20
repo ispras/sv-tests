@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,14 +23,18 @@
 //         on CLK, rather than the 6 time units given in the specify path.
 
 module test(CLK, D, dCLK, dD, Q);
+
   input CLK, D;
   inout dCLK, dD;
   output Q;
 
   specify
-    // BUG: (CLK = Q) = 6;
+`ifdef NEGATIVE_TEST
+    (CLK = Q) = 6; // BUG
+`else
     (CLK => Q) = 6;
-    $setuphold (posedge CLK, posedge D, -3,  8, , , , dCLK, dD);
-    $setuphold (posedge CLK, negedge D, -7, 13, , , , dCLK, dD);
+`endif
+    $setuphold(posedge CLK, posedge D, -3,  8, , , , dCLK, dD);
+    $setuphold(posedge CLK, negedge D, -7, 13, , , , dCLK, dD);
   endspecify
 endmodule

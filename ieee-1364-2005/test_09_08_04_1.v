@@ -22,6 +22,7 @@
 //         reverse order and still producing the same waveform.
 
 module test;
+
   event end_wave;
   reg [7:0] r;
 

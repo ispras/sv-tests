@@ -26,11 +26,12 @@
 //           can call $ferror to determine the cause of the most recent error (see 17.2.7).
 
 module test;
+
   integer fd, code, c;
 
   initial begin
 
-    fd = $fopen ("file.txt");
-    code = $ungetc (c, fd);
+    fd = $fopen("file.txt");
+    code = $ungetc(c, fd);
   end
 endmodule

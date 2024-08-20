@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -28,6 +28,7 @@
 //       action.
 
 module test(clk, reset, ev1, trig);
+
   parameter d = 1;
   input clk, reset, ev1, trig;
   reg areg, breg;
@@ -44,8 +45,8 @@ module test(clk, reset, ev1, trig);
     fork
       begin : event_expr
         @ev1;
-        repeat (3) @trig;
-        #d action (areg, breg);
+        repeat(3) @trig;
+        #d action(areg, breg);
       end
       @reset disable event_expr;
   join

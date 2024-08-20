@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.14 Concatenations
 //        Example 1
+
 module test;
+
   reg a;
   reg b[7:0];
   reg w;

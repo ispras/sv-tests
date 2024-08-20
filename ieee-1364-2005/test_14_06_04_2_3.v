@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,25 +23,27 @@
 //           declared showcancelled and on-detect.
 
 module test(a, b, out, out_b);
+
   input a, b;
   output out, out_b;
 
   specify
-//    showcancelled out;
+    showcancelled out;
     pulsestyle_ondetect out;
-//    (a => out) = (2,3);
-//    (b => out) = (4,5);
-//    showcancelled out_b;
-//    pulsestyle_ondetect out_b;
-//    (a => out_b) = (3,4);
-//    (b => out_b) = (5,6);
+    (a => out) = (2,3);
+    (b => out) = (4,5);
+    showcancelled out_b;
+    pulsestyle_ondetect out_b;
+    (a => out_b) = (3,4);
+    (b => out_b) = (5,6);
   endspecify
-//  specify
-//    showcancelled out,out_b;
-//    pulsestyle_ondetect out,out_b;
-//    (a => out) = (2,3);
-//    (b => out) = (4,5);
-//    (a => out_b) = (3,4);
-//    (b => out_b) = (5,6);
-//  endspecify
+
+  specify
+    showcancelled out,out_b;
+    pulsestyle_ondetect out,out_b;
+    (a => out) = (2,3);
+    (b => out) = (4,5);
+    (a => out_b) = (3,4);
+    (b => out_b) = (5,6);
+  endspecify
 endmodule

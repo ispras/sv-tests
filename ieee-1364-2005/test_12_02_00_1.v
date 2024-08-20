@@ -33,7 +33,7 @@
 //       the type and range of the parameter.
 
 module generic_fifo
-  #( parameter MSB=3, LSB=0, DEPTH=4)
+  #( parameter MSB = 3, LSB = 0, DEPTH = 4)
   //These parameters can be overridden
   ( input [MSB:LSB] in,
     input clk, read, write, reset,
@@ -49,8 +49,9 @@ module generic_fifo
       end
   endfunction
 
-  localparam FIFO_MSB = DEPTH*MSB;
+  localparam FIFO_MSB = DEPTH * MSB;
   localparam FIFO_LSB = LSB;
+
   // These parameters are local, and cannot be overridden.
   // They can be affected by altering the public parameters
   // above, and the module will work correctly.
@@ -58,8 +59,8 @@ module generic_fifo
   reg [LOG2(DEPTH):0] depth;
 
   always @(posedge clk or reset) begin
-    casex ({read,write,reset})
-    // implementation of fifo (trivial here)
+    casex ({read, write, reset})
+      // implementation of fifo (trivial here)
       default: depth = 0;
     endcase
   end

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,10 +21,11 @@
 //          Here is a legal $width check when the notifier is required and the threshold is not.
 
 module test(clk);
+
   input clk;
   reg ntfr_reg;
 
   specify
-    $width (posedge clk, 6, 0, ntfr_reg);
+    $width(posedge clk, 6, 0, ntfr_reg);
   endspecify
 endmodule

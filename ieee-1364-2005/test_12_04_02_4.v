@@ -66,7 +66,7 @@ module dimm(addr, ba, rasx, casx, csx, wex, cke, clk, dqm, data, dev_id);
   case ({MEM_SIZE, MEM_WIDTH})
     {32'd8, 32'd16}: // 8Meg x 16 bits wide
     begin : memory
-      for (i=0; i<4; i=i+1) begin :word
+      for (i = 0; i < 4; i = i + 1) begin : word
         sms_08b216t0 p(.clk(clk), .csb(csx), .cke(cke),.ba(ba),
                        .addr(addr), .rasb(rasx), .casb(casx),
                        .web(wex), .udqm(dqm[2*i+1]), .ldqm(dqm[2*i]),
@@ -90,7 +90,7 @@ module dimm(addr, ba, rasx, casx, csx, wex, cke, clk, dqm, data, dev_id);
     end
     {32'd16, 32'd8}: // 16Meg x 8 bits wide
     begin : memory
-      for (i=0; i<8; i=i+1) begin :byte_
+      for (i = 0; i < 8; i = i + 1) begin : byte_
         sms_16b208t0 p(.clk(clk), .csb(csx), .cke(cke),.ba(ba),
                        .addr(addr), .rasb(rasx), .casb(casx),
                        .web(wex), .dqm(dqm[i]),

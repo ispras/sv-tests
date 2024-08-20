@@ -42,6 +42,6 @@ module top;
   mod1_type mod1();
   mod2_type mod2();
   initial begin
-    $dumpvars (0, top.mod1, top.mod2.net1);
+    $dumpvars(0, top.mod1, top.mod2.net1);
   end
 endmodule

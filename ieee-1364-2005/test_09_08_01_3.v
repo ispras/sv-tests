@@ -22,15 +22,16 @@
 //         can be used to specify a time-sequenced waveform.
 
 module test;
-  event end_wave;
-  parameter d = 50;   // d declared as a parameter and
-  reg [7:0] r;        // r declared as an 8-bit reg
 
-  initial begin  // a waveform controlled by sequential delay
+  event end_wave;
+  parameter d = 50; // d declared as a parameter and
+  reg [7:0] r;      // r declared as an 8-bit reg
+
+  initial begin     // a waveform controlled by sequential delay
     #d r = 'h35;
     #d r = 'hE2;
     #d r = 'h00;
     #d r = 'hF7;
-    #d -> end_wave; //trigger an event called end_wave
+    #d -> end_wave; // trigger an event called end_wave
   end
 endmodule

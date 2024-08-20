@@ -26,15 +26,18 @@
 //         nonblocking assignment statement.
 
 module non_block1;
+
   reg a, b;
+
   initial begin
     a  = 0;
     b  = 1;
     a <= b; // evaluates, schedules, and
     b <= a; // executes in two steps
   end
+
   initial begin
-    $monitor ( $time , ,"a = %b b = %b", a, b);
-    #100  $finish ;
+    $monitor( $time, , "a = %b b = %b", a, b);
+    #100 $finish;
   end
 endmodule

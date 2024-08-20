@@ -21,5 +21,5 @@
 
 module test;
 
-  initial $dumpfile("module1.dump") ;
+  initial $dumpfile("module1.dump");
 endmodule

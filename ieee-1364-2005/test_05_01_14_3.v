@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.14 Concatenations
 //        Example 3
+
 module test;
+
   parameter P = 32;
 
   reg [31:0] a;

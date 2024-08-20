@@ -22,6 +22,7 @@
 //       the one following the named block.
 
 module test;
+
   reg a, rega, regb;
 
   initial

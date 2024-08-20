@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,12 +23,13 @@
 //         timecheck event for the $hold check.
 
 module test(clk, data, cond1);
+
   input clk, data, cond1;
   reg ntfr;
 
   specify
     specparam tsetup = 1.2, thold = 1.3;
-    $setup (data, clk &&& cond1, tsetup, ntfr);
-    $hold (clk, data &&& cond1, thold, ntfr);
+    $setup(data, clk &&& cond1, tsetup, ntfr);
+    $hold(clk, data &&& cond1, thold, ntfr);
   endspecify
 endmodule

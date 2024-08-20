@@ -21,7 +21,7 @@
 //         As an example, the module named test given in the previous example could alternatively be
 //         declared as follows.
 
-module test (
+module test(
   input [7:0] a,
   input signed [7:0] b, c, d, // Multiple ports that share all
                               // attributes can be declared together.
@@ -30,7 +30,5 @@ module test (
                               // must be in the one declaration.
 
   output reg signed [7:0] f, g,
-  output signed [7:0] h) ;
-  // It is illegal to redeclare any ports of
-  // the module in the body of the module.
+  output signed [7:0] h);
 endmodule

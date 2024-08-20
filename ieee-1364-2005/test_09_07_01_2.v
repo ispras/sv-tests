@@ -23,6 +23,7 @@
 //         the expression.
 
 module test;
+
   parameter d = 1, e = 1;
   reg rega, regb;
   integer regr;

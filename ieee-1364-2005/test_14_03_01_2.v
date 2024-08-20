@@ -20,6 +20,7 @@
 //       14.3.1 Specifying transition delays on module paths
 
 module test(C, Q);
+
   input C;
   output Q;
 
@@ -27,7 +28,7 @@ module test(C, Q);
     // two expressions specify rise and fall delays
     specparam  tPLH1 = 12, tPHL1 = 25;
     specparam  tPLH2 = 12:16:22, tPHL2 = 16:22:25;
-    (C => Q) = ( tPLH1, tPHL1 ) ;
-    (C => Q) = ( tPLH2, tPHL2 ) ;
+    (C => Q) = (tPLH1, tPHL1);
+    (C => Q) = (tPLH2, tPHL2);
   endspecify
 endmodule

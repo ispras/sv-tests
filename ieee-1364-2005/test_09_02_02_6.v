@@ -24,9 +24,12 @@
 //         in the following example.
 
 module multiple3;
+
   reg a;
+
   initial #8 a <= #8 1; // executed at time 8;
   // schedules an update of 1 at time 16
+
   initial #12 a <= #4 0;  // executed at time 12;
   // schedules an update of 0 at time 16
   // Because it is determinate that the update of a to the value 1

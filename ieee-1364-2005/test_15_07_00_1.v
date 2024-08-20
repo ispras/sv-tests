@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,6 +21,7 @@
 //       clr and set are high, add the following statement outside the specify block.
 
 module DFF (Q, CLK, DAT);
+
   input CLK;
   input [7:0] DAT;
   output [7:0] Q;
@@ -31,6 +32,6 @@ module DFF (Q, CLK, DAT);
   end
 
   specify
-    $setup (DAT, posedge CLK, 10);
+    $setup(DAT, posedge CLK, 10);
   endspecify
 endmodule

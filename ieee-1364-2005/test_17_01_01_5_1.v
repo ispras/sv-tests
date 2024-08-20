@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,8 +21,9 @@
 //         17.1.1.5 Strength format
 
 module test(s1, s2, s3);
+
   input s1, s2, s3;
 
   always
-  #15 $display ($time,,"group=%b signals=%v %v %v",{s1,s2,s3},s1,s2,s3);
+  #15 $display($time,, "group=%b signals=%v %v %v", {s1, s2, s3}, s1, s2, s3);
 endmodule

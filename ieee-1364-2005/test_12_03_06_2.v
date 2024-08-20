@@ -22,6 +22,7 @@
 //         using ports connected by name.
 
 module modB(wa, wb, c, d);
+
   inout wa, wb;
   input c, d;
   tranif1     g1(wa, wb, cinvert);
@@ -30,8 +31,9 @@ module modB(wa, wb, c, d);
 endmodule
 
 module topmod;
-  wire [4:0] v;
-  wire a,b,c,w;
 
-  modB b1 (.wb(v[3]),.wa(v[0]),.d(v[4]),.c(w));
+  wire [4:0] v;
+  wire a, b, c, w;
+
+  modB b1(.wb(v[3]), .wa(v[0]), .d(v[4]), .c(w));
 endmodule

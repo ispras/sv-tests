@@ -22,6 +22,7 @@
 //         that execute once to provide stimulus to the main part of the circuit being simulated.
 
 module test;
+
   reg [5:0] inputs;
 
   initial begin

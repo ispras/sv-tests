@@ -23,6 +23,7 @@
 //         nesting if-generate constructs, the else always belongs to the nearest if construct.
 
 module test;
+
   parameter p = 0, q = 0;
   wire a, b, c;
 

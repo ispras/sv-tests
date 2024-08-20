@@ -19,8 +19,11 @@
 //    5.1 Operators
 //      5.1.9 Logical operators
 //        Example 1
+
 module test;
+
   reg regA, regB, alpha, beta;
+
   initial begin
     regA = alpha && beta; // regA is set to 0
     regB = alpha || beta; // regB is set to 1

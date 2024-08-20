@@ -18,6 +18,7 @@
 //   3. Lexical conventions
 //    3.7 Identifiers
 //      3.7.1 Escaped identifiers
+
 module test;
   reg \busa+index /* There should be space */;
   reg \-clock ;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,8 @@
 //       inout1 and inout2. The control input is control. The instance name is t1.
 
 module test(control, inout1, inout2);
+
   input control;
   inout inout1, inout2;
-  tranif1 t1 (inout1,inout2,control);
+  tranif1 t1(inout1,inout2,control);
 endmodule

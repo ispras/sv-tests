@@ -23,6 +23,7 @@
 //         parallel, and the sequential blocks can, therefore, also execute in parallel.
 
 module test;
+
   event enable_a, enable_b;
   parameter ta = 1, tb = 1;
   reg wa, wb;

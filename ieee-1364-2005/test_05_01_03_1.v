@@ -18,7 +18,9 @@
 //   5. Expressions
 //    5.1 Operators
 //      5.1.3 Using integer numbers in expressions
+
 module test;
+
   integer IntA;
 
   initial begin

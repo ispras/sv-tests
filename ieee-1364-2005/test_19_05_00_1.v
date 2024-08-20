@@ -19,9 +19,9 @@
 //     19.5 `include
 //       Examples of `include compiler directives are as follows.
 
-`include  "parts/count.v"
-`include  "fileB"
-`include  "fileB" // including fileB
+`include "parts/count.v"
+`include "fileB"
+`include "fileB" // including fileB
 
 module test;
   initial begin

@@ -21,6 +21,7 @@
 //         The following example defines a function called getbyte, using a range specification.
 
 module test;
+
   function [7:0] getbyte;
     input [15:0] address;
     begin

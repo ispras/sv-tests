@@ -24,6 +24,7 @@
 //         and execute the $display task or execute the update for p, followed by the $display task.
 
 module test;
+
   reg q;
   wire p;
 

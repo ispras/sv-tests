@@ -20,16 +20,17 @@
 //       14.3.1 Specifying transition delays on module paths
 
 module test(C, Q);
+
   input C;
   output Q;
 
   specify
     // six expressions specify transitions to/from 0, 1, and z
-    specparam  t01 = 12, t10 = 16, t0z = 13,
-     tz1 = 10, t1z = 14, tz0 = 34 ;
-    (C => Q) = ( t01, t10, t0z, tz1, t1z, tz0) ;
-    specparam   T01 = 12:14:24, T10 = 16:18:20, T0z = 13:16:30;
-    specparam   Tz1 = 10:12:16, T1z = 14:23:36, Tz0 = 15:19:34;
-    (C => Q) = ( T01, T10, T0z, Tz1, T1z, Tz0);
+    specparam t01 = 12, t10 = 16, t0z = 13,
+     tz1 = 10, t1z = 14, tz0 = 34;
+    (C => Q) = (t01, t10, t0z, tz1, t1z, tz0);
+    specparam T01 = 12:14:24, T10 = 16:18:20, T0z = 13:16:30;
+    specparam Tz1 = 10:12:16, T1z = 14:23:36, Tz0 = 15:19:34;
+    (C => Q) = ( 01, T10, T0z, Tz1, T1z, Tz0);
   endspecify
 endmodule

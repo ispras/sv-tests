@@ -19,8 +19,11 @@
 //    5.1 Operators
 //      5.1.9 Logical operators
 //        Example 2
+
 module test;
+
   integer result, a, b, c, size, index, lastone;
+
   initial begin
     // The following expression performs a logical and of three subexpressions without needing any
     // parentheses:

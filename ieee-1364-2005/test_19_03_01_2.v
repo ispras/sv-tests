@@ -22,9 +22,9 @@
 
 module test;
 
-  `ifdef NEGATIVE_TEST
+`ifdef NEGATIVE_TEST
   `define first_half "start of string
   $display (`first_half end of string");
-  `endif
+`endif
 
 endmodule

@@ -20,6 +20,7 @@
 //       This example illustrates how a block disables itself.
 
 module test;
+
   reg rega, regb, regc;
 
   initial

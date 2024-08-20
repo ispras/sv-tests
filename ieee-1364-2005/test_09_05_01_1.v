@@ -24,6 +24,7 @@
 //         regardless of the values of the other bits of ir.
 
 module test;
+
   reg [7:0] ir;
 
   task instruction1;

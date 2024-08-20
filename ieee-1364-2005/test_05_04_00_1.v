@@ -26,6 +26,7 @@
 //       including the left-hand side of an assignment, shall be used.
 
 module test;
+
   reg [15:0] a, b; // 16-bit regs
   reg [15:0] sumA; // 16-bit reg
   reg [16:0] sumB; // 17-bit reg

@@ -22,8 +22,10 @@
 //         assignments are scheduled to occur after each time delay.
 
 module multiple4;
+
   reg r1;
   reg [2:0] i;
+
   initial begin
     // makes assignments to r1 without cancelling previous assignments
     for (i = 0; i <= 5; i = i+1)

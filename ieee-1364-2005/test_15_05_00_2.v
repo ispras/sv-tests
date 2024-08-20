@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,8 +20,10 @@
 //       Example 1.
 
 primitive posdff_udp(q, clock, data, preset, clear, notifier);
+
   output q; reg q;
   input clock, data, preset, clear, notifier;
+
   table
   //clock data   p c notifier state  q
   //-------------------------------------
@@ -41,13 +43,14 @@ primitive posdff_udp(q, clock, data, preset, clear, notifier);
 endprimitive
 
 module dff(q, qbar, clock, data, preset, clear);
+
   output q, qbar;
   input clock, data, preset, clear;
   reg notifier;
-  and (enable, preset, clear);
-  not (qbar, ffout);
-  buf (q, ffout);
-  posdff_udp (ffout, clock, data, preset, clear, notifier);
+  and(enable, preset, clear);
+  not(qbar, ffout);
+  buf(q, ffout);
+  posdff_udp(ffout, clock, data, preset, clear, notifier);
 
   specify
 
@@ -63,7 +66,7 @@ module dff(q, qbar, clock, data, preset, clear);
   (preset,clear *> q,qbar) = (tPLHpc, tPHLpc);
 
   // Setup time : data to clock, only when preset and clear are 1
-  $setup (data, posedge  clock &&& enable, tSU, notifier);
+  $setup (data, posedge clock &&& enable, tSU, notifier);
 
   // Hold time: clock to data, only when preset and clear are 1
   $hold (posedge clock, data &&& enable, tHD, notifier);

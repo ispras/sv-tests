@@ -18,11 +18,13 @@
 //   5. Expressions
 //    5.2 Operands
 //      5.2.1 Vector bit-select and part-select addressing
+
 `define lsb_base_expr (2 - 1)
 `define msb_base_expr (2 * 3)
 `define width_expr    (4 + 4)
 
 module test;
+
   reg [15:0] big_vect;
   reg [0:15] little_vect;
 

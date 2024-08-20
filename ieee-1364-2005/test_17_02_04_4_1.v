@@ -28,16 +28,17 @@
 //           count are ignored if $fread is loading a reg.
 
 module test;
+
   integer code, fd, count;
   reg [31:0] myreg;
   reg [31:0] mem [15:0];
   reg [3:0] start;
 
   initial begin
-    code = $fread (myreg, fd);
-    code = $fread (mem, fd);
-    code = $fread (mem, fd, start);
-    code = $fread (mem, fd, start, count);
-    code = $fread (mem, fd, , count);
+    code = $fread(myreg, fd);
+    code = $fread(mem, fd);
+    code = $fread(mem, fd, start);
+    code = $fread(mem, fd, start, count);
+    code = $fread(mem, fd, , count);
   end
 endmodule

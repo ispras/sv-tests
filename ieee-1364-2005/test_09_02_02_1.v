@@ -30,16 +30,20 @@
 //         When the simulator activates the nonblocking assign update events, the simulator updates
 //         the left-hand side of each nonblocking assignment statement.
 
-module evaluates2 (out);
+module evaluates2(out);
+
   output out;
   reg a, b, c;
+
   initial begin
     a = 0;
     b = 1;
     c = 0;
   end
+
   always  c = #5 ~c;
-  always  @( posedge  c)  begin
+
+  always @(posedge c) begin
     a <= b; // evaluates, schedules,
     b <= a; // and executes in two steps
   end

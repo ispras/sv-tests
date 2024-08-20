@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,11 +19,12 @@
 //     14.2 Module path declarations
 //       14.2.4 State-dependent paths
 //         14.2.4.4 The ifnone condition
-//           Example  2—The following module path description combination is illegal because it
+//           Example 2 — The following module path description combination is illegal because it
 //           combines a state-dependent path using an ifnone condition and an unconditional path
 //           for the same module path.
 
 module test(a, b, out);
+
   input a, b;
   output out;
 

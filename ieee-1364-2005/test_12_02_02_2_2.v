@@ -36,24 +36,25 @@ module tb3;
 
   // legal mixture of instance with positional parameters and
   // another instance with named parameters
-  vdff #(10, 15)     mod_a (.out(out_a), .in(in_a), .clk(clk));
-  vdff               mod_b (.out(out_b), .in(in_b), .clk(clk));
-  vdff #(.delay(12)) mod_c (.out(out_c), .in(in_c), .clk(clk));
+  vdff #(10, 15)     mod_a(.out(out_a), .in(in_a), .clk(clk));
+  vdff               mod_b(.out(out_b), .in(in_b), .clk(clk));
+  vdff #(.delay(12)) mod_c(.out(out_c), .in(in_c), .clk(clk));
 
   // mod_a instance with ILLEGAL mixture of parameter assignments
-  `ifdef NEGATIVE_TEST
-  vdff #(10, .delay(15)) mod_a (.out(out_a), .in(in_a), .clk(clk));
-  `endif
+`ifdef NEGATIVE_TEST
+  vdff #(10, .delay(15)) mod_a(.out(out_a), .in(in_a), .clk(clk));
+`endif
 
 endmodule
 
-module vdff (out, in, clk);
+module vdff(out, in, clk);
+
   parameter size=5, delay=1;
   output [size-1:0] out;
   input  [size-1:0] in;
   input             clk;
   reg    [size-1:0] out;
 
-  always @( posedge clk)
+  always @(posedge clk)
     #delay out = in;
 endmodule

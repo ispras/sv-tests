@@ -22,6 +22,7 @@
 //         file specified by fd, or if $fflush is invoked with no arguments, to all open files.
 
 module test;
+
   integer fd, mcd;
 
   initial begin

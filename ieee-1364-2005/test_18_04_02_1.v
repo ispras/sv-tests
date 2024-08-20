@@ -24,11 +24,13 @@ module testbench;
 endmodule
 
 module test_device(count_out, carry, data, reset);
+
   output count_out, carry;
   input [0:3] data;
   input reset;
+
   initial begin
-    $dumpports (testbench.DUT, "testoutput.vcd");
+    $dumpports(testbench.DUT, "testoutput.vcd");
     //  ...
   end
 endmodule

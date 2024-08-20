@@ -21,6 +21,7 @@
 //       the proper association, as shown below.
 
 module test;
+
   reg index, rega, regb, result;
 
   initial begin

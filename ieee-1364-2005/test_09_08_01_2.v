@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,11 +21,12 @@
 //         Delay control can be used in a sequential block to separate the two assignments in time.
 
 module test(clock);
+
   input clock;
   reg areg, breg, creg;
 
   initial begin
     areg = breg;
-    @( posedge clock) creg = areg;  // assignment delayed until  posedge on clock
+    @(posedge clock) creg = areg;  // assignment delayed until  posedge on clock
   end
 endmodule

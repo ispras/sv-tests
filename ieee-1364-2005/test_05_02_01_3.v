@@ -20,7 +20,9 @@
 //      5.2.1 Vector bit-select and part-select addressing
 //        Example 1 - The following example specifies the single bit of acc vector
 //        that is addressed by the operand index:
+
 module test;
+
   parameter index = 13;
 
   // The actual bit that is accessed by an address is, in part, determined by the declaration of

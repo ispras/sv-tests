@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,9 +26,11 @@
 module test(in1, in2, out1);
   input in1, in2;
   output out1;
-  `ifdef NEGATIVE_TEST
-    nand  #2 t_nand[0:3] (out1, in1, in2), t_nand[4:7] (out1, in1, in2); // illegal
-  `endif
+
+`ifdef NEGATIVE_TEST
+  nand  #2 t_nand[0:3](out1, in1, in2), t_nand[4:7](out1, in1, in2); // illegal
+`endif
+
   nand  #2 t_nand[0:7](out1, in1, in2);
-  nand  #2 x_nand[0:3] (out1, in1, in2), y_nand[4:7] (out1, in1, in2);
+  nand  #2 x_nand[0:3](out1, in1, in2), y_nand[4:7](out1, in1, in2);
 endmodule

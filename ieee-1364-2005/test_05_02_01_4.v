@@ -22,9 +22,10 @@
 //        principles of bit addressing. The code declares an 8-bit reg called vect and
 //        initializes it to a value of 4. The list describes how the separate bits of that vector
 //        can be addressed.
-module test;
-  reg [7:0] vect;
 
+module test;
+
+  reg [7:0] vect;
   reg [3:0] addr;
   reg [7:0] result;
 

@@ -23,8 +23,8 @@
 module test;
 
   initial begin
-    $display ("%d", 1'bx);
-    $display ("%h", 14'bx01010);
-    $display ("%h %o", 12'b001xxx101x01, 12'b001xxx101x01);
+    $display("%d", 1'bx);
+    $display("%h", 14'bx01010);
+    $display("%h %o", 12'b001xxx101x01, 12'b001xxx101x01);
   end
 endmodule

@@ -22,9 +22,10 @@
 //         reading the input file fd. It returns zero otherwise.
 
 module test;
+
   integer fd, code;
 
   initial begin
-   code = $feof(fd);
+    code = $feof(fd);
   end
 endmodule

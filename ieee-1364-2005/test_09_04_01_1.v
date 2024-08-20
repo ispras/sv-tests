@@ -24,6 +24,7 @@
 //         and parameters.
 
 module test;
+
   // declare regs and parameters
   reg [31:0] instruction, segment_area[255:0];
   reg [7:0] index;

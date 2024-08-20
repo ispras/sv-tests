@@ -36,7 +36,7 @@ module m1;
 
   defparam m.n.p = 1;
 
-  initial $display (m.n.p);
+  initial $display(m.n.p);
 
   generate
     if (p == 1) begin : m

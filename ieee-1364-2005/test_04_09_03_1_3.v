@@ -20,6 +20,7 @@
 //      4.9.3 Memories
 //        4.9.3.1 Array examples
 //          4.9.3.1.3 Memory differences
+
 module test;
   parameter n = 32;
   reg [1:n] rega; // An n-bit register is not the same

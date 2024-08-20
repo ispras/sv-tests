@@ -26,12 +26,13 @@
 //       $unsigned - returned value is unsigned
 
 module test;
+
   reg [7:0] regA, regB;
   reg signed [7:0] regS;
 
   initial begin
-    regA = $unsigned (-4);     // regA = 8'b11111100
-    regB = $unsigned (-4'sd4); // regB = 8'b00001100
-    regS = $signed (4'b1100);  // regS = -4
+    regA = $unsigned(-4);     // regA = 8'b11111100
+    regB = $unsigned(-4'sd4); // regB = 8'b00001100
+    regS = $signed(4'b1100);  // regS = -4
   end
 endmodule

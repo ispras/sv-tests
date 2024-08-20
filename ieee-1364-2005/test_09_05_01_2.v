@@ -23,6 +23,7 @@
 //         if r = 8'b01100110, then the task stat2 is called.
 
 module test;
+
   reg [7:0] r, mask;
 
   task stat1;

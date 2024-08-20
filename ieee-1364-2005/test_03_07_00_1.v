@@ -17,6 +17,7 @@
 // IEEE Std 1364-2005
 //   3. Lexical conventions
 //    3.7 Identifiers
+
 module test;
   reg shiftreg_a;
   reg busa_index;

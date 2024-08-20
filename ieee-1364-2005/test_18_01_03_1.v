@@ -24,9 +24,9 @@
 
 module test;
   initial begin
-      # 10    $dumpvars (1, test);
-      # 200   $dumpoff;
-      # 800   $dumpon;
-      # 900   $dumpoff;
+    # 10  $dumpvars (1, test);
+    # 200 $dumpoff;
+    # 800 $dumpon;
+    # 900 $dumpoff;
   end
 endmodule

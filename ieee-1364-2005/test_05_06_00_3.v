@@ -24,6 +24,7 @@
 //       expression may change the sign of the result.
 
 module test;
+
   reg [7:0] a;
   reg signed [7:0] b;
   reg signed [5:0] c, d;

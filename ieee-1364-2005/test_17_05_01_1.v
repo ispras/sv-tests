@@ -22,6 +22,7 @@
 //         uniform time unit, time precision, and format for timing information.
 
 module test;
+
   wire a1, a2, a3, a4, a5, a6, a7;
   reg  b1, b2, b3;
   wire [1:7] awire;
@@ -29,13 +30,13 @@ module test;
   reg [7:0] mem[1:256];
 
   initial begin
-    $async$and$array (mem, {a1,a2,a3,a4,a5,a6,a7}, {b1,b2,b3});
+    $async$and$array(mem, {a1, a2, a3, a4, a5, a6, a7}, {b1, b2, b3});
 
     // is equivalent
-    $async$and$array (mem, awire, breg);
+    $async$and$array(mem, awire, breg);
 
     // An example of a synchronous system call is as follows
-    $sync$or$plane (mem, {a1,a2,a3,a4,a5,a6,a7}, {b1,b2,b3});
+    $sync$or$plane(mem, {a1, a2, a3, a4, a5, a6, a7}, {b1, b2, b3});
   end
 
 endmodule

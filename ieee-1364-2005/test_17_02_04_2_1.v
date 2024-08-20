@@ -25,10 +25,11 @@
 //           significant partial byte is not used in order to determine the size.
 
 module test;
+
   integer code, fd;
   reg str;
 
   initial begin
-    code = $fgets ( str, fd );
+    code = $fgets(str, fd);
   end
 endmodule

@@ -23,10 +23,13 @@
 //         of that variable is indeterminate.
 
 module multiple2;
+
   reg a;
+
   initial a  = 1;
   initial a <= #4 0;    // schedules 0 at time 4
   initial a <= #4 1;    // schedules 1 at time 4
+
   // At time 4, a = ??
   // The assigned value of the reg is indeterminate
 endmodule

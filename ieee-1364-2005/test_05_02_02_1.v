@@ -21,6 +21,7 @@
 //        The next example declares a memory of 1024 eight-bit words.
 
 module test;
+
   reg [7:0] mem_name[0:1023];
   integer addr_expr;
   reg [7:0] expr_result;
@@ -29,7 +30,6 @@ module test;
   initial begin
     expr_result = mem_name[addr_expr];
     indirect_result = mem_name[mem_name[3]];
-
   end
 
 endmodule

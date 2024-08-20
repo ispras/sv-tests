@@ -18,7 +18,9 @@
 //   5. Expressions
 //    5.2 Operands
 //      5.2.1 Vector bit-select and part-select addressing
+
 module test;
+
   reg [31: 0] big_vect;
   reg [0 :31] little_vect;
   reg [63: 0] dword;

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,12 +22,14 @@
 //       units, then q will remain at 1.
 
 module test(retrig);
+
   input retrig;
   reg q;
 
   always begin : monostable
     #250 q = 0;
   end
+
   always @retrig begin
     disable monostable;
     q = 1;

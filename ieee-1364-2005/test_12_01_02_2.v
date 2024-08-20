@@ -24,26 +24,31 @@
 
 // Lower level module:
 // module description of a nand flip-flop circuit
-module ffnand (q, qbar, preset, clear);
+module ffnand(q, qbar, preset, clear);
+
+  // declares 2 circuit output nets
   output q, qbar;
-  //declares 2 circuit output nets
+
+  // declares 2 circuit input nets
   input preset, clear;
-  //declares 2 circuit input nets
+  
   // declaration of two nand gates and their interconnections
-  nand g1 (q, qbar, preset),
-  g2 (qbar, q, clear);
+  nand g1(q, qbar, preset),
+       g2(qbar, q, clear);
 endmodule
 
 // a waveform description for testing
 // the nand flip-flop, without the output ports
 module ffnand_wave;
-  reg in1, in2; //variables to drive the circuit
+
+  reg in1, in2; // variables to drive the circuit
   parameter d = 10;
 
   // make two copies of the circuit ffnand
   // ff1 has qbar unconnected, ff2 has q unconnected
   ffnand ff1(out1, , in1, in2),
   ff2(.qbar(out2), .clear(in2), .preset(in1), .q());
+  
   // ff3(.q(out3),.clear(in1),,,); is illegal
 
   // define the waveform to stimulate the circuit

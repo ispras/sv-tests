@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,16 +26,17 @@
 //         are dumped.
 
 module dump(clock);
+
   input clock;
   event do_dump;
 
-  initial $dumpfile ("verilog.dump");
+  initial $dumpfile("verilog.dump");
   initial @do_dump
     $dumpvars;                       // dump variables in the design
     always @do_dump                  // to begin the dump at event do_dump
     begin
       $dumpon;                       // no effect the first time through
-      repeat (500) @(posedge clock); // dump for 500 cycles
+      repeat(500) @(posedge clock); // dump for 500 cycles
       $dumpoff;                      // stop the dump
     end
     initial @(do_dump)

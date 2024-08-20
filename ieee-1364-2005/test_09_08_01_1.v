@@ -23,6 +23,7 @@
 //         second assignment.
 
 module test;
+
   reg areg, breg, creg;
 
   initial begin

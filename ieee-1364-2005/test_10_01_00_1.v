@@ -23,6 +23,7 @@
 //       the bytes in old_word, reverse their order, and place the reversed bytes in new_word.
 
 module test;
+
   reg old_word, new_word;
 
   task switch_bytes;
@@ -34,6 +35,6 @@ module test;
   endtask
 
   initial begin
-    switch_bytes (old_word, new_word);
+    switch_bytes(old_word, new_word);
   end
 endmodule

@@ -23,6 +23,7 @@
 //         file descriptor.
 
 module test;
+
   integer fd;
   integer pos;
 

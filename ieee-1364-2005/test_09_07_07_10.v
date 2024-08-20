@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,10 +26,11 @@
 //          negedge phi2 occurred at the same simulation time, each will be detected separately.
 
 module test(phi1, phi2, data);
+
   input phi1, phi2, data;
   reg a, b, num;
 
   initial begin
-    a <= repeat (a+b) @( posedge phi1 or negedge phi2) data;
+    a <= repeat(a + b) @(posedge phi1 or negedge phi2) data;
   end
 endmodule

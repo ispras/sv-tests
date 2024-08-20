@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,7 @@
 //       the value of select[2] is x or z, result should be 0—which is resolved by the third case.
 
 module test(select);
+
   input [1:3] select;
   reg flaga, flagb;
   reg result;

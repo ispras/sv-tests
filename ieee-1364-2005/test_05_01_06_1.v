@@ -18,7 +18,9 @@
 //   5. Expressions
 //    5.1 Operators
 //      5.1.6 Arithmetic expressions with regs and integers
+
 module test;
+
   integer intA;
   reg [15:0] regA;
   reg signed [15:0] regS;

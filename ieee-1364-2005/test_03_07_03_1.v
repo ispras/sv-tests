@@ -18,9 +18,11 @@
 //   3. Lexical conventions
 //    3.7 Identifiers
 //      3.7.3 System tasks and functions
+
 module test;
+
   initial begin
-    $display ("display a message");
+    $display("display a message");
     $finish;
   end
 endmodule

@@ -19,6 +19,7 @@
 //    3.5 Numbers
 //      3.5.1 Integer constants
 //        Example 2 - Sized constant numbers
+
 module test;
   parameter p00 = 4'b1001; // is a 4-bit binary number
   parameter p01 = 5 'D 3;  // is a 5-bit decimal number

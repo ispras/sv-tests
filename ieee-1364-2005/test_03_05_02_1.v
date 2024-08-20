@@ -18,6 +18,7 @@
 //   3. Lexical conventions
 //    3.5 Numbers
 //      3.5.2 Real constants
+
 module test;
   real x00 = 1.2;
   real x01 = 0.1;

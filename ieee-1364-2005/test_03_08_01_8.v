@@ -19,8 +19,11 @@
 //    3.8 Attributes
 //      3.8.1 Examples
 //        Example 8
+
 module test;
+
   reg a, b, c, d;
+
   initial begin
     a = b ? (* no_glitch *) c : d;
   end

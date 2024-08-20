@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,10 +32,10 @@ module test(clk, rst);
   reg y;
 
   initial begin
-    y = repeat  (-3) @ (posedge clk) x;
+    y = repeat(-3) @(posedge clk) x;
     // will not execute event_expression.
 
-    y = repeat  (a) @ (clk or rst) x;
+    y = repeat(a) @(clk or rst) x;
     // if a is assigned -3, it will execute the event_expression
     // if a is declared as an unsigned reg, but not if a is signed
   end

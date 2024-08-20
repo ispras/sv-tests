@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,21 +19,22 @@
 //     14.2 Module path declarations
 //       14.2.4 State-dependent paths
 //         14.2.4.3 Edge-sensitive state-dependent paths
-//           Example 4—The two state-dependent path declarations shown below are not legal because
+//           Example 4 — The two state-dependent path declarations shown below are not legal because
 //           even though they have different conditions, the destinations are not specified in the
 //           same way: the first destination is a part-select, the second is a bit-select.
 
 module test(clk, data, q, reset, cntrl);
+
   input clk, reset, cntrl;
   output data;
   output [4:0] q;
 
   specify
-    `ifdef NEGATIVE_TEST
+`ifdef NEGATIVE_TEST
     if (reset)
       (posedge clk => (q[3:0]:data)) = (10,5);
     if (!reset)
       (posedge clk => (q[0]:data)) = (15,8);
-    `endif
+`endif
   endspecify
 endmodule

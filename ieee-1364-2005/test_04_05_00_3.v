@@ -24,6 +24,7 @@
 //       assumed.
 
 module test(clk, a, b, c);
+
   input wire clk;
   input wire [3:0] a;
   input wire [3:0] b;

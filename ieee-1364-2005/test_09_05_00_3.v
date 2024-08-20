@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,13 +20,14 @@
 //       The following example shows another way to use a case statement to detect x and z values.
 
 module test(sig);
+
   input sig;
 
   initial begin
     case (sig)
-      1'bz: $display ("signal is floating");
-      1'bx: $display ("signal is unknown");
-      default: $display ("signal is %b", sig);
+      1'bz: $display("signal is floating");
+      1'bx: $display("signal is unknown");
+      default: $display("signal is %b", sig);
     endcase
   end
 endmodule

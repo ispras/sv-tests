@@ -21,7 +21,9 @@
 //         The following example is not legal
 
 module test;
-  `ifdef NEGATIVE_TEST
-    reg [3:0] array [3:0] = 0;
-  `endif
+
+`ifdef NEGATIVE_TEST
+  reg [3:0] array [3:0] = 0;
+`endif
+
 endmodule

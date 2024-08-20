@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,7 +25,7 @@
 //           not be explicitly assigned a value due to the ordered list, but will have the value
 //           4096 due to its declaration expression.
 
-module my_mem (input addr, data);
+module my_mem(input addr, data);
 
   parameter addr_width = 16;
   localparam mem_size = 1 << addr_width;
@@ -34,6 +34,7 @@ module my_mem (input addr, data);
 endmodule
 
 module top(addr, data);
+
   input addr, data;
   // some code
   my_mem #(12, 16) m(addr,data);

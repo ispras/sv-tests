@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
 //       17.2.2 File output system tasks
 
 module test(clock);
+
   input clock;
   integer messages, broadcast, cpu_chann, alu_chann, mem_chann;
   reg address, acc, f, a, b;
@@ -29,7 +30,7 @@ module test(clock);
     cpu_chann = $fopen("cpu.dat");
 
     if (cpu_chann == 0)
-      $finish ;
+      $finish;
 
     alu_chann = $fopen("alu.dat");
 
@@ -48,8 +49,8 @@ module test(clock);
 
     // The following file output tasks show how the channels opened in the preceding example
     // might be used:
-    $fdisplay (broadcast, "system reset at time %d", $time);
-    $fdisplay (messages, "Error occurred on address bus at time %d, address = %h",  $time, address);
+    $fdisplay(broadcast, "system reset at time %d", $time);
+    $fdisplay(messages, "Error occurred on address bus at time %d, address = %h", $time, address);
     forever @(posedge clock)
       $fdisplay(alu_chann, "acc= %h f=%h a=%h b=%h", acc, f, a, b);
   end

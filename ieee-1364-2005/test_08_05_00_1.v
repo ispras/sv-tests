@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,16 +20,21 @@
 //       The following example shows a sequential UDP that contains an initial statement.
 
 module test(s, r, q);
+
   input s, r;
   output q;
+
   srff srff_edge(q, s, r);
 endmodule
 
-primitive  srff (q, s, r);
+primitive srff(q, s, r);
+
   output q;
   reg q;
   input s, r;
+
   initial q = 1'b1;
+
   table
   //  s  r   q   q+
       1  0 : ? : 1 ;

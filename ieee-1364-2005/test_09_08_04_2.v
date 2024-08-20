@@ -26,6 +26,7 @@
 //         the next Bevent.
 
 module test;
+
   event Aevent, Bevent;
   reg areg, breg;
 

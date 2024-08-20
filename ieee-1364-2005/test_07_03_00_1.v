@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,8 @@
 //       and out2. The instance name is b1.
 
 module test(in, out1, out2);
+
   input in;
   output out1, out2;
-  buf b1 (out1, out2, in);
+  buf b1(out1, out2, in);
 endmodule

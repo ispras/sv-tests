@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,8 +24,10 @@
 //         in to out, and in is not inverted as it propagates to out.
 
 module test(clock, in, out);
+
   inout clock, in, out;
+
   specify
-    ( posedge  clock => ( out +: in ) ) = (10, 8);
+    (posedge clock => (out +: in)) = (10, 8);
   endspecify
 endmodule

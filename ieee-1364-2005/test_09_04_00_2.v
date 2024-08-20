@@ -23,6 +23,7 @@
 //       with the inner if, as shown by indentation.
 
 module test;
+
   reg index, rega, regb, result;
 
   initial begin

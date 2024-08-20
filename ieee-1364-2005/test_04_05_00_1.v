@@ -22,6 +22,7 @@
 //       port expression declarations.
 
 module test(a,b,c,d,e,f,g,h);
+
   // From 12.3.3
   input [7:0] a; // no explicit declaration - net is unsigned
   input [7:0] b;

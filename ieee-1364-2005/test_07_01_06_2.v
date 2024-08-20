@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,19 +22,21 @@
 //         and they demonstrate the range specification and connection rules for declaring an array
 //         of instances
 
-module driver (in, out, en);
+module driver(in, out, en);
+
   input [3:0] in;
   output [3:0] out;
   input en;
-  bufif0 ar[3:0] (out, in, en); // array of three-state buffers
+  bufif0 ar[3:0](out, in, en); // array of three-state buffers
 endmodule
 
-module driver_equiv (in, out, en);
+module driver_equiv(in, out, en);
+
   input [3:0] in;
   output [3:0] out;
   input en;
-  bufif0 ar3 (out[3], in[3], en); // each buffer declared separately
-  bufif0 ar2 (out[2], in[2], en);
-  bufif0 ar1 (out[1], in[1], en);
-  bufif0 ar0 (out[0], in[0], en);
+  bufif0 ar3(out[3], in[3], en); // each buffer declared separately
+  bufif0 ar2(out[2], in[2], en);
+  bufif0 ar1(out[1], in[1], en);
+  bufif0 ar0(out[0], in[0], en);
 endmodule

@@ -24,8 +24,10 @@
 //         the nonblocking assignments shall be the same as the ordering of the execution.
 
 module multiple;
+
   reg a;
   initial a = 1;
+
   // The assigned value of the reg is determinate
   initial begin
     a <= #4 0;   // schedules a = 0 at time 4

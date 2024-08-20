@@ -20,6 +20,7 @@
 //       14.3.1 Specifying transition delays on module paths
 
 module test(C, Q);
+
   input C;
   output Q;
 

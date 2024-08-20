@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.7 Relational operators
 //        Example 1
+
 module test;
+
   integer result, a, foo;
 
   initial begin

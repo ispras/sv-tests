@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,9 +24,11 @@
 //         path is from in to out, and in is inverted as it propagates to out.
 
 module test(clock, in, out);
+
   inout [3:0] clock;
   inout in, out;
+
   specify
-    ( negedge clock[0] => ( out -: in )) = (10, 8);
+    (negedge clock[0] => (out -: in)) = (10, 8);
   endspecify
 endmodule

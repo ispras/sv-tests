@@ -19,7 +19,8 @@
 //     12.5 Hierarchical names
 //       The code in this example defines a hierarchy of module instances and named blocks.
 
-module mod (in);
+module mod(in);
+
   input in;
 
   always @(posedge in) begin : keep
@@ -28,7 +29,7 @@ module mod (in);
   end
 endmodule
 
-module cct (stim1, stim2);
+module cct(stim1, stim2);
   input stim1, stim2;
 
   // instantiate mod
@@ -39,8 +40,8 @@ module wave;
   reg stim1, stim2;
   cct a(stim1, stim2); // instantiate cct
 
-  initial begin :wave1
-    #100 fork :innerwave
+  initial begin : wave1
+    #100 fork : innerwave
       reg hold;
     join
     #150 begin

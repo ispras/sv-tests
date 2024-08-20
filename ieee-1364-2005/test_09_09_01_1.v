@@ -22,6 +22,7 @@
 //         variables at the start of simulation.
 
 module test;
+
   parameter size = 10;
   reg areg;
   reg memory[size : 0];

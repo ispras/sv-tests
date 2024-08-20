@@ -26,6 +26,7 @@
 //         leading zeroes are added in front of the number until the name does not conflict.
 
 module top;
+
   parameter genblk2 = 0;
   genvar i;
 

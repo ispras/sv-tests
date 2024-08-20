@@ -24,11 +24,14 @@
 //         of ORed values.
 
 module test;
+
   reg a, b, c, d;
   wire e;
-  and and1 (e, a, b, c);
+
+  and and1(e, a, b, c);
+
   initial begin
-    $monitor ("%d d=%b,e=%b", $stime, d, e);
+    $monitor("%d d=%b,e=%b", $stime, d, e);
     assign d = a & b & c;
     a = 1;
     b = 0;

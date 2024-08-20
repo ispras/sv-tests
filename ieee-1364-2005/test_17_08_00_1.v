@@ -20,15 +20,15 @@
 //       The following example shows how the $realtobits and $bitstoreal functions are used
 //       in port connections.
 
-module driver (net_r);
+module driver(net_r);
   output net_r;
   real r;
-  wire [64:1] net_r = $realtobits (r);
+  wire [64:1] net_r = $realtobits(r);
 endmodule
 
-module receiver (net_r);
+module receiver(net_r);
   input net_r;
   wire [64:1] net_r;
   real r;
-  initial assign r = $bitstoreal (net_r);
+  initial assign r = $bitstoreal(net_r);
 endmodule

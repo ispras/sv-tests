@@ -22,6 +22,7 @@
 //       following example.
 
 module test;
+
   reg old_word, new_word;
 
   function switch_bytes;
@@ -32,6 +33,6 @@ module test;
   endfunction
 
   initial begin
-    new_word = switch_bytes (old_word);
+    new_word = switch_bytes(old_word);
   end
 endmodule

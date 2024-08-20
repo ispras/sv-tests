@@ -23,11 +23,12 @@
 //         exactly the same for both implementations.
 
 module test;
+
   event end_wave;
   parameter d = 50;   // d declared as a parameter and
   reg [7:0] r;        // r declared as an 8-bit reg
 
-  initial begin  // a waveform controlled by sequential delay
+  initial begin       // a waveform controlled by sequential delay
     fork
       #50 r = 'h35;
       #100 r = 'hE2;

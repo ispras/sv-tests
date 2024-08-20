@@ -22,9 +22,10 @@
 //         illegal. This example shows illegal port connections.
 
 module test;
-  `ifdef NEGATIVE_TEST
-  a ia (.i (a), .i (b), // illegal connection of input port twice.
-        .o (c), .o (d), // illegal connection of output port twice.
+
+`ifdef NEGATIVE_TEST
+  a ia (.i (a), .i (b),  // illegal connection of input port twice.
+        .o (c), .o (d),  // illegal connection of output port twice.
         .e (e), .e (f)); // illegal connection of inout port twice.
-  `endif
+`endif
 endmodule

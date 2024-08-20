@@ -24,8 +24,10 @@
 //         has length 5, the length of d .
 
 module bitlength();
-  reg [3:0] a,b,c;
+
+  reg [3:0] a, b, c;
   reg [4:0] d;
+
   initial begin
     a = 9;
     b = 8;

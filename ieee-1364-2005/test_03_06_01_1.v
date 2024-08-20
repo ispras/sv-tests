@@ -18,8 +18,11 @@
 //   3. Lexical conventions
 //    3.6 Strings
 //      3.6.1 String variable declaration
+
 module test;
+
   reg [8*12:1] stringvar;
+
   initial begin
     stringvar = "Hello world!";
   end

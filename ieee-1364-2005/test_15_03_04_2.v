@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,20 +21,22 @@
 //          The following example demonstrates some examples of legal and illegal calls.
 
 module test(clr);
-  input clr;
 
+  input clr;
   reg notif;
 
   specify
     specparam lim = 10, thresh = 0.5;
+    
     // Legal Calls
-    $width (negedge clr, lim);
-    $width (negedge clr, lim, thresh, notif);
-    $width (negedge clr, lim, 0, notif);
+    $width(negedge clr, lim);
+    $width(negedge clr, lim, thresh, notif);
+    $width(negedge clr, lim, 0, notif);
+    
     // Illegal Calls
-    `ifdef NEGATIVE_TEST
-    $width (negedge clr, lim, , notif);
-    $width (negedge clr, lim, notif);
-    `endif
+`ifdef NEGATIVE_TEST
+    $width(negedge clr, lim, , notif);
+    $width(negedge clr, lim, notif);
+`endif
   endspecify
 endmodule

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,15 +24,18 @@
 //       has been added.
 
 module test(clock, data, q);
+
   input clock, data;
   output q;
   latch latch(q, clock, data);
 endmodule
 
-primitive latch (q, clock, data);
+primitive latch(q, clock, data);
+
   output q;
-  reg  q;
+  reg q;
   input clock, data;
+
   table
     // clock data  q   q+
     0    1 : ? : 1 ;

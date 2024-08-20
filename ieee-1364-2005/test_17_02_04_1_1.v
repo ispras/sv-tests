@@ -26,11 +26,12 @@
 //           determine the cause of the most recent error (see 17.2.7).
 
 module test;
+
   integer fd, c;
 
   initial begin
 
-    fd = $fopen ("file.txt");
-    c = $fgetc (fd);
+    fd = $fopen("file.txt");
+    c = $fgetc(fd);
   end
 endmodule

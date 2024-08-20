@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,15 +25,16 @@
 //         the smallest fall delay among the first three.
 
 module test(A, MODE, Y);
+
   input A;
   input integer MODE;
   output Y;
 
   specify
-    if  (MODE < 5) (A => Y) = (5, 9);
-    if  (MODE < 4) (A => Y) = (4, 8);
-    if  (MODE < 3) (A => Y) = (6, 5);
-    if  (MODE < 2) (A => Y) = (3, 2);
-    if  (MODE < 1) (A => Y) = (7, 7);
+    if (MODE < 5) (A => Y) = (5, 9);
+    if (MODE < 4) (A => Y) = (4, 8);
+    if (MODE < 3) (A => Y) = (6, 5);
+    if (MODE < 2) (A => Y) = (3, 2);
+    if (MODE < 1) (A => Y) = (7, 7);
   endspecify
 endmodule

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,11 +23,12 @@
 //          assignment is encountered. After five occurrences of posedge clk, a is assigned
 //          the value of data.
 
-module test(clk);
+module test (clk);
+
   input clk;
   reg a, data;
 
   initial begin
-    a <= repeat (5) @( posedge clk) data;
+    a <= repeat(5) @( posedge clk) data;
   end
 endmodule

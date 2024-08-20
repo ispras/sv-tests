@@ -19,10 +19,11 @@
 //    3.8 Attributes
 //      3.8.1 Examples
 //        Example 4
+
 module mod1;
 endmodule
 
 module test;
-  (* optimize_power=0 *)
+  (* optimize_power = 0 *)
   mod1 synth1 (/* <port_list> */);
 endmodule

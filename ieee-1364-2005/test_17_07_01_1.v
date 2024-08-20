@@ -28,7 +28,9 @@
 //         function returns an integer. The time precision does not cause rounding of these values.
 
 `timescale 10 ns / 1 ns
+
 module test;
+
   reg set;
   parameter p = 1.55;
 

@@ -22,9 +22,10 @@
 //         reading the input file fd. It returns zero otherwise.
 
 module test;
+
   reg [7:0] mem[1:256];
 
-   initial $readmemh ("mem.data", mem);
-   initial $readmemh ("mem.data", mem, 16);
-   initial $readmemh ("mem.data", mem, 128, 1);
+   initial $readmemh("mem.data", mem);
+   initial $readmemh("mem.data", mem, 16);
+   initial $readmemh("mem.data", mem, 128, 1);
 endmodule

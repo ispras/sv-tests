@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,8 @@
 //         an open collector nor gate
 
 module test(in1, in2, out1);
+
   input in1, in2;
   output out1;
-  nor (highz1,strong0) n1(out1,in1,in2);
+  nor (highz1,strong0) n1(out1, in1, in2);
 endmodule

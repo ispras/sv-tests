@@ -27,12 +27,13 @@
 //           remain, the excess arguments are ignored.
 
 module test;
+
   integer code, fd;
   reg str, arg1, arg2, arg3;
   reg [32:0] format;
 
   initial begin
-    code = $fscanf (fd, format, arg1, arg2, arg3);
-    code = $sscanf (str, format, arg1, arg2, arg3);
+    code = $fscanf(fd, format, arg1, arg2, arg3);
+    code = $sscanf(str, format, arg1, arg2, arg3);
   end
 endmodule

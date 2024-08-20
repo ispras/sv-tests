@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,8 @@
 //       The following example declares a two-input and gate.
 
 module test(in1, in2, out1);
+
   input in1, in2;
   output out1;
-  and a1 (out, in1, in2);
+  and a1(out, in1, in2);
 endmodule

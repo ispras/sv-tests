@@ -19,7 +19,7 @@
 //     17.5 Programmable logic array (PLA) modeling system tasks
 //       17.5.4 Logic array personality formats
 
-module async_array(a1,a2,a3,a4,a5,a6,a7,b1,b2,b3);
+module async_array(a1, a2, a3, a4, a5, a6, a7, b1, b2, b3);
 
   input a1, a2, a3, a4, a5, a6, a7;
   output b1, b2, b3;
@@ -29,10 +29,10 @@ module async_array(a1,a2,a3,a4,a5,a6,a7,b1,b2,b3);
   initial begin
 
     // set up the personality from the file array.dat
-    $readmemb ("array.dat", mem);
+    $readmemb("array.dat", mem);
 
     // set up an asynchronous logic array with the input
     // and output terms expressed as concatenations
-    $async$and$array (mem,{a1,a2,a3,a4,a5,a6,a7},{b1,b2,b3});
+    $async$and$array(mem, {a1,a2,a3,a4,a5,a6,a7}, {b1,b2,b3});
   end
 endmodule

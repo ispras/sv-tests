@@ -21,6 +21,7 @@
 //        Example 4
 
 module test;
+
   reg [7:0] result;
   reg [1:0] y, w;
 

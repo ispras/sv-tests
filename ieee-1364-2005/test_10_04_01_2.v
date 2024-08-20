@@ -22,6 +22,7 @@
 //         as follows.
 
 module test;
+
   function [7:0] getbyte (input [15:0] address);
     begin
       // code to extract low-order byte from addressed word

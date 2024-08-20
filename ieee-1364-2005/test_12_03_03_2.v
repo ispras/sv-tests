@@ -21,7 +21,7 @@
 //         Implicit nets shall be considered unsigned. Nets connected to ports without an explicit
 //         net declaration shall be considered unsigned, unless the port is declared as signed.
 
-module test(a,b,c,d,e,f,g,h);
+module test(a, b, c, d, e, f, g, h);
 
   input [7:0] a;         // no explicit declaration - net is unsigned
   input [7:0] b;
@@ -37,49 +37,35 @@ module test(a,b,c,d,e,f,g,h);
   reg [7:0] g;           // reg  g inherits signed attribute from port
 endmodule
 
-module complex_ports ({c,d}, .e(f));
-  input signed [7:0] c;
-  input signed [7:0] d;
-  output [7:0] f;
+module complex_ports({c,d}, .e(f)); // Nets {c,d} receive the first port bits.
+  input signed [7:0] c;             // Name 'f' is declared inside the module.
+  input signed [7:0] d;             // Name 'e' is defined outside the module.
+  output [7:0] f;                   // Can't use named port connections of first port.
 endmodule
-  // Nets {c,d} receive the first port bits.
-  // Name 'f' is declared inside the module.
-  // Name 'e' is defined outside the module.
-  // Can't use named port connections of first port.
 
-module split_ports (a[7:4], a[3:0]);
-  input [7:0] a;
+module split_ports(a[7:4], a[3:0]); // First port is upper 4 bits of 'a'.
+  input [7:0] a;                    // Second port is lower 4 bits of 'a'.
+endmodule                           // Can't use named port connections because
+                                    // of part-select port 'a'.
+
+module same_port(.a(i), .b(i)); // Name 'i' is declared inside the module as an inout port.
+  inout i;                      // Names 'a' and 'b' are defined for port connections.
 endmodule
-  // First port is upper 4 bits of 'a'.
-  // Second port is lower 4 bits of 'a'.
-  // Can't use named port connections because
-  // of part-select port 'a'.
 
-module same_port (.a(i), .b(i));
-  inout i;
-endmodule
-  // Name 'i' is declared inside the module as an inout port.
-  // Names 'a' and 'b' are defined for port connections.
-
-module renamed_concat (.a({b,c}), f, .g(h[1]));
-  input [7:0] a;
-  input [7:0] b;
-  input signed [7:0] c;
+module renamed_concat(.a({b, c}), f, .g(h[1]));
+  input [7:0] a;        // Names 'b', 'c', 'f', 'h' are defined inside the module.
+  input [7:0] b;        // Names 'a', 'f', 'g' are defined for port connections.
+  input signed [7:0] c; // Can use named port connections.
   output [7:0] f;
   output signed [7:0] g;
   output signed [7:0] h;
 endmodule
-  // Names 'b', 'c', 'f', 'h' are defined inside the module.
-  // Names 'a', 'f', 'g' are defined for port connections.
-  // Can use named port connections.
 
-module same_input (a,a);
+module same_input(a, a); // This is legal. The inputs are tied together.
 input a;
-  // This is legal. The inputs are tied together.
 endmodule
 
-module mixed_direction (.p({a, e}));
+module mixed_direction(.p({a, e})); // 'p' contains both input and output directions.
   input a;
-  // p contains both input and output directions.
   output e;
 endmodule

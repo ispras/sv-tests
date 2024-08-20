@@ -18,7 +18,9 @@
 //   5. Expressions
 //    5.1 Operators
 //      5.1.13 Conditional operator
+
 module test;
+
   reg drive_busa;
   reg [15:0] data;
 

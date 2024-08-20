@@ -22,6 +22,7 @@
 //        256-by-256-by-8 one-bit elements
 
 module test;
+
   reg [7:0] twod_array[0:255][0:255];
   wire threed_array[0:255][0:255][0:7];
   reg [7:0] twod_array_result;
@@ -40,9 +41,10 @@ module test;
     lower_result = twod_array[14][1][3:0]; // access lower 4 bits of word
     sixth_bit = twod_array[1][3][6]; // access bit 6 of word
     sel_result = twod_array[1][3][sel]; // use variable bit-select
-    `ifdef NEGATIVE_TEST
+
+`ifdef NEGATIVE_TEST
     illegal_result = threed_array[14][1][3:0]; // Illegal
-    `endif
+`endif
   end
 
 endmodule

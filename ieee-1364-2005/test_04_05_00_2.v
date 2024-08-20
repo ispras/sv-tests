@@ -23,6 +23,7 @@
 //       (see 12.7), then an implicit scalar net of default net type shall be assumed.
 
 module test(a, b, x, res);
+
   input wire a;
   input wire b;
   input wire [2:0] x;

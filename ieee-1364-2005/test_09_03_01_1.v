@@ -21,10 +21,13 @@
 //         The following example shows a use of the assign and deassign procedural statements in a
 //         behavioral description of a D-type flip-flop with preset and clear inputs.
 
-module dff (q, d, clear, preset, clock);
+module dff(q, d, clear, preset, clock);
+
   output q;
   input d, clear, preset, clock;
+
   reg q;
+
   always @(clear or preset)
     if (!clear)
       assign q = 0;
@@ -32,6 +35,7 @@ module dff (q, d, clear, preset, clock);
       assign q = 1;
     else
       deassign q;
-  always @( posedge clock)
+
+  always @(posedge clock)
     q = d;
 endmodule

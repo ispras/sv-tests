@@ -21,6 +21,7 @@
 //       implement a multiplier.
 
 module test;
+
   parameter size = 8, longsize = 16;
   reg [size:1] opa, opb;
   reg [longsize:1] result;

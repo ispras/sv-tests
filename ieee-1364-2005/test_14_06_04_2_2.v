@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,10 +26,11 @@
 module test(input a, b, output out);
 
   specify
-    (a=>out)=(2,3);
-    `ifdef NEGATIVE_TEST
+    (a => out) = (2,3);
+
+`ifdef NEGATIVE_TEST
     showcancelled out;
-    (b =>out)=(3,4);
-    `endif
+    (b => out) = (3,4);
+`endif
   endspecify
 endmodule

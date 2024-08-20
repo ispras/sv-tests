@@ -23,6 +23,7 @@
 //         of both a and b at the same simulation time, thereby creating a race condition.
 
 module test;
+
   reg a, b;
 
   initial begin

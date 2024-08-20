@@ -19,6 +19,7 @@
 //    4.10 Parameters
 //      4.10.3 Specify parameters
 //        Example 1
+
 module test;
   specify
     specparam tRise_clk_q = 150, tFall_clk_q = 200;

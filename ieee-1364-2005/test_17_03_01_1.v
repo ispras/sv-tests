@@ -25,7 +25,7 @@
 
 module a_dat;
   initial
-    $printtimescale (b_dat.c1);
+    $printtimescale(b_dat.c1);
 endmodule
 
 `timescale 10 fs / 1 fs

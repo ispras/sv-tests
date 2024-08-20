@@ -22,6 +22,7 @@
 //         as shown in the following.
 
 module test;
+
   parameter half_period = 10;
   reg areg;
 

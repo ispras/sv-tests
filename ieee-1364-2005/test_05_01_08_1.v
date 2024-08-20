@@ -19,7 +19,9 @@
 //    5.1 Operators
 //      5.1.8 Equality operators
 //        Table 5-11 - Definitions of equality operators
+
 module test;
+
   integer a, b, c;
 
   initial begin

@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,6 @@ module test(input clk, data, clr, set, inout clr_and_set);
 
   specify
     // Then add the condition to the timing check using the signal clr_and_set as follows
-    $setup (data, posedge clk &&& clr_and_set, 10);
+    $setup(data, posedge clk &&& clr_and_set, 10);
   endspecify
 endmodule

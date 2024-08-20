@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,13 +22,14 @@
 //       path delays to the module paths.
 
 module test(clk, clr, pre, q);
+
   input clk, clr, pre;
   output q;
 
   specify
     // Specify Parameters
-    specparam  tRise_clk_q = 45:150:270, tFall_clk_q=60:200:350;
-    specparam  tRise_Control = 35:40:45, tFall_control=40:50:65;
+    specparam  tRise_clk_q = 45:150:270, tFall_clk_q = 60:200:350;
+    specparam  tRise_Control = 35:40:45, tFall_control = 40:50:65;
     // Module Path Assignments
     (clk => q) = (tRise_clk_q, tFall_clk_q);
     (clr, pre *> q) = (tRise_Control, tFall_control);

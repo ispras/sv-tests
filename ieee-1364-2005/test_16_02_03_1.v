@@ -20,9 +20,10 @@
 //       16.2.3 SDF annotation of specparams
 
 module clock(clk);
+
   output clk;
   reg clk;
-  specparam dhigh=0, dlow=0;
+  specparam dhigh = 0, dlow = 0;
 
   initial clk = 0;
 

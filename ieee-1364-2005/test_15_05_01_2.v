@@ -1,5 +1,5 @@
 /*
- * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -23,10 +23,11 @@
 //         is created, and it is used for both timing checks.
 
 module test(CLK, DATA1, DATA2);
+
   input CLK, DATA1, DATA2;
 
   specify
-    $setuphold (posedge CLK, DATA1, -10, 20);
-    $setuphold (posedge CLK, DATA2, -15, 18);
+    $setuphold(posedge CLK, DATA1, -10, 20);
+    $setuphold(posedge CLK, DATA2, -15, 18);
   endspecify
 endmodule

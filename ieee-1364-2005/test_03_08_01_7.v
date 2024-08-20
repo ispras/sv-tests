@@ -19,7 +19,9 @@
 //    3.8 Attributes
 //      3.8.1 Examples
 //        Example 7
+
 module test;
+
   reg a, b, c;
 
   function add;

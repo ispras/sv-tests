@@ -22,6 +22,7 @@
 //         code that could accomplish the same timing effect without using intra-assignment.
 
 module test;
+
   reg a, b, temp;
 
   initial begin

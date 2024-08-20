@@ -23,14 +23,15 @@
 //         expressions (bit-selects) and are compared against the constant expression for a match.
 
 module test;
+
   reg [2:0] encode;
 
   initial begin
     case(1)
-      encode[2] : $display ("Select Line 2") ;
-      encode[1] : $display ("Select Line 1") ;
-      encode[0] : $display ("Select Line 0") ;
-      default $display ("Error: One of the bits expected ON");
+      encode[2] : $display("Select Line 2") ;
+      encode[1] : $display("Select Line 1") ;
+      encode[0] : $display("Select Line 0") ;
+      default $display("Error: One of the bits expected ON");
     endcase
   end
 endmodule
