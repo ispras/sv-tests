@@ -18,14 +18,15 @@
 //   16. Assertions
 //    16.3 Immediate assertions
 
-module test;
+module test(clk, req1, req2);
 
-reg state, req1, req2, clk, REQ;
+input clk, req1, req2;
+reg state, REQ;
 time t;
 
 always @(posedge clk)
   if (state == REQ)
-    assert (req1 || req2)
+    assert(req1 || req2);
   else begin
     t = $time;
     #5 $display("assert failed at time %0t", t);

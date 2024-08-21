@@ -19,10 +19,10 @@
 //    16.14 Concurrent assertions
 //     16.14.6 Embedding concurrent assertions in procedural code
 
-module test;
+module test(mclk);
 
+input mclk;
 reg q, q1, d, d1;
-reg mclk;
 
 property r4;
   q != d;

@@ -18,10 +18,10 @@
 //   16. Assertions
 //    16.6 Boolean expressions
 
-module test;
+module test(clk);
 
+input clk;
 reg [2:0] count;
-reg clk;
 reg a;
 realtime t;
 

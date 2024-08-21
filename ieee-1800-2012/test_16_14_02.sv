@@ -19,9 +19,9 @@
 //    16.14 Concurrent assertions
 //     16.14.2 Assume statement
 
-module test;
+module test(clk, req, gnt, rst);
 
-reg clk, req, gnt, rst;
+input clk, req, gnt, rst;
 
 property abc(a, b, c);
   disable iff (c) @(posedge clk) a |=> b;

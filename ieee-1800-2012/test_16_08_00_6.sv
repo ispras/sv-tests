@@ -18,9 +18,9 @@
 //   16. Assertions
 //    16.8 Declaring sequences
 
-module test;
+module test(sysclk);
 
-reg sysclk;
+input sysclk;
 reg x, y;
 
 `ifdef NEGATIVE_TEST

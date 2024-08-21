@@ -19,9 +19,10 @@
 //    16.12 Declaring properties
 //     16.12.6 Implication
 
-module test;
+module test(write_en, data_valid);
 
-reg write_en, data_valid;
+input write_en;
+output data_valid;
 reg [0:4] addr;
 reg [0:8] retire_address, write_address;
 

@@ -19,9 +19,9 @@
 //    16.9 Sequence operations
 //     16.9.4 Global clocking past and future sampled value functions
 
-module test;
+module test(clk, rst, sig);
 
-logic clk, rst, sig;
+input clk, rst, sig;
 
 global clocking sys @(posedge clk); endclocking
 

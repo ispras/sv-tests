@@ -19,9 +19,9 @@
 //    16.13 Multiclock support
 //     16.13.7 Local variable initialization assignments
 
-module test;
+module test(clk, clk1, clk2);
 
-reg clk, clk1, clk2;
+input clk, clk1, clk2;
 reg a, b, c, d, e, f;
 
 property p;

@@ -19,9 +19,10 @@
 //    16.12 Declaring properties
 //     16.12.6 Implication
 
-module test;
+module test(mclk, irdy, trdy);
 
-reg mclk, data_phase, irdy, trdy, stop;
+input mclk, irdy, trdy;
+reg data_phase, stop;
 
 property data_end;
   @(posedge mclk)

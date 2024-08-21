@@ -19,9 +19,9 @@
 //    16.12 Declaring properties
 //     16.12.11 Always property
 
-module test;
+module test(clk, reset);
 
-reg clk, reset;
+input clk, reset;
 reg a, b, c;
 
 initial a1: assume property( @(posedge clk) reset[*5] #=# (always !reset));

@@ -19,10 +19,10 @@
 //    16.12 Declaring properties
 //     16.12.17 Recursive properties
 
-module test;
+module test(reset, write_request, retry, write_request_ack, data_valid, last_data_valid);
 
-reg reset;
-reg write_request, write_request_ack, retry, data_valid, last_data_valid;
+input reset, write_request, retry;
+output write_request_ack, retry, data_valid, last_data_valid;
 reg [0:127] model_data, data;
 reg [3:0] write_request_ack_tag, data_valid_tag, retry_tag;
 

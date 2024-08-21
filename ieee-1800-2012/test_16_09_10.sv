@@ -19,9 +19,9 @@
 //    16.9 Sequence operations
 //     16.9.10 Sequence contained within another sequence
 
-module test;
+module test(irdy, trdy);
 
-reg irdy, trdy;
+input irdy, trdy;
 
 sequence rule1;
   !trdy[*7] within ($fell(irdy) ##1 !irdy[*8]);

@@ -18,10 +18,10 @@
 //   16. Assertions
 //    16.10 Local variables
 
-module test;
+module test(valid_in);
 
+input valid_in;
 integer pipe_in, pipe_out1;
-reg valid_in;
 
 property e;
   int x;

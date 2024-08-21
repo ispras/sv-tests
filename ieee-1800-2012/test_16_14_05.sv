@@ -19,9 +19,9 @@
 //    16.14 Concurrent assertions
 //     16.14.5 Using concurrent assertion statements outside procedural code
 
-module top(input reg clk);
+module top(input clk);
 
-reg a,b,c;
+reg a, b, c;
 
 property rule3;
     @(posedge clk) a |-> b ##1 c;

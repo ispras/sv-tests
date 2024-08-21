@@ -18,9 +18,9 @@
 //   16. Assertions
 //    16.8 Declaring sequences
 
-module test;
+module test(clk);
 
-reg clk;
+input clk;
 reg a, b, c, d, e, f, g, h, i, j, k, l;
 
 sequence s1;

@@ -19,10 +19,10 @@
 //    16.9 Sequence operations
 //     16.9.11 Composing sequences from simpler subsequences
 
-module test;
+module test(sysclk);
 
+input sysclk;
 reg a, b, c;
-reg sysclk;
 reg trans, start_trans, end_trans;
 
 sequence s;

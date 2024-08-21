@@ -19,8 +19,9 @@
 //    16.3 Deferred assertions
 //     16.4.2 Deferred assertion flush points
 
-module test(input reg clk, input reg a, input reg b);
+module test(clk, a, b);
 
+input clk, a, b;
 reg c;
   
 always @(posedge clk)

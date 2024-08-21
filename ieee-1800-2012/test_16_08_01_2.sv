@@ -19,10 +19,10 @@
 //    16.8 Declaring sequences
 //     16.8.1 Typed formal arguments in sequence declarations
 
-module test;
+module test(clk);
 
 reg x, y, z;
-reg clk;
+input clk;
 
 sequence delay_arg_example (max, shortint delay1, delay2, min);
   x ##delay1 y[*min:max] ##delay2 z;
@@ -30,7 +30,7 @@ endsequence
 
 parameter my_delay=2;
 
-assert property (delay_arg_example(4, my_delay, my_delay-1, 3));
+assert property (delay_arg_example(4, my_delay, my_delay - 1, 3));
 
 assert property (x ##2 y[*3:$] ##1 z);
 

@@ -21,9 +21,10 @@
 
 `define data_end_exp (data_phase && ((irdy==0)&&($fell(trdy)||$fell(stop))))
 
-module test;
+module test(mclk, irdy, trdy);
 
-reg mclk, irdy, trdy, frame, stop, data_phase;
+input mclk, irdy, trdy;
+reg frame, stop, data_phase;
 
 property data_end_rule1;
   @(posedge mclk)

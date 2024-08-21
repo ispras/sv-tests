@@ -20,13 +20,13 @@
 //     16.14.6 Embedding concurrent assertions in procedural code
 //      16.14.6.1 Arguments to procedural concurrent assertions
 
-module test;
+module test(clk);
 
+input clk;
 wire w;
 reg [10:0] foo;
 reg [10:0] bar;
 reg my_activation_condition;
-reg clk;
 
 always @(posedge clk) begin : procedural_block_1
   integer i;

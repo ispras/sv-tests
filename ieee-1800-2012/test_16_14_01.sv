@@ -19,9 +19,9 @@
 //    16.14 Concurrent assertions
 //     16.14.1 Assert statement
 
-module test;
+module test(clk, rst, in1, in2);
 
-reg clk, rst, in1, in2;
+input clk, rst, in1, in2;
 
 property abc(a, b, c);
   disable iff (a==2) @(posedge clk) not (b ##1 c);

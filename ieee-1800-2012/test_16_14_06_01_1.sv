@@ -20,11 +20,11 @@
 //     16.14.6 Embedding concurrent assertions in procedural code
 //      16.14.6.1 Arguments to procedural concurrent assertions
 
-module test;
+module test(clk);
 
+input clk;
 reg [10:0] foo;
 reg [10:0] bar;
-reg clk;
 
 // Assume for this example that (posedge clk) will not occur at time 0
 always @(posedge clk) begin : loop

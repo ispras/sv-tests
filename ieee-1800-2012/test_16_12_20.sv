@@ -19,9 +19,9 @@
 //    16.12 Declaring properties
 //     16.12.20 Property examples
 
-module test;
+module test(clk, clkev);
 
-reg clk, clkev;
+input clk, clkev;
 reg a, b, c, d, e, f;
 
 property rule1;
@@ -49,7 +49,7 @@ property rule5;
     f) ;
 endproperty
 
-property rule6(x,y);
+property rule6(x, y);
   ##1 x |-> y;
 endproperty
 
@@ -57,7 +57,7 @@ property rule5a;
   @(posedge clk)
   a ##1 (b || c)[->1] |->
   (if (b)
-    rule6(d,e)
+    rule6(d, e)
   else // c
     f) ;
 endproperty

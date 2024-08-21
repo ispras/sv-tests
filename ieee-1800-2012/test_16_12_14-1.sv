@@ -19,9 +19,9 @@
 //    16.12 Declaring properties
 //     16.12.14 Abort properties
 
-module test;
+module test(clk);
 
-logic clk;
+input clk;
 reg go, get, put, stop;
 
 assert property (@(clk) go ##1 get[*2] |-> (reject_on(stop) put[->2]));

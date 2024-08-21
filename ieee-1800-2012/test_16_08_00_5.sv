@@ -18,9 +18,9 @@
 //   16. Assertions
 //    16.8 Declaring sequences
 
-module test;
+module test(sysclk);
 
-reg sysclk;
+input sysclk;
 reg start_trans, end_trans, trans;
 reg a, b, c;
 
