@@ -27,24 +27,24 @@ module test(a, b, out, out_b);
   input a, b;
   output out, out_b;
 
+// The equivalent block is the commented one:
+//  specify
+//    showcancelled out;
+//    pulsestyle_ondetect out;
+//    (a => out) = (2,3);
+//    (b => out) = (4,5);
+//    showcancelled out_b;
+//    pulsestyle_ondetect out_b;
+//    (a => out_b) = (3,4);
+//    (b => out_b) = (5,6);
+//  endspecify
+
   specify
-    showcancelled out;
-    pulsestyle_ondetect out;
+    showcancelled out,out_b;
+    pulsestyle_ondetect out,out_b;
     (a => out) = (2,3);
     (b => out) = (4,5);
-    showcancelled out_b;
-    pulsestyle_ondetect out_b;
     (a => out_b) = (3,4);
     (b => out_b) = (5,6);
   endspecify
-
-// The equivalent block is the commented one:
-// specify
-//   showcancelled out,out_b;
-//   pulsestyle_ondetect out,out_b;
-//   (a => out) = (2,3);
-//   (b => out) = (4,5);
-//   (a => out_b) = (3,4);
-//   (b => out_b) = (5,6);
-// endspecify
 endmodule
