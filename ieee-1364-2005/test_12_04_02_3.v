@@ -29,6 +29,7 @@ module adder_2bit(co, sum, a, b, ci);
 endmodule
 
 module adder_cla(co, sum, a, b, ci);
+  parameter WIDTH = 1;
   input co, sum, a, b, ci;
 endmodule
 
