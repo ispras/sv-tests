@@ -26,7 +26,7 @@ reg [10:0] foo;
 reg [10:0] bar;
 genvar i;
 
-//default clocking @(posedge clk); endclocking
+default clocking @(posedge clk); endclocking
 
 generate for (i=0; i<10; i=i+1) begin
   a1: assert property (foo[10] && bar[10]);

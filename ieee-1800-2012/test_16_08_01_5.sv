@@ -16,18 +16,21 @@
 
 // IEEE Std 1800-2012
 //   16. Assertions
-//    16.14 Concurrent assertions
-//     16.14.2 Assume statement
+//    16.8 Declaring sequences
+//     16.8.1 Typed formal arguments in sequence declarations
 
-module test(input clk, req, gnt, rst);
+module test(clk);
 
-global clocking sys @(posedge clk); endclocking
+reg x, y, z;
+input clk;
 
-property abc(a, b, c);
-  disable iff (c) @(posedge clk) a |=> b;
-endproperty
+sequence event_arg_example2 (reg sig);
+  @(posedge sig) x ##1 y;
+endsequence
 
-env_prop:
-    assume property (@$global_clock abc(req, gnt, rst)) else $error("Assumption failed.");
+cover property (event_arg_example2(clk));
+
+// The cover property above is equivalent to the following:
+cover property (@(posedge clk) x ##1 y);
 
 endmodule
