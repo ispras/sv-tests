@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 ISP RAS (http://www.ispras.ru)
+ * Copyright 2018-2024 ISP RAS (http://www.ispras.ru)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@
 
 module iobuf(io1, io2, dir);
 
-  input io1, io2;
+  inout io1, io2;
   output dir;
   bufif0 #(5:7:9, 8:10:12, 15:18:21) b1(io1, io2, dir);
   bufif1 #(6:8:10, 5:7:9, 13:17:19) b2(io2, io1, dir);
