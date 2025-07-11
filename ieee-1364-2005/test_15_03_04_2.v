@@ -20,6 +20,8 @@
 //       15.3.4 $width
 //          The following example demonstrates some examples of legal and illegal calls.
 
+// ! TYPE: VARYING
+
 module test(clr);
 
   input clr;

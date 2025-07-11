@@ -25,6 +25,8 @@
 //         than one explicit delayed signal for the first check and another implicit delayed signal
 //         for the second check.
 
+// ! TYPE: POSITIVE
+
 module test(CLK, DATA1, DATA2, del_CLK, del_DATA1);
 
   input CLK, DATA1, DATA2;

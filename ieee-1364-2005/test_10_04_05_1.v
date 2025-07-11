@@ -21,6 +21,8 @@
 //         This example defines a function called clogb2 that returns an integer with the value of
 //         the ceiling of the log base 2.
 
+// ! TYPE: POSITIVE
+
 module ram_model(address, write, chip_select, data);
 
   parameter data_width = 8;

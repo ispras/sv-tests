@@ -20,6 +20,8 @@
 //       The following example shows how the $realtobits and $bitstoreal functions are used
 //       in port connections.
 
+// ! TYPE: POSITIVE
+
 module driver(net_r);
   output net_r;
   real r;

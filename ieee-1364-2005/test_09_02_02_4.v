@@ -23,6 +23,8 @@
 //         nonblocking assignments, then the order of the resulting updates of the destination of
 //         the nonblocking assignments shall be the same as the ordering of the execution.
 
+// ! TYPE: POSITIVE
+
 module multiple;
 
   reg a;

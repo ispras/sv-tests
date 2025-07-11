@@ -20,6 +20,8 @@
 //      5.1.7 Relational operators
 //        Example 1
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer result, a, foo;

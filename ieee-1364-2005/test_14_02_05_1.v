@@ -24,6 +24,8 @@
 //         8-bit output bus. The module paths from both input lines in1 and in2 to q use a parallel
 //         connection (=>) because they set up parallel connections between two 8-bit buses.
 
+// ! TYPE: POSITIVE
+
 module mux8 (in1, in2, s, q);
 
   output [7:0] q;

@@ -20,6 +20,8 @@
 //       6.2.1 Variable declaration assignment
 //         Declare a 4-bit reg and assign it the value 4.
 
+// ! TYPE: POSITIVE
+
 module test;
   reg [3:0] a = 4'h4;
   reg b;

@@ -21,6 +21,8 @@
 //         The following example describes a module with one 16-bit output bus. It selects between
 //         one of four input busses and connects the selected bus to the output bus.
 
+// ! TYPE: POSITIVE
+
 module select_bus(busout, bus0, bus1, bus2, bus3, enable, s);
 
   parameter n = 16;

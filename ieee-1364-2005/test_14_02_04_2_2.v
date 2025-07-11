@@ -26,6 +26,8 @@
 //           inputs on opcode. The last path declaration declares a path from the opcode input to
 //           the o1 output.
 
+// ! TYPE: POSITIVE
+
 module ALU (o1, i1, i2, opcode);
 
   input [7:0] i1, i2;

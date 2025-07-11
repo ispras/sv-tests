@@ -19,6 +19,8 @@
 //     8.2 Combinational UDPs
 //       The following example defines a multiplexer with two data inputs and a control input.
 
+// ! TYPE: POSITIVE
+
 module test(control, dataA, dataB, mux);
 
   input control, dataA, dataB;

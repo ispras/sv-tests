@@ -25,6 +25,8 @@
 //          equals the sum of a and b, a is assigned the value of data. Even if posedge phi1 and
 //          negedge phi2 occurred at the same simulation time, each will be detected separately.
 
+// ! TYPE: POSITIVE
+
 module test(phi1, phi2, data);
 
   input phi1, phi2, data;

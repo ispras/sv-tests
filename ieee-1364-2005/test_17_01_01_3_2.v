@@ -20,6 +20,8 @@
 //       17.1.1 The display and write tasks
 //         17.1.1.3 Size of displayed data
 
+// ! TYPE: POSITIVE
+
 module printval;
 
   reg [11:0] r1;

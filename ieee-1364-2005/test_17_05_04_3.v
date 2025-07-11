@@ -23,6 +23,8 @@
 //         the Verilog HDL description using the $async$and$plane system task, and finally the
 //         result of running the simulation.
 
+// ! TYPE: POSITIVE
+
 module pla;
 
   `define rows 4

@@ -22,6 +22,8 @@
 //       with the closest previous if that lacks an else. In the example below, the else goes
 //       with the inner if, as shown by indentation.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg index, rega, regb, result;

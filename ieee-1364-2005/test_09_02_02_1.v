@@ -30,6 +30,8 @@
 //         When the simulator activates the nonblocking assign update events, the simulator updates
 //         the left-hand side of each nonblocking assignment statement.
 
+// ! TYPE: POSITIVE
+
 module evaluates2(out);
 
   output out;

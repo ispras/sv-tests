@@ -23,6 +23,8 @@
 //         extends from clock[0] to out using a rise delay of 10 and a fall delay of 8. The data
 //         path is from in to out, and in is inverted as it propagates to out.
 
+// ! TYPE: POSITIVE
+
 module test(clock, in, out);
 
   inout [3:0] clock;

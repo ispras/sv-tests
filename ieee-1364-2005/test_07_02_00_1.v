@@ -19,6 +19,8 @@
 //     7.2 and, nand, nor, or, xor, and xnor gates
 //       The following example declares a two-input and gate.
 
+// ! TYPE: POSITIVE
+
 module test(in1, in2, out1);
 
   input in1, in2;

@@ -26,6 +26,8 @@
 //          — 1 sets position to current location plus offset;
 //          — 2 sets position to EOF plus offset.
 
+// ! TYPE: POSITIVE
+
 module test(operation);
 
   input operation;

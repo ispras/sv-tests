@@ -26,6 +26,8 @@
 //           for the format, the behavior is undefined. If the format is exhausted while arguments
 //           remain, the excess arguments are ignored.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer code, fd;

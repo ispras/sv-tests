@@ -21,6 +21,8 @@
 //        Example 1 - The following example specifies the single bit of acc vector
 //        that is addressed by the operand index:
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter index = 13;

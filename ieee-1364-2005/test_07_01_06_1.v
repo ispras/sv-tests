@@ -21,6 +21,8 @@
 //         The following declaration of nand_array declares four instances that can be referenced by
 //           nand_array[1], nand_array[2], nand_array[3], and nand_array[4], respectively.
 
+// ! TYPE: POSITIVE
+
 module test(in1, in2, out1);
 
   input in1, in2;

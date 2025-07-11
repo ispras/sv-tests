@@ -20,6 +20,8 @@
 //       9.9.2 Always construct
 //         The following code, for example, creates a zero-delay infinite loop.
 
+// ! TYPE: POSITIVE
+
 module test;
   reg areg;
 

@@ -22,6 +22,8 @@
 //          statements are encountered, but the assignments are delayed until the rising edge of the
 //          clock signal.
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
   input clk;

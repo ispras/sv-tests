@@ -25,6 +25,8 @@
 //         triggered again. At every 10000 time steps, the current values of all VCD variables
 //         are dumped.
 
+// ! TYPE: POSITIVE
+
 module dump(clock);
 
   input clock;

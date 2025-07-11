@@ -19,6 +19,8 @@
 //     7.14.1 min:typ:max delays
 //       The following example shows min:typ:max values for rising, falling, and turn-off delays.
 
+// ! TYPE: POSITIVE
+
 module iobuf(io1, io2, dir);
 
   inout io1, io2;

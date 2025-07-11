@@ -25,6 +25,8 @@
 //         construct. If such a name would conflict with an explicitly declared name, then
 //         leading zeroes are added in front of the number until the name does not conflict.
 
+// ! TYPE: POSITIVE
+
 module top;
 
   parameter genblk2 = 0;

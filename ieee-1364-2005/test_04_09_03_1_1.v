@@ -21,6 +21,8 @@
 //        4.9.3.1 Array examples
 //          4.9.3.1.1 Array declarations
 
+// ! TYPE: POSITIVE
+
 module test;
   reg [7:0] mema[0:255];   // declares a memory mema of 256 8-bit
                            // registers. The indices are 0 to 255

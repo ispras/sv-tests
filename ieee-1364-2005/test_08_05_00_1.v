@@ -19,6 +19,8 @@
 //     8.5 Sequential UDP initialization
 //       The following example shows a sequential UDP that contains an initial statement.
 
+// ! TYPE: POSITIVE
+
 module test(s, r, q);
 
   input s, r;

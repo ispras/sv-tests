@@ -19,6 +19,8 @@
 //     14.2 Module path declarations
 //       14.2.6 Declaring multiple module paths in a single statement
 
+// ! TYPE: POSITIVE
+
 module test(a, b, c, q1, q2);
 
   input a, b, c;

@@ -21,6 +21,8 @@
 //         Implicit nets shall be considered unsigned. Nets connected to ports without an explicit
 //         net declaration shall be considered unsigned, unless the port is declared as signed.
 
+// ! TYPE: NEGATIVE
+
 module test(a, b, c, d, e, f, g, h);
 
   input [7:0] a;         // no explicit declaration - net is unsigned

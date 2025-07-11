@@ -19,6 +19,8 @@
 //     17.5 Programmable logic array (PLA) modeling system tasks
 //       17.5.4 Logic array personality formats
 
+// ! TYPE: POSITIVE
+
 module sync_array(a1, a2, a3, a4, a5, a6, a7, b1, b2, b3, clk);
 
   input a1, a2, a3, a4, a5, a6, a7, clk;

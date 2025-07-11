@@ -24,6 +24,8 @@
 //         instantiation is created by the same loop generate construct. For example, the following
 //         code is not allowed.
 
+// ! TYPE: VARYING
+
 module flop(
   input in, in1,
   output out1);

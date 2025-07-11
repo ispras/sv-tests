@@ -23,6 +23,8 @@
 //       assignment statement appears (see 12.7), then an implicit scalar net of default net type shall be
 //       assumed.
 
+// ! TYPE: POSITIVE
+
 module test(clk, a, b, c);
 
   input wire clk;

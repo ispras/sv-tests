@@ -21,6 +21,8 @@
 //         The $setuphold timing check combines the functionality of the $setup and $hold timing
 //         checks into a single timing check.
 
+// ! TYPE: POSITIVE
+
 module test(clk, data);
 
   input clk, data;

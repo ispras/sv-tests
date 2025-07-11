@@ -21,6 +21,8 @@
 //         Multiple module instance port connections are not allowed, e.g., the following example is
 //         illegal. This example shows illegal port connections.
 
+// ! TYPE: VARYING
+
 module test;
 
 `ifdef NEGATIVE_TEST

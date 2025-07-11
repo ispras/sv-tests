@@ -20,6 +20,8 @@
 //      5.1.5 Arithmetic operators
 //        Table 5-5 - Arithmetic operators defined
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer a, b, c;

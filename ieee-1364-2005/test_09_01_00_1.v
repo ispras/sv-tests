@@ -19,6 +19,8 @@
 //     9.1 Behavioral model overview
 //       The following example shows a complete Verilog behavioral model.
 
+// ! TYPE: POSITIVE
+
 module behave;
 
   reg [1:0] a, b;

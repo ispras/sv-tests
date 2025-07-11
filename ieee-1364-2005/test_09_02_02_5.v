@@ -22,6 +22,8 @@
 //         blocks contain nonblocking assignment operators to the same variable, the final value
 //         of that variable is indeterminate.
 
+// ! TYPE: POSITIVE
+
 module multiple2;
 
   reg a;

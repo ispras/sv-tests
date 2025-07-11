@@ -29,6 +29,8 @@
 //         a defparam or an instantiation statement, then it will take on that value, regardless of
 //         the value of word_size.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter

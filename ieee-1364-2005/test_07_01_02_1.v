@@ -21,6 +21,8 @@
 //         The following example shows a drive strength specification in a declaration of
 //         an open collector nor gate
 
+// ! TYPE: POSITIVE
+
 module test(in1, in2, out1);
 
   input in1, in2;

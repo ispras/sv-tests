@@ -25,6 +25,8 @@
 //           second parameter of mod_c is changed using parameter redefinition by
 //           name during instantiation
 
+// ! TYPE: VARYING
+
 module tb3;
 
   // declarations & code

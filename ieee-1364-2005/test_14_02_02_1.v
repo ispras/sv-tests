@@ -20,6 +20,8 @@
 //       14.2.2 Simple module paths
 //         The following three examples illustrate valid simple module path declarations.
 
+// ! TYPE: POSITIVE
+
 module test(A, B, C, D, Q);
 
   inout A, B, C, D, Q;

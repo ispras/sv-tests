@@ -21,6 +21,8 @@
 //         This example defines a function called factorial that returns an integer value.
 //         The factorial function is called iteratively and the results are printed.
 
+// ! TYPE: POSITIVE
+
 module tryfact;
   // define the function
   function automatic integer factorial;

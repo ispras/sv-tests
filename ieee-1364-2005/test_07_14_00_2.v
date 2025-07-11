@@ -22,6 +22,8 @@
 //       to the outputs of the module will be cumulative, and it depends on the signal path through
 //       the network.
 
+// ! TYPE: POSITIVE
+
 module tri_latch(qout, nqout, clock, data, enable);
 
   output qout, nqout;

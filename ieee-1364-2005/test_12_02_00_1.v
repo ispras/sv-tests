@@ -32,6 +32,8 @@
 //       signed and shall be the range of its declaration. An override value shall be converted to
 //       the type and range of the parameter.
 
+// ! TYPE: POSITIVE
+
 module generic_fifo
   #( parameter MSB = 3, LSB = 0, DEPTH = 4)
   //These parameters can be overridden

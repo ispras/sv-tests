@@ -20,6 +20,8 @@
 //      3.5.1 Integer constants
 //        Example 4 - Automatic left padding
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [11:0] a, b, c, d;

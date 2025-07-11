@@ -23,6 +23,8 @@
 //         from clock to out using a rise delay of 10 and a fall delay of 8. The data path is from
 //         in to out, and in is not inverted as it propagates to out.
 
+// ! TYPE: POSITIVE
+
 module test(clock, in, out);
 
   inout clock, in, out;

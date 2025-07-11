@@ -23,6 +23,8 @@
 //         sized vector value. The argument shall be treated as an unsigned value, and an argument
 //         value of 0 shall produce a result of 0.
 
+// ! TYPE: POSITIVE
+
 module test;
   integer n, result;
 

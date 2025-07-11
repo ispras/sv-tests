@@ -26,6 +26,8 @@
 //         top-level module top. The modules top and annotate would both be considered top-level
 //         modules.
 
+// ! TYPE: POSITIVE
+
 module top;
 
   reg clk;

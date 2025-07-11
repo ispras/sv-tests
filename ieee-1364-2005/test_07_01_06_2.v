@@ -22,6 +22,8 @@
 //         and they demonstrate the range specification and connection rules for declaring an array
 //         of instances
 
+// ! TYPE: POSITIVE
+
 module driver(in, out, en);
 
   input [3:0] in;

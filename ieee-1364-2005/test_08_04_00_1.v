@@ -23,6 +23,8 @@
 //       when clock changes value from 0 to 1 and data equals 0, the output goes to 0 no matter what
 //       the current state.
 
+// ! TYPE: POSITIVE
+
 module test(clock, data, q);
 
   input clock, data;

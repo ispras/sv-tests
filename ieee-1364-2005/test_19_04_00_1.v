@@ -21,6 +21,8 @@
 //       compilation. If the identifier  behavioral is defined, a continuous net assignment will be
 //       compiled in; otherwise, an and gate will be instantiated.
 
+// ! TYPE: POSITIVE
+
 module and_op(a, b, c);
 
   output a;

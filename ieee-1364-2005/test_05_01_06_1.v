@@ -19,6 +19,8 @@
 //    5.1 Operators
 //      5.1.6 Arithmetic expressions with regs and integers
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer intA;

@@ -22,6 +22,8 @@
 //       scope whose declarations can be directly referenced from the scope where the instantiation appears
 //       (see 12.7), then an implicit scalar net of default net type shall be assumed.
 
+// ! TYPE: POSITIVE
+
 module test(a, b, x, res);
 
   input wire a;

@@ -22,6 +22,8 @@
 //         and they demonstrate how different instances within an array of instances are connected
 //         when the port sizes do not match
 
+// ! TYPE: POSITIVE
+
 module driver(in, out, en);
 
   input [3:0] in;

@@ -21,6 +21,8 @@
 //         The following $setuphold check is equivalent to the separate $setup and
 //         $hold checks shown above.
 
+// ! TYPE: POSITIVE
+
 module test(clk, data, cond1);
 
   input clk, data, cond1;

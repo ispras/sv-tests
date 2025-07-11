@@ -20,6 +20,8 @@
 //       The for statement accomplishes the same results as the following pseudo-code
 //       that is based on the while loop.
 
+// ! TYPE: POSITIVE
+
 module test(rega);
 
   input [7:0] rega;

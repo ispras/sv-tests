@@ -20,6 +20,8 @@
 //      3.8.1 Examples
 //        Example 4
 
+// ! TYPE: POSITIVE
+
 module mod1;
 endmodule
 

@@ -21,6 +21,8 @@
 //         Table 9-2 illustrates the philosophy of intra-assignment timing controls by showing the
 //         code that could accomplish the same timing effect without using intra-assignment.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a, b, temp;

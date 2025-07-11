@@ -22,6 +22,8 @@
 //           Because no pulse style or showcancelled declarations appear within the specify block,
 //           the compiler applies the default modes of on-event and noshowcancelled.
 
+// ! TYPE: POSITIVE
+
 module test(a, b, out);
 
   input a, b;

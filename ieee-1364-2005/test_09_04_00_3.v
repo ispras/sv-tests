@@ -20,6 +20,8 @@
 //       If that association is not desired, a begin-end block statement shall be used to force
 //       the proper association, as shown below.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg index, rega, regb, result;

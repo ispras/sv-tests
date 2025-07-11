@@ -22,6 +22,8 @@
 //           Both these specify blocks produce the same result. Outputs out and out_b are both
 //           declared showcancelled and on-detect.
 
+// ! TYPE: POSITIVE
+
 module test(a, b, out, out_b);
 
   input a, b;

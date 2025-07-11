@@ -20,6 +20,8 @@
 //       17.11.2 Real math functions
 //         Table 17-18 — sqrt(x*x+y*y).
 
+// ! TYPE: POSITIVE
+
 module test;
   integer x, y, result;
 

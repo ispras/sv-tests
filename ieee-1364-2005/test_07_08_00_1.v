@@ -20,6 +20,8 @@
 //       The following example declares two pullup instances. The p1 instance drives neta
 //       and the p2 instance drives netb with strong strength.
 
+// ! TYPE: POSITIVE
+
 module test(inout neta, netb);
 
   pullup (strong1) p1(neta), p2(netb);

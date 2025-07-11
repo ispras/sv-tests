@@ -22,6 +22,8 @@
 //         The first assignment is performed, and areg is updated before control passes to the
 //         second assignment.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg areg, breg, creg;

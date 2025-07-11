@@ -23,6 +23,8 @@
 //         assign procedural statement of ANDed values is “patched” to act like an assign statement
 //         of ORed values.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a, b, c, d;

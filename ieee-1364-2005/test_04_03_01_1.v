@@ -19,6 +19,8 @@
 //    4.3 Vectors
 //      4.3.1 Specifying vectors
 
+// ! TYPE: POSITIVE
+
 module test;
   wand w;                      // a scalar net of type "wand"
   tri [15:0] busa;             // a three-state 16-bit bus

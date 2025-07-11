@@ -20,6 +20,8 @@
 //      3.8.1 Examples
 //        Example 6
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a, b, c;

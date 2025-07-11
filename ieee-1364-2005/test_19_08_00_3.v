@@ -24,6 +24,8 @@
 //       other words, the value 0 is assigned to reg set at simulation time 16 ns (1.6 × 10 ns),
 //       and the value 1 at simulation time 32 ns.
 
+// ! TYPE: POSITIVE
+
 `timescale 10 ns / 1 ns
 
 module test;

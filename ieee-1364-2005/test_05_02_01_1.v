@@ -19,9 +19,11 @@
 //    5.2 Operands
 //      5.2.1 Vector bit-select and part-select addressing
 
-`define lsb_base_expr (2 - 1)
+// ! TYPE: VARYING
+
+`define lsb_base_expr (4 - 1)
 `define msb_base_expr (2 * 3)
-`define width_expr    (4 + 4)
+`define width_expr    (1 + 1)
 
 module test;
 

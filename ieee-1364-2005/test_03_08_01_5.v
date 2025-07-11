@@ -20,6 +20,8 @@
 //      3.8.1 Examples
 //        Example 5
 
+// ! TYPE: POSITIVE
+
 module test;
   (* fsm_state *) reg [7:0] state1;
   (* fsm_state = 1 *) reg [3:0] state2, state3;

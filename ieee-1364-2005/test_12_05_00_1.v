@@ -19,6 +19,8 @@
 //     12.5 Hierarchical names
 //       The code in this example defines a hierarchy of module instances and named blocks.
 
+// ! TYPE: POSITIVE
+
 module mod(in);
 
   input in;

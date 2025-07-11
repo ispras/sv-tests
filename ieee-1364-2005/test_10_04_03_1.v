@@ -21,6 +21,8 @@
 //         The following example creates a word by concatenating the results of two calls
 //         to the function getbyte.
 
+// ! TYPE: POSITIVE
+
 module test(control);
 
   input control;

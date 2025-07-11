@@ -23,6 +23,8 @@
 //         side of assignments, or as variables in case item expressions shall all be included by
 //         these rules.
 
+// ! TYPE: POSITIVE
+
 module test(go, ws, state);
 
   parameter IDLE = 0, READ = 1, DLY = 2, DONE = 3;

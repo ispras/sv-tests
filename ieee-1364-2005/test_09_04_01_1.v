@@ -23,6 +23,8 @@
 //         which increment is to be added to the index reg. The first ten lines declare the regs
 //         and parameters.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   // declare regs and parameters

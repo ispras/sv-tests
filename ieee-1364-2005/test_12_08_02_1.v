@@ -27,6 +27,8 @@
 //         from the one in the defparam statement. Below is an example of a design
 //         that has this problem.
 
+// ! TYPE: NEGATIVE
+
 module m;
   m1 n();
 endmodule

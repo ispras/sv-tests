@@ -22,6 +22,8 @@
 //           Consider the following example, where both parameters of mod_a and only one parameter
 //           of mod_c and mod_d are changed during instantiation.
 
+// ! TYPE: POSITIVE
+
 module tb2;
   wire [9:0] out_a, out_d;
   wire [4:0] out_b, out_c;

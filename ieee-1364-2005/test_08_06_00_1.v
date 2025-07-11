@@ -19,6 +19,8 @@
 //     8.6 UDP instances
 //       The following example creates an instance of the D-type flip-flop d_edge_ff.
 
+// ! TYPE: POSITIVE
+
 primitive d_edge_ff(q, clock, data);
   output q;
   reg q;

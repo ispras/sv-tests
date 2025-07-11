@@ -20,6 +20,8 @@
 //       9.7.1 Delay control
 //         The following example delays the execution of the assignment by 10 time units.
 
+// ! TYPE: POSITIVE
+
 module test;
   reg rega, regb;
 

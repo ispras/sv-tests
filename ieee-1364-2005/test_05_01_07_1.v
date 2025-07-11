@@ -20,6 +20,8 @@
 //      5.1.7 Relational operators
 //        Table 5-10 - Definitions of relational operators
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer a, b, c;

@@ -20,6 +20,8 @@
 //       Example 3 — To perform the previous sample setup check on the positive clk edge only when
 //       clr and set are high, add the following statement outside the specify block.
 
+// ! TYPE: POSITIVE
+
 module DFF (Q, CLK, DAT);
 
   input CLK;

@@ -20,6 +20,8 @@
 //       The next example presents a source description file that contains a trireg net declaration
 //       with a charge decay time specification.
 
+// ! TYPE: POSITIVE
+
 module capacitor;
 
   reg data, gate;

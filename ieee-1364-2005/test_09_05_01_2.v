@@ -22,6 +22,8 @@
 //         how do-not-care conditions can be dynamically controlled during simulation. In this case,
 //         if r = 8'b01100110, then the task stat2 is called.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] r, mask;

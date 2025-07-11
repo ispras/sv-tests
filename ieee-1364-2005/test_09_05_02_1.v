@@ -22,6 +22,8 @@
 //         this example, the case expression is a constant expression (1). The case items are
 //         expressions (bit-selects) and are compared against the constant expression for a match.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [2:0] encode;

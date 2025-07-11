@@ -23,6 +23,8 @@
 //           are low, a module path extends from clock  to out using a rise delay of 10 and a fall
 //           delay of 8.
 
+// ! TYPE: POSITIVE
+
 module test(clock, reset, clear, in, out);
 
   input clock, reset, clear, in;

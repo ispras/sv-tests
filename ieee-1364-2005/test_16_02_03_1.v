@@ -19,6 +19,8 @@
 //     16.2 Mapping of SDF constructs to Verilog
 //       16.2.3 SDF annotation of specparams
 
+// ! TYPE: POSITIVE
+
 module clock(clk);
 
   output clk;

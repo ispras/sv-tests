@@ -20,6 +20,8 @@
 //       12.4.1 Loop generate constructs
 //         Examples of legal and illegal generate loops.
 
+// ! TYPE: VARYING
+
 module mod_a;
 
   genvar i;

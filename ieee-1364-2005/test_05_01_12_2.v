@@ -21,6 +21,8 @@
 //        Example 2 - In this example, the reg result is assigned the binary value 1110,
 //        which is 1000 shifted to the right two positions and sign-filled.
 
+// ! TYPE: POSITIVE
+
 module ashift;
 
   reg signed [3:0] start, result;

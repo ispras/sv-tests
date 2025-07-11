@@ -19,6 +19,8 @@
 //     17.10 Command line input
 //       17.10.2 $value$plusargs (user_string, variable)
 
+// ! TYPE: POSITIVE
+
 `define STRING reg [1024 * 8:1]
 
 module goodtasks;

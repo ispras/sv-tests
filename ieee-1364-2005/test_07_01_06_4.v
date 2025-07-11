@@ -20,6 +20,8 @@
 //       7.1.6 Primitive instance connection list
 //         This example demonstrates how a series of modules can be chained together.
 
+// ! TYPE: POSITIVE
+
 module DFF(q, dat, clk);
 
   input clk;

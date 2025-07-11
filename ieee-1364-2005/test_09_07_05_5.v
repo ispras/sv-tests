@@ -23,6 +23,8 @@
 //         side of assignments, or as variables in case item expressions shall all be included by
 //         these rules.
 
+// ! TYPE: POSITIVE
+
 module test(a, en);
 
   input a, en;

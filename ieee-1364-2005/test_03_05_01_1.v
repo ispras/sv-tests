@@ -20,6 +20,8 @@
 //      3.5.1 Integer constants
 //        Example 1 - Unsized constant numbers
 
+// ! TYPE: VARYING
+
 module test;
   parameter p00 = 659;      // is a decimal number
   parameter p01 = 'h 837FF; // is a hexadecimal number

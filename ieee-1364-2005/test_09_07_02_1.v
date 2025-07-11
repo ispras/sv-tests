@@ -20,6 +20,8 @@
 //       9.7.2 Event control
 //         The following example shows illustrations of edge-controlled statements.
 
+// ! TYPE: POSITIVE
+
 module test(clock);
 
   input clock;

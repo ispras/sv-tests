@@ -21,6 +21,8 @@
 //         The following is an example of a continuous assignment to a net that
 //         has been previously declared
 
+// ! TYPE: POSITIVE
+
 module test;
   reg enable;
   wire  mynet;

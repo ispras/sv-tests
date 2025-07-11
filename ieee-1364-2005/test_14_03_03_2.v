@@ -24,10 +24,12 @@
 //         delay among the first three. A fall transition would select a delay of 5 because that is
 //         the smallest fall delay among the first three.
 
+// ! TYPE: VARYING
+
 module test(A, MODE, Y);
 
   input A;
-  input integer MODE;
+  output integer MODE = 0;
   output Y;
 
   specify

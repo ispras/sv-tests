@@ -19,6 +19,8 @@
 //     9.6 Looping statements
 //       The following example counts the number of logic 1 values in rega.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg count, rega;

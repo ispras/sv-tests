@@ -21,6 +21,8 @@
 //       specifies that the IEEE Std 1364-2005 Verilog keywords should be used. This example shall
 //       result in an error because uwire is reserved as a keyword in this standard.
 
+// ! TYPE: VARYING
+
 `begin_keywords "1364-2005" // use IEEE Std 1364-2005 Verilog keywords
 module m2;
 

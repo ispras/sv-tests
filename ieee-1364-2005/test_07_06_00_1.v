@@ -20,6 +20,8 @@
 //       The following example declares an instance of tranif1. The bidirectional terminals are
 //       inout1 and inout2. The control input is control. The instance name is t1.
 
+// ! TYPE: POSITIVE
+
 module test(control, inout1, inout2);
 
   input control;

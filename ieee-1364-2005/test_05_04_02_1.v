@@ -24,6 +24,8 @@
 //         example below describes how the bit lengths of the operands could result in the loss
 //         of a significant bit.
 
+// ! TYPE: VARYING
+
 module test;
 
   reg [15:0] a, b, answer; // 16-bit regs

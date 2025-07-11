@@ -20,6 +20,8 @@
 //       12.4.1 Loop generate constructs
 //         Generated ripple adder with net declaration inside of the generate loop.
 
+// ! TYPE: POSITIVE
+
 module addergen1(co, sum, a, b, ci);
 
   parameter SIZE = 4;

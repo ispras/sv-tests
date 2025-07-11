@@ -19,6 +19,8 @@
 //     10.3 Disabling of named blocks and tasks
 //       This example illustrates how a block disables itself.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg rega, regb, regc;

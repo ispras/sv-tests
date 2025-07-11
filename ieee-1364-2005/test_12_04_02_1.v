@@ -22,6 +22,8 @@
 //         hierarchical name of the gate instantiation in that block would be test.u1.g1. When
 //         nesting if-generate constructs, the else always belongs to the nearest if construct.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter p = 0, q = 0;

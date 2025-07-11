@@ -23,6 +23,8 @@
 //       for the current state, which is separated by colons from the inputs and the output,
 //       has been added.
 
+// ! TYPE: POSITIVE
+
 module test(clock, data, q);
 
   input clock, data;

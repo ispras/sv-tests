@@ -20,6 +20,8 @@
 //      5.1.14 Concatenations
 //        Example 3
 
+// ! TYPE: VARYING
+
 module test;
 
   parameter P = 32;

@@ -18,6 +18,8 @@
 //   4. Data types
 //    4.8 Integers, reals, times, and realtimes
 
+// ! TYPE: POSITIVE
+
 module test;
   integer a;      // integer value
   time last_chng; // time value

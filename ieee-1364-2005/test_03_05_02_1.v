@@ -19,6 +19,8 @@
 //    3.5 Numbers
 //      3.5.2 Real constants
 
+// ! TYPE: VARYING
+
 module test;
   real x00 = 1.2;
   real x01 = 0.1;

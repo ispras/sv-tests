@@ -23,6 +23,8 @@
 //         If the most significant bit of ir is a 1, then the task instruction1 is called,
 //         regardless of the values of the other bits of ir.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] ir;

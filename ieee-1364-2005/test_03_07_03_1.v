@@ -19,6 +19,8 @@
 //    3.7 Identifiers
 //      3.7.3 System tasks and functions
 
+// ! TYPE: POSITIVE
+
 module test;
 
   initial begin

@@ -25,6 +25,8 @@
 //           differentiated from the character code  0xFF. Applications can call $ferror to
 //           determine the cause of the most recent error (see 17.2.7).
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer fd, c;

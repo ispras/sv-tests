@@ -19,6 +19,8 @@
 //    5.1 Operators
 //      5.1.4 Expression evaluation order
 
+// ! TYPE: POSITIVE
+
 module test;
   reg regA, regB, regC, result;
 

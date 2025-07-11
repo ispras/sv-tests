@@ -19,6 +19,8 @@
 //    4.10 Parameters
 //      4.10.1 Module parameters
 
+// ! TYPE: POSITIVE
+
 module test;
   parameter msb = 7;                 // defines msb as a constant value 7
   parameter e = 25, f = 9;           // defines two constant numbers

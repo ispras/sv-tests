@@ -27,6 +27,8 @@
 //      b) The value 1.6 is rounded to 2, and 3.2 is rounded to 3 because the $time system
 //         function returns an integer. The time precision does not cause rounding of these values.
 
+// ! TYPE: POSITIVE
+
 `timescale 10 ns / 1 ns
 
 module test;

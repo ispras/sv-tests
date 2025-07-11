@@ -22,6 +22,8 @@
 //         a parallel block instead of a sequential block. The waveform produced on the reg is
 //         exactly the same for both implementations.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   event end_wave;

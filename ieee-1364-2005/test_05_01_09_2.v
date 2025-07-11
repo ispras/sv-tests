@@ -20,6 +20,8 @@
 //      5.1.9 Logical operators
 //        Example 2
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer result, a, b, c, size, index, lastone;

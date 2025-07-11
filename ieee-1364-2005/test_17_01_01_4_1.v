@@ -20,6 +20,8 @@
 //       17.1.1 The display and write tasks
 //         17.1.1.4 Unknown and high-impedance values
 
+// ! TYPE: POSITIVE
+
 module test;
 
   initial begin

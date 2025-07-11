@@ -21,6 +21,8 @@
 //       specify values for the module path delays. The module path assignments assign those module
 //       path delays to the module paths.
 
+// ! TYPE: POSITIVE
+
 module test(clk, clr, pre, q);
 
   input clk, clr, pre;

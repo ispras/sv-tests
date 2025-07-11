@@ -21,6 +21,8 @@
 //         Part-select results are unsigned, regardless of the operands even if the part-select
 //         specifies the entire vector.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [15:0] a;

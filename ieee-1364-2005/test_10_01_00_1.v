@@ -22,6 +22,8 @@
 //       called switch_bytes could look like the following example. The task switch_bytes would take
 //       the bytes in old_word, reverse their order, and place the reversed bytes in new_word.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg old_word, new_word;

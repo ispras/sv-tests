@@ -20,6 +20,8 @@
 //      4.10.3 Specify parameters
 //        Example 2
 
+// ! TYPE: VARYING
+
 module RAM16GEN(DOUT, DIN, ADR, WE, CE);
 
   output [7:0] DOUT;

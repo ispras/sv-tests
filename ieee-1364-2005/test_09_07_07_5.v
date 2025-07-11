@@ -22,6 +22,8 @@
 //         intra-assignment timing control. The code in this example samples and sets the values
 //         of both a and b at the same simulation time, thereby creating a race condition.
 
+// ! TYPE: VARYING
+
 module test;
 
   reg a, b;

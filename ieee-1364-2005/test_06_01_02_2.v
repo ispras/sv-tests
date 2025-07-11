@@ -22,6 +22,8 @@
 //         with carry. The  assignment could not be specified directly in the declaration
 //         of the nets because it requires a concatenation on the left-hand side.
 
+// ! TYPE: POSITIVE
+
 module adder (sum_out, carry_out, carry_in, ina, inb);
 
   output [3:0] sum_out;

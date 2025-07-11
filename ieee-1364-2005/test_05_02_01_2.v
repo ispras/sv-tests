@@ -19,6 +19,8 @@
 //    5.2 Operands
 //      5.2.1 Vector bit-select and part-select addressing
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [31: 0] big_vect;

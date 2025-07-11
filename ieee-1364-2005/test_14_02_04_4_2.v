@@ -23,6 +23,8 @@
 //           combines a state-dependent path using an ifnone condition and an unconditional path
 //           for the same module path.
 
+// ! TYPE: POSITIVE
+
 module test(a, b, out);
 
   input a, b;

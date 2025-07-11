@@ -20,6 +20,8 @@
 //       6.2.1 Variable declaration assignment
 //         Declare a time variable and realtime variable with initial values.
 
+// ! TYPE: POSITIVE
+
 module test;
   time t1 = 25;
   realtime rt1 = 2.5;

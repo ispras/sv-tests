@@ -21,6 +21,8 @@
 //          In the following example, the rise/fall times of 1.3 and 1.7 are annotated to both
 //          specify paths.
 
+// ! TYPE: POSITIVE
+
 module test(mode, sel, zout);
 
   input mode, sel;

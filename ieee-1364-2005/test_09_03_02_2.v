@@ -24,6 +24,8 @@
 //         reevaluated while the assign or force is in effect. Here, if b changes or c changes,
 //         a will be forced to the new value of the expression b + 10*c.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a, b, c;

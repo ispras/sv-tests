@@ -20,6 +20,8 @@
 //       17.11.2 Real math functions
 //         Table 17-18 — Decimal logarithm.
 
+// ! TYPE: POSITIVE
+
 module test;
   integer n, result;
 

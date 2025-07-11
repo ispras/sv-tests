@@ -20,6 +20,8 @@
 //       Example 3 — The following example shows usage of chained nested conditional compilation
 //       directives.
 
+// ! TYPE: POSITIVE
+
 module test;
   `ifdef first_block
     `ifndef second_nest

@@ -19,6 +19,8 @@
 //     17.10 Command line input
 //       17.10.1 $test$plusargs (string)
 
+// ! TYPE: POSITIVE
+
 module test;
   initial begin
     if ($test$plusargs("HELLO"))      $display("Hello argument found.");

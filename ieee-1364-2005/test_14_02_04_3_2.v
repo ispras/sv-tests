@@ -22,6 +22,8 @@
 //           Example 2 — The following example shows two edge-sensitive path declarations, each of
 //           which has a unique edge.
 
+// ! TYPE: POSITIVE
+
 module test(clk, data, q);
 
   input clk;

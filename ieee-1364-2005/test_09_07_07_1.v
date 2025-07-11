@@ -24,6 +24,8 @@
 //         changes to 0. If enable is already 0 when the begin-end block is entered, then the
 //         assignment “a = b;” is evaluated after a delay of 10 and no additional delay occurs.
 
+// ! TYPE: POSITIVE
+
 module test(clk, rst);
 
   input clk, rst;

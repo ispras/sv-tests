@@ -20,6 +20,8 @@
 //       15.3.4 $width
 //          Here is a legal $width check when the notifier is required and the threshold is not.
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
   input clk;

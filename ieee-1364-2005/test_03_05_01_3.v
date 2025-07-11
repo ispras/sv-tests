@@ -20,6 +20,8 @@
 //      3.5.1 Integer constants
 //        Example 3 - Using sign with constant numbers
 
+// ! TYPE: VARYING
+
 module test;
 `ifdef NEGATIVE_TEST
   parameter p00 = 8 'd -6;  // this is illegal syntax

@@ -20,6 +20,8 @@
 //       The following example declares a two-output buf. The input is in. The outputs are out1
 //       and out2. The instance name is b1.
 
+// ! TYPE: POSITIVE
+
 module test(in, out1, out2);
 
   input in;

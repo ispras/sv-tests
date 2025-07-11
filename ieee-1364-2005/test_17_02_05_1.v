@@ -22,6 +22,8 @@
 //         byte of the file fd, which shall be read or written by a subsequent operation on that
 //         file descriptor.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer fd;

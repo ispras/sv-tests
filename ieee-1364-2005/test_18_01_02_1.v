@@ -22,6 +22,8 @@
 //         within the module top; it does not dump variables in any of the modules instantiated
 //         by module top.
 
+// ! TYPE: POSITIVE
+
 module top;
 
   initial begin

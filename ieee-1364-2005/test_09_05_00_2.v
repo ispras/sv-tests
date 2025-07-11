@@ -21,6 +21,8 @@
 //       and z values properly. In this example, if select[1] is 0 and flaga is 0, then even if
 //       the value of select[2] is x or z, result should be 0—which is resolved by the third case.
 
+// ! TYPE: POSITIVE
+
 module test(select);
 
   input [1:3] select;

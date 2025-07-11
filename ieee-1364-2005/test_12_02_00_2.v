@@ -25,6 +25,8 @@
 //       on the type and range of the new value. Therefore, the defparam of f1.B with the value
 //       3.1415 replaces B ’s current value of 3'h2 with the floating point number 3.1415..
 
+// ! TYPE: POSITIVE
+
 module foo(a, b);
 
   input a, b;

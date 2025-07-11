@@ -25,6 +25,8 @@
 //         the Bevent occurred before the Aevent, then the block would be waiting for
 //         the next Bevent.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   event Aevent, Bevent;

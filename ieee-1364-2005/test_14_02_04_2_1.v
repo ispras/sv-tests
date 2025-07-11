@@ -25,6 +25,8 @@
 //           state-dependent paths describe another pair of output rise and fall delay times when
 //           the XOR gate buffers a changing input.
 
+// ! TYPE: POSITIVE
+
 module XORgate (a, b, out);
 
   input a, b;

@@ -19,6 +19,8 @@
 //     15.5 Notifiers: user-defined responses to timing violations
 //       Example 1.
 
+// ! TYPE: POSITIVE
+
 primitive posdff_udp(q, clock, data, preset, clear, notifier);
 
   output q; reg q;

@@ -20,6 +20,8 @@
 //       The following example show how values are applied in a module that
 //       instantiates a sequential UDP with an initial statement.
 
+// ! TYPE: POSITIVE
+
 primitive dff1(q, clk, d);
 
   input clk, d;

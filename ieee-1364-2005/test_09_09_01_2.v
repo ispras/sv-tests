@@ -21,6 +21,8 @@
 //         Another typical usage of the initial construct is specification of waveform descriptions
 //         that execute once to provide stimulus to the main part of the circuit being simulated.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [5:0] inputs;

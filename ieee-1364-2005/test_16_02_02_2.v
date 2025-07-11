@@ -19,6 +19,8 @@
 //     16.2 Mapping of SDF constructs to Verilog
 //       16.2.2 Mapping of SDF timing check constructs to Verilog
 
+// ! TYPE: VARYING
+
 module test(clk, mode, data);
 
   input clk, mode, data;

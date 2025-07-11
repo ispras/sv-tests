@@ -22,6 +22,8 @@
 //         a single $setuphold. clk is the timecheck event for the $setup check, while data is the
 //         timecheck event for the $hold check.
 
+// ! TYPE: POSITIVE
+
 module test(clk, data, cond1);
 
   input clk, data, cond1;

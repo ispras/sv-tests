@@ -19,6 +19,8 @@
 //     19.4 `ifdef, `else, `elsif, `endif, `ifndef
 //       Example 2 — The following example shows usage of nested conditional compilation directive.
 
+// ! TYPE: POSITIVE
+
 module test(out);
 
   output out;

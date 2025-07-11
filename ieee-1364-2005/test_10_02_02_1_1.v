@@ -21,6 +21,8 @@
 //         The following example illustrates the basic structure of a task definition with
 //         five arguments.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   task my_task;

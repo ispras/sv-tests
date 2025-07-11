@@ -19,6 +19,8 @@
 //     15.5 Notifiers: user-defined responses to timing violations
 //       Example 1.
 
+// ! TYPE: POSITIVE
+
 module test(clk, data);
 
   input clk, data;

@@ -20,6 +20,8 @@
 //       Because the numeric value of the if expression is tested for being zero, certain
 //       shortcuts are possible. For example, the following two statements express the same logic.
 
+// ! TYPE: POSITIVE
+
 module test(expression);
 
   input expression;

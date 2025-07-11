@@ -21,6 +21,8 @@
 //          The intra-assignment form of timing control used in the next example prevents this
 //          race condition.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a, b;

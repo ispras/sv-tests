@@ -23,6 +23,8 @@
 //           a**b=1 // expression size is 4 bits (size of a)
 //           c=ac61 // expression size is 16 bits (size of c)
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [3:0] a;

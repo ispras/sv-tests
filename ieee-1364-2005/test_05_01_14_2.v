@@ -20,6 +20,8 @@
 //      5.1.14 Concatenations
 //        Example 2
 
+// ! TYPE: VARYING
+
 module test;
 
   reg a;

@@ -23,6 +23,8 @@
 //         conditional expression, which uses the maximum bit length, the expression a&b actually
 //         has length 5, the length of d .
 
+// ! TYPE: POSITIVE
+
 module bitlength();
 
   reg [3:0] a, b, c;

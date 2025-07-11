@@ -25,6 +25,8 @@
 //       $signed - returned value is signed
 //       $unsigned - returned value is unsigned
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] regA, regB;

@@ -22,6 +22,8 @@
 //         though CLK is referenced in two different timing checks, only one implicit delayed signal
 //         is created, and it is used for both timing checks.
 
+// ! TYPE: POSITIVE
+
 module test(CLK, DATA1, DATA2);
 
   input CLK, DATA1, DATA2;

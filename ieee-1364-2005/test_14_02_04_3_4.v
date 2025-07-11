@@ -23,6 +23,8 @@
 //           even though they have different conditions, the destinations are not specified in the
 //           same way: the first destination is a part-select, the second is a bit-select.
 
+// ! TYPE: VARYING
+
 module test(clk, data, q, reset, cntrl);
 
   input clk, reset, cntrl;

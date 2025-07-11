@@ -20,6 +20,8 @@
 //       Repeat statement: In the following example of a repeat loop, add and shift operators
 //       implement a multiplier.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter size = 8, longsize = 16;

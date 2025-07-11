@@ -22,6 +22,8 @@
 //           Consider the following example, where the parameters within module instances mod_a ,
 //           mod_c , and mod_d are changed during instantiation.
 
+// ! TYPE: POSITIVE
+
 module tb1;
   wire [9:0] out_a, out_d;
   wire [4:0] out_b, out_c;

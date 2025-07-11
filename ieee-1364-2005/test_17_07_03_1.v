@@ -22,6 +22,8 @@
 //         the time unit of the module. They are real numbers because $realtime returns a real
 //         number.
 
+// ! TYPE: POSITIVE
+
 `timescale 10 ns / 1 ns
 
 module test;

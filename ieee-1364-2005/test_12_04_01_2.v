@@ -21,6 +21,8 @@
 //         A parameterized gray-code–to–binary-code converter module using a loop to generate
 //         continuous assignments.
 
+// ! TYPE: POSITIVE
+
 module gray2bin1(bin, gray);
 
   parameter SIZE = 8;    // this module is parameterizable

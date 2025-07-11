@@ -20,6 +20,8 @@
 //       19.3.1 `define
 //         The following is illegal syntax because it is split across a string.
 
+// ! TYPE: VARYING
+
 module test;
 
 `ifdef NEGATIVE_TEST

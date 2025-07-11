@@ -21,6 +21,8 @@
 //         The following example shows the use of %t with the $timeformat system task to specify a
 //         uniform time unit, time precision, and format for timing information.
 
+// ! TYPE: POSITIVE
+
 `timescale 1 ms / 1 ns
 
 module cntrl;

@@ -20,6 +20,8 @@
 //       10.2.2 Task enabling and argument passing
 //         Using the second form of a task declaration, the task could be defined as follows.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg foo1, foo2, foo3;

@@ -21,6 +21,8 @@
 //         The simulator evaluates and schedules assignments for the end of the current time step
 //         and can perform swapping operations with the nonblocking procedural assignments.
 
+// ! TYPE: POSITIVE
+
 module non_block1;
 
   reg a, b, c, d, e, f;

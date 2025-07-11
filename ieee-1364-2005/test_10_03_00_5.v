@@ -27,6 +27,8 @@
 //       of events within the sequential block, the fork-join block terminates—including the task
 //       action.
 
+// ! TYPE: POSITIVE
+
 module test(clk, reset, ev1, trig);
 
   parameter d = 1;

@@ -23,6 +23,8 @@
 //         indeterminate. For example, the value of reg a at the end of time cycle 16 is determinate
 //         in the following example.
 
+// ! TYPE: POSITIVE
+
 module multiple3;
 
   reg a;

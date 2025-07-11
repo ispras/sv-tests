@@ -21,6 +21,8 @@
 //       be assumed, with the vector width of the port expression declaration. See 12.3.3 for a discussion of
 //       port expression declarations.
 
+// ! TYPE: POSITIVE
+
 module test(a,b,c,d,e,f,g,h);
 
   // From 12.3.3

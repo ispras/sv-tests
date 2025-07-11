@@ -20,6 +20,8 @@
 //       A simple example of the use of the case statement is the decoding of reg rega to produce
 //       a value for result as follows.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [15:0] rega;

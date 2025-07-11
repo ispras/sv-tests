@@ -28,6 +28,8 @@
 //         In the modB definition, ports wa and wb are declared as inouts while ports c and d are
 //         declared as input.
 
+// ! TYPE: POSITIVE
+
 module modB(wa, wb, c, d);
   inout wa, wb;
   input c, d;

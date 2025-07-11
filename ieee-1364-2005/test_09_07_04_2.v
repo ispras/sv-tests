@@ -20,6 +20,8 @@
 //       9.7.4 Event or operator
 //         The following example show the use of the comma (,) as an event logical or operator.
 
+// ! TYPE: POSITIVE
+
 module test(a, b, c, d, e);
 
   input a, b, c, d, e;

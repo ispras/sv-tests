@@ -21,6 +21,8 @@
 //         Example 2 - In this example, the $dumpvars task shall dump all variables in the module
 //         top and in all module instances below module top in the hierarchy.
 
+// ! TYPE: POSITIVE
+
 module top;
 
   initial begin

@@ -19,6 +19,8 @@
 //    5.1 Operators
 //      5.1.13 Conditional operator
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg drive_busa;

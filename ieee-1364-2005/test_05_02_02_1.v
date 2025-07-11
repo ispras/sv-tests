@@ -20,6 +20,8 @@
 //      5.2.2 Array and memory addressing
 //        The next example declares a memory of 1024 eight-bit words.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] mem_name[0:1023];

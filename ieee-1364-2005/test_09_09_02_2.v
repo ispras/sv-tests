@@ -21,6 +21,8 @@
 //         Providing a timing control to the above code creates a potentially useful description
 //         as shown in the following.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter half_period = 10;

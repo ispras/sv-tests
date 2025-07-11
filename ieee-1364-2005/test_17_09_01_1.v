@@ -21,7 +21,9 @@
 //         Example 1 - The following code fragment shows an example of random number generation
 //         between –59 and 59.
 
+// ! TYPE: VARYING
+
 module test;
-  reg [23:0] rand;
-  initial assign rand = $random % 60;
+  reg [23:0] rnd;
+  initial assign rnd = $random % 60;
 endmodule

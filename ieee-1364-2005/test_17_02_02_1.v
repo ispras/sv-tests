@@ -19,6 +19,8 @@
 //     17.2 File input-output system tasks and functions
 //       17.2.2 File output system tasks
 
+// ! TYPE: POSITIVE
+
 module test(clock);
 
   input clock;

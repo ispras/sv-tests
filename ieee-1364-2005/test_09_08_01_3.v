@@ -21,6 +21,8 @@
 //         The following example shows how the combination of the sequential block and delay control
 //         can be used to specify a time-sequenced waveform.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   event end_wave;

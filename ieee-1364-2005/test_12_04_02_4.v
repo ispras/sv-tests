@@ -20,6 +20,9 @@
 //       12.4.2 Conditional generate constructs
 //         A module of memory dimm.
 
+// ! TYPE: POSITIVE
+
+
 module sms_08b216t0(clk, csb, cke, ba, addr, rasb, casb, web, ldqm, udqm, dqi, dev_id);
   input [10:0] addr;
   input        clk, csb, cke, ba, rasb, casb, web, ldqm;

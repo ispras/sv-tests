@@ -20,6 +20,8 @@
 //       The following example shows a specification of the charge decay time in a trireg net
 //       declaration
 
+// ! TYPE: POSITIVE
+
 module test;
   trireg ( large ) #(0,0,50) cap1;
 endmodule

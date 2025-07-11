@@ -23,6 +23,8 @@
 //       related to assignment size mismatch or truncation. Truncating the sign bit of a signed
 //       expression may change the sign of the result.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] a;

@@ -25,6 +25,8 @@
 //       5.4.1. In the case of the addition operator, the bit length of the largest operand,
 //       including the left-hand side of an assignment, shall be used.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [15:0] a, b; // 16-bit regs

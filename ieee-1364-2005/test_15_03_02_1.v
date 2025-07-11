@@ -19,6 +19,8 @@
 //     15.3 Timing checks for clock and control signals
 //       15.3.2 $timeskew
 
+// ! TYPE: POSITIVE
+
 module test(CP, MODE, CPN);
 
   input CP, MODE, CPN;

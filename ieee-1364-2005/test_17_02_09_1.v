@@ -21,6 +21,8 @@
 //         The following example returns a nonzero value when EOF has previously been detected
 //         reading the input file fd. It returns zero otherwise.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] mem[1:256];

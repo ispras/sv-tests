@@ -20,6 +20,8 @@
 //       The posedge and negedge keywords can be used as a shorthand for certain edge-control
 //       specifiers.
 
+// ! TYPE: POSITIVE
+
 module test(clr);
 
   input clr;

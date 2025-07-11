@@ -23,6 +23,8 @@
 //          assignment is encountered. After five occurrences of posedge clk, a is assigned
 //          the value of data.
 
+// ! TYPE: POSITIVE
+
 module test (clk);
 
   input clk;

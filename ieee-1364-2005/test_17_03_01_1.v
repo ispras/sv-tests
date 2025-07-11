@@ -21,6 +21,8 @@
 //         In this example, module a_dat invokes the $printtimescale system task to display
 //         timescale information about another module c_dat, which is instantiated in module b_dat.
 
+// ! TYPE: POSITIVE
+
 `timescale 1 ms / 1 us
 
 module a_dat;

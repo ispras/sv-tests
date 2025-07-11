@@ -28,6 +28,8 @@
 //       loop. For each iteration of the continue block, a set of statements executes if (a != 0).
 //       Another set of statements executes if (a! = b).
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
   parameter n = 32;
@@ -35,20 +37,23 @@ module test(clk);
   reg a, b, rega, regb, regc;
   integer i;
 
-  initial
-    begin : break
-      for (i = 0; i < n; i = i + 1) begin : continue
-        @clk
-        if (a == 0) // "continue" loop
-          disable continue;
-        rega = regb;
-        regb = regc;
-        @clk
-        if (a == b) // "break" from loop
-          disable break;
-        regc = rega;
-        regb = rega;
+  initial begin
+    fork
+      begin : break_block
+        for (i = 0; i < n; i = i + 1) begin : continue_block
+          @clk
+          if (a == 0) // "continue_block" loop
+            disable continue_block;
+          rega = regb;
+          regb = regc;
+          @clk
+          if (a == b) // "break_block" from loop
+            disable break_block;
+          regc = rega;
+          regb = rega;
+        end
       end
+    join
   end
 
 endmodule

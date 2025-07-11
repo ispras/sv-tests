@@ -21,6 +21,8 @@
 //         The following example illustrates the use of tasks by describing
 //         a traffic light sequencer.
 
+// ! TYPE: POSITIVE
+
 module traffic_lights;
 
   reg clock, red, amber, green;

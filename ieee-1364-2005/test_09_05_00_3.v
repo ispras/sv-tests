@@ -19,6 +19,8 @@
 //     9.5 Case statement
 //       The following example shows another way to use a case statement to detect x and z values.
 
+// ! TYPE: POSITIVE
+
 module test(sig);
 
   input sig;

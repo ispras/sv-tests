@@ -21,6 +21,8 @@
 //         The following example shows how the value of i[0] is assigned to r1 and how the
 //         assignments are scheduled to occur after each time delay.
 
+// ! TYPE: POSITIVE
+
 module multiple4;
 
   reg r1;

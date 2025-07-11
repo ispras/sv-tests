@@ -19,6 +19,8 @@
 //    5.1 Operators
 //      5.1.3 Using integer numbers in expressions
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer IntA;

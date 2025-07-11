@@ -20,6 +20,8 @@
 //       6.2.1 Variable declaration assignment
 //         The following example is not legal
 
+// ! TYPE: VARYING
+
 module test;
 
 `ifdef NEGATIVE_TEST

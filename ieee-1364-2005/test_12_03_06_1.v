@@ -23,6 +23,8 @@
 //         is unused; it is named In2. There could be other unused ports not mentioned in the
 //         instantiation.
 
+// ! TYPE: POSITIVE
+
 module ALPHA(Out, In1, In2);
   output Out;
   input In1, In2;

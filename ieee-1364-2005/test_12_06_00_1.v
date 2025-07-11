@@ -22,6 +22,8 @@
 //       copies of module b because module a and d instantiate b. There are four copies of c.i
 //       because each of the two copies of b instantiates c twice.
 
+// ! TYPE: POSITIVE
+
 module a;
 
   integer i;

@@ -20,6 +20,8 @@
 //       10.4.1 Function declarations
 //         The following example defines a function called getbyte, using a range specification.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   function [7:0] getbyte;

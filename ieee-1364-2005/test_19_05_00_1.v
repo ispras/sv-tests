@@ -19,6 +19,8 @@
 //     19.5 `include
 //       Examples of `include compiler directives are as follows.
 
+// ! TYPE: POSITIVE
+
 `include "parts/count.v"
 `include "fileB"
 `include "fileB" // including fileB

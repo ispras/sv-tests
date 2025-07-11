@@ -20,6 +20,8 @@
 //       12.4.2 Conditional generate constructs
 //         Generate with a case to handle widths less than 3.
 
+// ! TYPE: POSITIVE
+
 module adder_1bit(co, sum, a, b, ci);
   input co, sum, a, b, ci;
 endmodule

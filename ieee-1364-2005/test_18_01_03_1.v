@@ -22,6 +22,8 @@
 //         time 210), restarts it again 800 time units later (at time 1010), and stops it 900 time
 //         units later (at time 1910).
 
+// ! TYPE: POSITIVE
+
 module test;
   initial begin
     # 10  $dumpvars (1, test);

@@ -24,6 +24,8 @@
 //           condition is encountered. If str is not an integral number of bytes in length, the most
 //           significant partial byte is not used in order to determine the size.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer code, fd;

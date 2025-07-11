@@ -20,6 +20,8 @@
 //      3.8.1 Examples
 //        Example 3
 
+// ! TYPE: POSITIVE
+
 (* optimize_power *)
 module mod1 (/* <port_list> */);
 endmodule

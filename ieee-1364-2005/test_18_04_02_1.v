@@ -19,6 +19,8 @@
 //     18.4 Format of extended VCD file
 //       18.4.2 Extended VCD node information
 
+// ! TYPE: POSITIVE
+
 module testbench;
   test_device DUT();
 endmodule

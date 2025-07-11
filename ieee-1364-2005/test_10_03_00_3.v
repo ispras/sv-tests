@@ -21,6 +21,8 @@
 //       similar to a forward goto. The next statement executed after the disable statement is
 //       the one following the named block.
 
+// ! TYPE: POSITIVE
+
 module test(a);
 
   input a;

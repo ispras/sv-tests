@@ -27,6 +27,8 @@
 //           not supplied, the memory shall be filled with what data are available. The start and
 //           count are ignored if $fread is loading a reg.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer code, fd, count;

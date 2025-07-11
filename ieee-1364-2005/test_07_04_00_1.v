@@ -20,6 +20,8 @@
 //       The following example declares an instance of bufif1. The output is outw, the input is inw,
 //       and the control is controlw. The instance name is bf1.
 
+// ! TYPE: POSITIVE
+
 module test(inw, controlw, outw);
 
   input inw, controlw;

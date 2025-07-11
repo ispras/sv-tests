@@ -23,6 +23,8 @@
 //         $bitstoreal shall be used for passing the bit patterns across module ports. (See 17.8 for
 //         a description of these system tasks.)
 
+// ! TYPE: POSITIVE
+
 module driver(net_r);
 
   output net_r;

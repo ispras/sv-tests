@@ -21,6 +21,8 @@
 //       function. Thus, the function call for the function switch_bytes could look like the
 //       following example.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg old_word, new_word;

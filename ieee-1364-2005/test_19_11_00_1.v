@@ -24,6 +24,8 @@
 //       that the "1364-1995" Verilog keyword lists should be used would also work with this
 //       example.
 
+// ! TYPE: POSITIVE
+
 `begin_keywords "1364-2001" // use IEEE Std 1364-2001 Verilog keywords
 module m2;
   wire [63:0] uwire; // OK: "uwire" is not a keyword in 1364-2001

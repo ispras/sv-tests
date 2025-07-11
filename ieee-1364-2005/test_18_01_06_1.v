@@ -21,6 +21,8 @@
 //         Example 1 — This example shows how the $dumpflush task can be used in a Verilog HDL
 //         source file.
 
+// ! TYPE: POSITIVE
+
 module test;
   initial begin
       $dumpvars;

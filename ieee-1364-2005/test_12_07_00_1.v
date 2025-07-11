@@ -20,6 +20,8 @@
 //       The following example shows how variables can be accessed directly or with hierarchical
 //       names.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   task t;

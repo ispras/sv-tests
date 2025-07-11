@@ -21,6 +21,8 @@
 //        The next example declares an array of 256-by-256 eight-bit elements and an array
 //        256-by-256-by-8 one-bit elements
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] twod_array[0:255][0:255];

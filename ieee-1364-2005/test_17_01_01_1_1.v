@@ -22,6 +22,8 @@
 //           The escape sequences given in Table 17-1, when included in a string argument, cause
 //           special characters to be displayed.
 
+// ! TYPE: POSITIVE
+
 module disp;
   initial begin
     $display ("\\\t\\\n\"\123");

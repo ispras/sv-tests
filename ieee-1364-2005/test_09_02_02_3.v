@@ -25,6 +25,8 @@
 //         At the end of the current time step, the simulator updates the left-hand side of each
 //         nonblocking assignment statement.
 
+// ! TYPE: POSITIVE
+
 module non_block1;
 
   reg a, b;

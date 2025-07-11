@@ -21,6 +21,8 @@
 //       clear combination is 01, the output has value 1. Similarly, whenever the preset and clear
 //       combination has value 10, the output has value 0.
 
+// ! TYPE: POSITIVE
+
 primitive jk_edge_ff(q, clock, j, k, preset, clear);
 
   output q;

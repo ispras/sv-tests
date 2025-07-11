@@ -20,6 +20,8 @@
 //      5.1.5 Arithmetic operators
 //        Table 5-8 - Examples of modulus and power operators
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg result;

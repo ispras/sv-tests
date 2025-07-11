@@ -24,6 +24,9 @@
 
 // Lower level module:
 // module description of a nand flip-flop circuit
+
+// ! TYPE: POSITIVE
+
 module ffnand(q, qbar, preset, clear);
 
   // declares 2 circuit output nets

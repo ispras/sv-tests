@@ -19,6 +19,8 @@
 //     19.3 `define and `undef
 //       19.3.1 `define
 
+// ! TYPE: POSITIVE
+
 module test;
 
   `define wordsize 8

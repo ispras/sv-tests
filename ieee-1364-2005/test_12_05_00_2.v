@@ -20,6 +20,8 @@
 //       The next example shows how a pair of named blocks can refer to items declared within each
 //       other.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   initial begin

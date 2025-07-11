@@ -24,6 +24,8 @@
 //         queue and performed in source order as well. Hence, at the end of simulation time 0,
 //         the variable a will be assigned 0 and then 1.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a;

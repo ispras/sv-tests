@@ -19,6 +19,8 @@
 //    3.6 Strings
 //      3.6.2 String manipulation
 
+// ! TYPE: POSITIVE
+
 module string_test;
 
   reg [8*14:1] stringvar;

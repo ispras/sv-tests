@@ -22,6 +22,8 @@
 //         identifier. In this example, at any change in clock, a module path extends from clock
 //         to out.
 
+// ! TYPE: POSITIVE
+
 module test(clock, in, out);
 
   inout clock, in, out;

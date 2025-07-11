@@ -21,6 +21,8 @@
 //         This example defines the modules modB and topmod , and then topmod instantiates modB
 //         using ports connected by name.
 
+// ! TYPE: POSITIVE
+
 module modB(wa, wb, c, d);
 
   inout wa, wb;

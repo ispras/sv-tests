@@ -20,6 +20,8 @@
 //       Example 1 — To illustrate the difference between conditioned and unconditioned timing
 //       check events, consider the following example with unconditioned timing check.
 
+// ! TYPE: POSITIVE
+
 module test(data, clk);
 
   input data, clk;

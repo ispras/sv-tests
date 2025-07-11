@@ -20,6 +20,8 @@
 //      5.1.14 Concatenations
 //        Example 4
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] result;

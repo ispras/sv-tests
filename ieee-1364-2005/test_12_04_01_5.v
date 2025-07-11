@@ -23,6 +23,8 @@
 //         identifier for the loop is indexed by adding the “[genvar value]” to the end of the
 //         generate block identifier. These names can be used in hierarchical path names.
 
+// ! TYPE: POSITIVE
+
 module M1;
   initial begin
   end

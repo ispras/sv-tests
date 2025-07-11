@@ -22,6 +22,8 @@
 //         of the assignment is delayed by the amount of simulation time specified by the value of
 //         the expression.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter d = 1, e = 1;

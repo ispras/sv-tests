@@ -20,6 +20,8 @@
 //      5.1.9 Logical operators
 //        Example 1
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg regA, regB, alpha, beta;

@@ -19,6 +19,8 @@
 //     18.1 Creating four-state VCD file
 //       18.1.1 Specifying name of dump file ($dumpfile)
 
+// ! TYPE: POSITIVE
+
 module test;
 
   initial $dumpfile("module1.dump");

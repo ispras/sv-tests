@@ -19,6 +19,8 @@
 //     8.2 Combinational UDPs
 //       Using ?, the description of a multiplexer can be abbreviated as follows.
 
+// ! TYPE: POSITIVE
+
 module test(control, dataA, dataB, mux);
 
   input control, dataA, dataB;

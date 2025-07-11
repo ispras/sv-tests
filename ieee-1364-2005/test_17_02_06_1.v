@@ -21,6 +21,8 @@
 //         The following example writes any buffered output to the file(s) specified by mcd, to the
 //         file specified by fd, or if $fflush is invoked with no arguments, to all open files.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   integer fd, mcd;

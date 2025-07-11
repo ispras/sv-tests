@@ -23,6 +23,8 @@
 //         The assignment of 0 to q enables an update event for p. The simulator may either continue
 //         and execute the $display task or execute the update for p, followed by the $display task.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg q;

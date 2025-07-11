@@ -23,6 +23,8 @@
 //         simulation time is advanced and after all other events at that time have occurred so that
 //         the data written are sure to be the correct data for that simulation time.
 
+// ! TYPE: POSITIVE
+
 module test(clock, data);
 
   input clock, data;

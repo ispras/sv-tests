@@ -22,6 +22,8 @@
 //         event occurs. Because the event controls are within a fork-join block, they execute in
 //         parallel, and the sequential blocks can, therefore, also execute in parallel.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   event enable_a, enable_b;

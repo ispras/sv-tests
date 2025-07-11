@@ -18,6 +18,8 @@
 //   3. Lexical conventions
 //    3.7 Identifiers
 
+// ! TYPE: POSITIVE
+
 module test;
   reg shiftreg_a;
   reg busa_index;

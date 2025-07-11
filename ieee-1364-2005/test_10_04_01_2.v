@@ -21,6 +21,8 @@
 //         Or using the second form of a function declaration, the function could be defined
 //         as follows.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   function [7:0] getbyte (input [15:0] address);

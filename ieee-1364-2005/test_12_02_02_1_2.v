@@ -25,6 +25,8 @@
 //           not be explicitly assigned a value due to the ordered list, but will have the value
 //           4096 due to its declaration expression.
 
+// ! TYPE: POSITIVE
+
 module my_mem(input addr, data);
 
   parameter addr_width = 16;

@@ -20,6 +20,8 @@
 //       14.2.7 Module path polarity
 //         14.2.7.2 Positive polarity
 
+// ! TYPE: POSITIVE
+
 module test(In1, s, q);
 
   input In1, s;

@@ -18,8 +18,10 @@
 //   17. System tasks and functions
 //     17.5 Programmable logic array (PLA) modeling system tasks
 //       17.5.1 Array types
-//         The following example shows the use of %t with the $timeformat system task to specify a
-//         uniform time unit, time precision, and format for timing information.
+//         The following example illustrates modeling of both synchronous
+//         and asynchronous arrays is provided by the PLA system tasks.
+
+// ! TYPE: POSITIVE
 
 module test;
 
@@ -27,7 +29,7 @@ module test;
   reg  b1, b2, b3;
   wire [1:7] awire;
   reg  [1:3] breg;
-  reg [7:0] mem[1:256];
+  reg [0:7] mem[1:256];
 
   initial begin
     $async$and$array(mem, {a1, a2, a3, a4, a5, a6, a7}, {b1, b2, b3});

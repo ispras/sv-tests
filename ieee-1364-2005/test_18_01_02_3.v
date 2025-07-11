@@ -23,6 +23,8 @@
 //         instances below mod1, along with variable net1 in module mod2. The argument 0 applies
 //         only to the module instance top.mod1 and not to the individual variable top.mod2.net1.
 
+// ! TYPE: POSITIVE
+
 module mod1_type;
   initial begin
   end

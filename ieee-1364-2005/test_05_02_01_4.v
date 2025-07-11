@@ -23,6 +23,8 @@
 //        initializes it to a value of 4. The list describes how the separate bits of that vector
 //        can be addressed.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [7:0] vect;

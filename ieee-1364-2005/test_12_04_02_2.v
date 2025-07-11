@@ -20,6 +20,8 @@
 //       12.4.2 Conditional generate constructs
 //         An implementation of a parameterized multiplier module.
 
+// ! TYPE: POSITIVE
+
 module CLA_multiplier(a, b, product);
 
   parameter a_width = 8, b_width = 8;

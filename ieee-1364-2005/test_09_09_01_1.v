@@ -21,6 +21,8 @@
 //         The following example illustrates use of the initial construct for initialization of
 //         variables at the start of simulation.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   parameter size = 10;

@@ -25,6 +25,8 @@
 //          from padding and the original string characters ( \0, ASCII NUL ). The following example
 //          illustrates the potential problem
 
+// ! TYPE: VARYING
+
 module test;
 
   reg [8*10:1] s1, s2;

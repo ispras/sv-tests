@@ -21,6 +21,8 @@
 //       retrig restarts the monostable time period. If retrig continues to occur within 250 time
 //       units, then q will remain at 1.
 
+// ! TYPE: POSITIVE
+
 module test(retrig);
 
   input retrig;

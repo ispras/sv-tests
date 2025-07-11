@@ -20,6 +20,8 @@
 //       9.2.1 Blocking procedural assignments
 //         The following examples show blocking procedural assignments.
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg [0:5] rega, regb, carry, acc;
