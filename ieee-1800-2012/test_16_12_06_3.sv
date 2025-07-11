@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.6 Implication
 
+// ! TYPE: POSITIVE
+
 module test(write_en, data_valid);
 
 input write_en;

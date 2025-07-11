@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.4 Global clocking past and future sampled value functions
 
+// ! TYPE: POSITIVE
+
 module test(input wire clk, input wire sig);
 
 global clocking sys @(posedge clk); endclocking

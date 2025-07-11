@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.10 Sequence contained within another sequence
 
+// ! TYPE: POSITIVE
+
 module test(irdy, trdy);
 
 input irdy, trdy;

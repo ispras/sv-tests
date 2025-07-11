@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.14 Abort properties
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
 input clk;

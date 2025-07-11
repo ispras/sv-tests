@@ -19,6 +19,8 @@
 //    16.3 Deferred assertions
 //     16.4.3 Deferred assertions outside procedural code
 
+// ! TYPE: POSITIVE
+
 module test (input a, b);
   a1: assert #0 (a == b);
 endmodule

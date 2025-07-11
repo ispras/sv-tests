@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.8 First_match operation
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg a, b, c, d;

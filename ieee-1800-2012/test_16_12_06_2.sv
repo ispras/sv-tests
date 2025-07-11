@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.6 Implication
 
+// ! TYPE: POSITIVE
+
 `define data_end_exp (data_phase && ((irdy==0)&&($fell(trdy)||$fell(stop))))
 
 module test(mclk, irdy, trdy);

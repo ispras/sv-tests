@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.11 Always property
 
+// ! TYPE: VARYING
+
 module test(clk, reset);
 
 input clk, reset;

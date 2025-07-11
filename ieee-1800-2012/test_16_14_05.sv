@@ -19,6 +19,8 @@
 //    16.14 Concurrent assertions
 //     16.14.5 Using concurrent assertion statements outside procedural code
 
+// ! TYPE: POSITIVE
+
 module top(input clk);
 
 reg a, b, c;

@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.2 Repetition in sequences
 
+// ! TYPE: POSITIVE
+
 `define true 1'b1
 
 module test;

@@ -19,6 +19,8 @@
 //    16.8 Declaring sequences
 //     16.8.2 Local variable formal arguments in sequence declarations
 
+// ! TYPE: POSITIVE
+
 module test;
 
 integer data_in, data_out, data, do1;

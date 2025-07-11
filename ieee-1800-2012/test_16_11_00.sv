@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.11 Calling subroutines on match of a sequence
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg a, b, e, f;

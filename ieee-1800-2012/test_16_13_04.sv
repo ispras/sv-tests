@@ -19,6 +19,8 @@
 //    16.13 Multiclock support
 //     16.13.4 Examples
 
+// ! TYPE: POSITIVE
+
 module test(clk, clk1, clk2);
 
 input clk, clk1, clk2;

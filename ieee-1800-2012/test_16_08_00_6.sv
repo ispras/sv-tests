@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.8 Declaring sequences
 
+// ! TYPE: VARYING
+
 module test(sysclk);
 
 input sysclk;

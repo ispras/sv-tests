@@ -19,6 +19,8 @@
 //    16.8 Declaring sequences
 //     16.8.2 Local variable formal arguments in sequence declarations
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg b_d, d_d;

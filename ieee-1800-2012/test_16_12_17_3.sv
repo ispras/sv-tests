@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.17 Recursive properties
 
+// ! TYPE: POSITIVE
+
 module test;
 
 property fibonacci1 (local input int a, b, n, int fib_sig);

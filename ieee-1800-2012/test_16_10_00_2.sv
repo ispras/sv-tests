@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.10 Local variables
 
+// ! TYPE: VARYING
+
 module test;
 
 reg a, b, c, e, f, g;

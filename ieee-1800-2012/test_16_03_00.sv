@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.3 Immediate assertions
 
+// ! TYPE: POSITIVE
+
 module test(clk, req1, req2);
 
 input clk, req1, req2;

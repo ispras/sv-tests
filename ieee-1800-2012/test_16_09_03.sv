@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.3 Sampled value functions
 
+// ! TYPE: POSITIVE
+
 module test(clk, clk1, clk2, enable);
 
 input clk, clk1, clk2, enable;

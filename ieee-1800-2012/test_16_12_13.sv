@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.13 Eventually property
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg a;

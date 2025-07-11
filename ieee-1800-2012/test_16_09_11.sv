@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.11 Composing sequences from simpler subsequences
 
+// ! TYPE: POSITIVE
+
 module test(sysclk);
 
 input sysclk;

@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.8 Declaring sequences
 
+// ! TYPE: POSITIVE
+
 module test(data, en);
 
 input [7:0] data;

@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.10 Local variables
 
+// ! TYPE: VARYING
+
 `define true 1'b1
 
 module test;

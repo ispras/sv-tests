@@ -20,6 +20,8 @@
 //     16.14.6 Embedding concurrent assertions in procedural code
 //      16.14.6.1 Arguments to procedural concurrent assertions
 
+// ! TYPE: POSITIVE
+
 module test(input clk);
 
 reg [10:0] foo;

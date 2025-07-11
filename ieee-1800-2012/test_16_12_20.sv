@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.20 Property examples
 
+// ! TYPE: POSITIVE
+
 module test(clk, clkev);
 
 input clk, clkev;

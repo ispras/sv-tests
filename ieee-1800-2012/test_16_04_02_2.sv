@@ -19,6 +19,8 @@
 //    16.3 Deferred assertions
 //     16.4.2 Deferred assertion flush points
 
+// ! TYPE: POSITIVE
+
 module test(clk, a, b);
 
 input clk, a, b;

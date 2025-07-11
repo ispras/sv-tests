@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.1 Sequence property
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg clk;

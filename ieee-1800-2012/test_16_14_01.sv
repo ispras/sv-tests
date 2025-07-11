@@ -19,6 +19,8 @@
 //    16.14 Concurrent assertions
 //     16.14.1 Assert statement
 
+// ! TYPE: POSITIVE
+
 module test(input clk, rst, in1, in2);
 
 global clocking sys @(posedge clk); endclocking

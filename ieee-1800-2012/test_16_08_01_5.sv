@@ -19,6 +19,8 @@
 //    16.8 Declaring sequences
 //     16.8.1 Typed formal arguments in sequence declarations
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
 reg x, y, z;

@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.5 AND operation
 
+// ! TYPE: POSITIVE
+
 module test;
 
 reg te1, te2, te3, te4, te5;

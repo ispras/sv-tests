@@ -19,6 +19,8 @@
 //    16.14 Concurrent assertions
 //     16.14.6 Embedding concurrent assertions in procedural code
 
+// ! TYPE: POSITIVE
+
 module test(mclk, scanclk);
 
 input mclk, scanclk;

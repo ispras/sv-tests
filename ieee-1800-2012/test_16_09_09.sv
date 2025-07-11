@@ -19,6 +19,8 @@
 //    16.9 Sequence operations
 //     16.9.9 Conditions over sequences
 
+// ! TYPE: POSITIVE
+
 module test(mclk, irdy, trdy);
 
 input mclk, irdy, trdy;

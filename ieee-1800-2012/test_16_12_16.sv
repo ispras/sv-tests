@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.16 Case
 
+// ! TYPE: VARYING
+
 module test;
 
 reg a, b;

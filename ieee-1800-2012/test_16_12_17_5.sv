@@ -19,6 +19,8 @@
 //    16.12 Declaring properties
 //     16.12.17 Recursive properties
 
+// ! TYPE: POSITIVE
+
 module test(reset, write_request, retry, write_request_ack, data_valid, last_data_valid);
 
 input reset, write_request, retry;

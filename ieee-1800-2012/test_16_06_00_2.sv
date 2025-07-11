@@ -18,6 +18,8 @@
 //   16. Assertions
 //    16.6 Boolean expressions
 
+// ! TYPE: POSITIVE
+
 module test(clk);
 
 input clk;
