@@ -2,6 +2,9 @@
 // IEEE Std 1364-2005
 //--------------------------------------------------------------------------------------------------
 
+During test suite development, a number of errors in the IEEE-1364-2005 standard
+has been found. They're listed below.
+
 //--------------------------------------------------------------------------------------------------
 // 3.5.1 Integer constants
 //   Example 3 - Using sign with constant numbers
