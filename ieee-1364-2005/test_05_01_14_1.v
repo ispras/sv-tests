@@ -20,10 +20,12 @@
 //      5.1.14 Concatenations
 //        Example 1
 
+// ! TYPE: POSITIVE
+
 module test;
 
   reg a;
-  reg b[7:0];
+  reg [7:0] b;
   reg w;
   reg [8:0] result;
 
