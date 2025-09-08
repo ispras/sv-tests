@@ -55,14 +55,10 @@ module d;
   integer i;
   b d_b1();
 
-  initial begin // full path name references each copy of i
-    a.i = 1;
-    d.i = 5;
-    a.a_b1.i = 2;
-    d.d_b1.i = 6;
-    a.a_b1.b_c1.i = 3;
-    d.d_b1.b_c1.i = 7;
-    a.a_b1.b_c2.i = 4;
-    d.d_b1.b_c2.i = 8;
+  initial begin       // full path name references each copy of i
+    a.i = 1;                 //    d.i = 5;
+    a.a_b1.i = 2;            //    d.d_b1.i = 6;
+    a.a_b1.b_c1.i = 3;       //    d.d_b1.b_c1.i = 7;
+    a.a_b1.b_c2.i = 4;       //    d.d_b1.b_c2.i = 8;
   end
 endmodule
