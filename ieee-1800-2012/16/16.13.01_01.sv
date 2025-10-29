@@ -1,0 +1,61 @@
+/*
+ * Copyright 2025 ISP RAS (http://www.ispras.ru)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// IEEE Std 1800-2012
+//   16. Assertions
+//    16.13 Multiclock support
+//     16.13.1 Multiclocked sequences
+
+// ! TYPE: POSITIVE
+
+module top(input clk0, clk1, clk2, sig0, sig1);
+
+  sequence s1;
+    @(posedge clk0) sig0 ##1 @(posedge clk1) sig1;
+  endsequence
+
+  sequence s2;
+    @(posedge clk0) sig0 ##1 sig1;
+  endsequence
+
+  sequence s3;
+    @(posedge clk0) sig0 ##0 @(posedge clk1) sig1;
+  endsequence
+
+  sequence s4;
+    @(posedge clk0) sig0 ##0 sig1;
+  endsequence
+
+  sequence s5;
+    @(posedge clk0) sig0 && sig1;
+  endsequence
+
+  sequence s6;
+    @(posedge clk1) s1 ##1 @(posedge clk2) s2;
+  endsequence
+
+  sequence s7;
+    @(posedge clk0) sig0 ##1 @(posedge clk1) sig1[*0:1];
+  endsequence
+
+  sequence s8;
+    @(posedge clk1) s1 ##2 @(posedge clk2) s2;
+  endsequence
+
+  sequence s9;
+    @(posedge clk1) s1 intersect @(posedge clk2) s2;
+  endsequence
+endmodule
