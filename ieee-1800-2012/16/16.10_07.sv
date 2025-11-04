@@ -34,7 +34,7 @@ endsequence
 
 `ifdef NEGATIVE_TEST
 sequence seq1;
-  c ##1 sub_seq1 ##1 (do1 == v1);                         // error because v1 is not visible
+  c ##1 sub_seq1 ##1 (do1 == v1); // error because 'v1' is not visible
 endsequence
 `endif
 
@@ -44,13 +44,13 @@ endsequence
 
 sequence seq2;
   int v1;
-  c ##1 sub_seq2(v1)                                      // v1 is bound to lv
-  ##1 (do1 == v1);                                        // v1 holds the value that was assigned to lv
+  c ##1 sub_seq2(v1) // 'v1' is bound to lv
+  ##1 (do1 == v1); // 'v1' holds the value that was assigned to 'lv'
 endsequence
 
 `ifdef NEGATIVE_TEST
 sequence sub_seq3(lv);
-  int lv;                                                 // illegal because lv is a formal argument
+  int lv; // illegal because 'lv' is a formal argument
   (a ##1 !a, lv = data_in)
   ##1 !b[*0:$]
   ##1 b && (data_out == lv);
@@ -60,7 +60,7 @@ endsequence
 `ifdef NEGATIVE_TEST
 sequence s4;
   int x;
-  (a ##1 (b, x = data) ##1 c) or (d ##1 (e==x));            // illegal
+  (a ##1 (b, x = data) ##1 c) or (d ##1 (e==x)); // illegal
 endsequence
 `endif
 
@@ -68,28 +68,28 @@ endsequence
 sequence s5;
   int x,y;
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (y==data2);  // illegal because y is not in the intersection
+    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (y==data2); // illegal because 'y' is not in the intersection
 endsequence
 `endif
 
 sequence s6;
   int x,y;
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2);  // legal because x is in the intersection
+    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2); // legal because 'x' is in the intersection
 endsequence
 
 `ifdef NEGATIVE_TEST
 sequence s7;
   int x,y;
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    and (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2); // illegal because x is common to both threads
+    and (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2); // illegal because 'x' is common to both threads
 endsequence
 `endif
 
 sequence s8;
   int x,y;
   (a ##1 (b, x = data, y = data1) ##1 c)
-    and (d ##1 (`true, x = data) ##0 (e==x)) ##1 (y==data2); // legal because y is in the difference
+    and (d ##1 (`true, x = data) ##0 (e==x)) ##1 (y==data2); // legal because 'y' is in the difference
 endsequence
 
 endmodule

@@ -33,7 +33,7 @@ endproperty
 always_ff @(clock iff reset == 0 or posedge reset) begin
   cnt <= reset ? 0 : cnt + 1;
   `ifdef NEGATIVE_TEST
-    q <= $past(d1);             // no inferred clock
+    q <= $past(d1); // no inferred clock
     r3_p: assert property (r3); // no inferred clock
   `endif
 end

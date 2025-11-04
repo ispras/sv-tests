@@ -47,7 +47,7 @@ property rule5;
   a ##1 (b || c)[->1] |->
   (if (b)
     (##1 d |-> e)
-  else // c
+  else // 'c'
     f) ;
 endproperty
 
@@ -60,7 +60,7 @@ property rule5a;
   a ##1 (b || c)[->1] |->
   (if (b)
     rule6(d, e)
-  else // c
+  else // 'c'
     f) ;
 endproperty
 

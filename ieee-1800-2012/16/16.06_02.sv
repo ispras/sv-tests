@@ -31,7 +31,7 @@ initial count = 0;
 `ifdef NEGATIVE_TEST
 realtime t;
 always @(posedge clk) begin
-  if (count == 0) t = $realtime; //capture t in a procedural context
+  if (count == 0) t = $realtime; //capture 't' in a procedural context
   count = count + 1;
 end
 

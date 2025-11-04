@@ -28,7 +28,7 @@ input clk;
 reg [10:0] foo;
 reg [10:0] bar;
 
-// Assume for this example that (posedge clk) will not occur at time 0
+// Assume for this example that '(posedge clk)' will not occur at time 0
 always @(posedge clk) begin
   int i = 10;
   for (i=0; i<10; i++) begin

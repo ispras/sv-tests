@@ -26,10 +26,10 @@ property p2;
   disable iff (rst) a |=> b;
 endproperty
 
-// Disable condition is rst - explicitly specified within a5
+// Disable condition is 'rst' - explicitly specified within 'a5'
 a5 : assert property (@(posedge clk) disable iff (rst) a |=> b);
 
-// Disable condition is rst - explicitly specified within p2
+// Disable condition is 'rst' - explicitly specified within 'p2'
 a6 : assert property (@ (posedge clk) p2);
 
 // No disable condition

@@ -30,8 +30,8 @@ module m1;
     rst1 ##1 rst1;
   endproperty
 
-  a1: assert property (@(posedge clk) p1);    // property p1 is
-                                              // defined elsewhere
+  a1: assert property (@(posedge clk) p1); // property 'p1' is
+                                           // defined elsewhere
   //...
 
   module m2;
@@ -44,7 +44,7 @@ module m1;
       rst2 ##2 rst2;
     endproperty
     // ...
-    a2: assert property (@(posedge clk) p2); // property p2 is
+    a2: assert property (@(posedge clk) p2); // property 'p2' is
                                              // defined elsewhere
   endmodule
 

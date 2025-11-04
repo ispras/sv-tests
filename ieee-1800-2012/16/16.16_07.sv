@@ -49,15 +49,15 @@ c1: cover property (s2);
   // illegal: no leading clocking event
 `endif
 c2: cover property (@(negedge clk) s2);
-  // legal: explicit leading clocking event, @(negedge clk)
+  // legal: explicit leading clocking event, '@(negedge clk)'
 
 sequence s3;
   @(negedge clk) s2;
 endsequence
 
 c3: cover property (s3);
-  // legal: leading clocking event, @(negedge clk),
-  // determined from declaration of s3
+  // legal: leading clocking event, '@(negedge clk)',
+  // determined from declaration of 's3'
 `ifdef NEGATIVE_TEST
 c4: cover property (s3 ##1 b);
   // illegal: no default, inferred, or explicit leading

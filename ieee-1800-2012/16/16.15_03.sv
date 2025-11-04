@@ -28,13 +28,13 @@ property p1;
   disable iff (rst1) a |=> b;
 endproperty
 
-// Disable condition is rst1 - explicitly specified within a1
+// Disable condition is 'rst1' - explicitly specified within 'a1'
 a1 : assert property (@(posedge clk) disable iff (rst1) a |=> b);
 
-// Disable condition is rst1 - explicitly specified within p1
+// Disable condition is 'rst1' - explicitly specified within 'p1'
 a2 : assert property (@(posedge clk) p1);
 
-// Disable condition is rst - no explicit specification, inferred from
+// Disable condition is 'rst' - no explicit specification, inferred from
 // default disable iff declaration
 a3 : assert property (@(posedge clk) a |=> b);
 

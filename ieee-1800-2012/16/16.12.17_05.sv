@@ -29,8 +29,8 @@ reg [0:127] model_data, data;
 reg [3:0] write_request_ack_tag, data_valid_tag, retry_tag;
 
 property check_write;
-  logic [0:127] expected_data; // local variable to sample model data
-  logic [3:0] tag; // local variable to sample tag
+  logic [0:127] expected_data; // local variable to sample 'model_data'
+  logic [3:0] tag; // local variable to sample 'tag'
   disable iff (reset)
   (
     write_request && write_request_ack,
