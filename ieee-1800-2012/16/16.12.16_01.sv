@@ -32,7 +32,7 @@ property p_delay(logic [1:0] delay);
     2'd2 : a ##4 b;
     2'd3 : a ##8 b;
 `ifdef NEGATIVE_TEST
-    default: 0; // cause a failure if delay has x or z values
+    default: 0; // cause a failure if delay has 'a' or 'b' values
 `endif
   endcase
 endproperty

@@ -44,7 +44,7 @@ sequence seq4;
 endsequence
 
 sequence seq5;
-  a [*0];               // Using 0 as the repetition number, an empty sequence results
+  a [*0]; // Using '0' as the repetition number, an empty sequence results
 endsequence
 
 sequence seq6;
@@ -60,13 +60,13 @@ sequence seq8;
 endsequence
 
 sequence seq9;
-  `true ##3 (a [*3]);   // means `true ##1 `true ##1 `true ##1 a ##1 a ##1 a
+  `true ##3 (a [*3]); // means `true ##1 `true ##1 `true ##1 a ##1 a ##1 a
 endsequence
 
 sequence seq10;
-  (`true ##2 a) [*3];   // means (`true ##2 a) ##1 (`true ##2 a) ##1
-                        // (`true ##2 a), which in turn means `true ##1 `true ##1;
-                        // a ##1 `true ##1 `true ##1 a ##1 `true ##1 `true ##1 a
+  (`true ##2 a) [*3]; // means (`true ##2 a) ##1 (`true ##2 a) ##1
+                      // (`true ##2 a), which in turn means `true ##1 `true ##1;
+                      // a ##1 `true ##1 `true ##1 a ##1 `true ##1 `true ##1 a
 endsequence
 
 sequence seq11;
@@ -127,7 +127,7 @@ endsequence
 
 `ifdef NEGATIVE_TEST
 sequence seq23;
-  (b, v = e)[->2];        // illegal:
+  (b, v = e)[->2]; // illegal:
 endsequence
 `endif
 

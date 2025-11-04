@@ -32,12 +32,12 @@ endproperty
 default clocking posedge_clk @(posedge clk);
   property q3;
     $fell(c) |=> q1;
-    // legal: q1 has no clocking event
+    // legal: 'q1' has no clocking event
   endproperty
 
   property q4;
     $fell(c) |=> q2;
-    // legal: q2 has clocking event identical to that of
+    // legal: 'q2' has clocking event identical to that of
     // the clocking block
   endproperty
 
@@ -57,10 +57,10 @@ always @(negedge clk)
 begin
   a1: assert property ($fell(c) |=> q1);
     // legal: contextually inferred leading clocking event,
-    // @(negedge clk)
+    // '@(negedge clk)'
   a2: assert property (posedge_clk.q4);
-    // legal: will be queued (pending) on negedge clk, then
-    // (if matured) checked at next posedge clk (see 16.14.6)
+    // legal: will be queued (pending) on 'negedge clk', then
+    // (if matured) checked at next 'posedge clk' (see 16.14.6)
 `ifdef NEGATIVE_TEST
   a3: assert property ($fell(c) |=> q2);
     // illegal: multiclocked property with contextually
@@ -68,7 +68,7 @@ begin
 `endif
   a4: assert property (q5);
     // legal: contextually inferred leading clocking event,
-    // @(negedge clk)
+    // '@(negedge clk)'
 end
 
 property q6;
@@ -77,12 +77,12 @@ endproperty
 
 `ifdef NEGATIVE_TEST
 a5: assert property (q6);
-  // illegal: default leading clocking event, @(posedge clk),
+  // illegal: default leading clocking event, '@(posedge clk)',
   // but semantic leading clock is not unique
 `endif
 
 a6: assert property ($fell(c) |=> q6);
-  // legal: default leading clocking event, @(posedge clk),
+  // legal: default leading clocking event, '@(posedge clk)',
   // is the unique semantic leading clock
 
 sequence s2;
@@ -90,7 +90,7 @@ sequence s2;
 endsequence
 
 c1: cover property (s2);
-  // legal: default leading clocking event, @(posedge clk)
+  // legal: default leading clocking event, '@(posedge clk)'
 c2: cover property (@(negedge clk) s2);
-  // legal: explicit leading clocking event, @(negedge clk)
+  // legal: explicit leading clocking event, '@(negedge clk)'
 endmodule

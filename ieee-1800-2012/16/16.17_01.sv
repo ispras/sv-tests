@@ -38,7 +38,7 @@ endtask
 
 initial begin
   bit ok;
-  wait_for( 23, ok );  // wait for the value 23
+  wait_for( 23, ok ); // wait for the value 23
   // ...
 end
 
