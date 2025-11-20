@@ -1,0 +1,42 @@
+/*
+ * Copyright 2025 ISP RAS (http://www.ispras.ru)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// IEEE Std 1800-2012
+//   9. Processes
+//    9.6 Process control
+//     9.6.3 Disable fork statement
+
+// ! TYPE: POSITIVE
+
+module top(output int adr_top);
+
+  task wait_device(input a, adr);
+  endtask
+
+  task get_first( output int adr );
+    fork
+      wait_device( 1, adr );
+      wait_device( 7, adr );
+      wait_device( 13, adr );
+    join_any
+    disable fork;
+  endtask
+
+  initial begin
+    get_first(adr_top);
+  end
+
+endmodule
