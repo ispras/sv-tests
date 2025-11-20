@@ -1,0 +1,36 @@
+/*
+ * Copyright 2025 ISP RAS (http://www.ispras.ru)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// IEEE Std 1800-2012
+//   9. Processes
+//    9.3 Block statements
+//     9.3.2 Parallel blocks
+
+// ! TYPE: POSITIVE
+
+module top;
+
+  initial
+    for( int j = 1; j <= 3; ++j )
+      fork
+        automatic int k = j; // local copy, 'k', for each value of 'j'
+        #k $write( "%0d", k );
+        begin
+          automatic int m = j; // the value of 'm' is undetermined
+        end
+      join_none
+
+endmodule
