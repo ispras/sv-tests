@@ -1,0 +1,36 @@
+/*
+ * Copyright 2025 ISP RAS (http://www.ispras.ru)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+// IEEE Std 1800-2012
+//   10. Assignment statements
+//    10.10 Unpacked array concatenation
+//     10.10.3 Nesting of unpacked array concatenations
+
+// ! TYPE: POSITIVE
+
+module top;
+
+  typedef int T_QI[$];
+  T_QI jagged_array[$] = '{ {1}, T_QI'{2,3,4}, {5,6} };
+
+  // jagged_array[0][0] = 1 -- jagged_array[0] is a queue of 1 int
+  // jagged_array[1][0] = 2 -- jagged_array[1] is a queue of 3 ints
+  // jagged_array[1][1] = 3
+  // jagged_array[1][2] = 4
+  // jagged_array[2][0] = 5 -- jagged_array[2] is a queue of 2 ints
+  // jagged_array[2][1] = 6
+
+endmodule
