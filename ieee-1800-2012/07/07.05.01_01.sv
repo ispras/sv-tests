@@ -8,7 +8,8 @@
 module top;
 
   int arr1 [][2][3] = new [4]; // 'arr1' sized to length 4; elements are
-                               // fixed-size arrays and so do not require initializing
+                               // fixed-size arrays
+                               // and so do not require initializing
   int arr2 [][] = new [4]; // 'arr2' sized to length 4; dynamic subarrays
                            // remain unsized and uninitialized
 `ifdef NEGATIVE_TEST

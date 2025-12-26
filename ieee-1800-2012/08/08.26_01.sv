@@ -14,7 +14,8 @@ module top;
     pure virtual function GET_T get();
   endclass
 
-  class Fifo #(type T = logic, int DEPTH = 1) implements PutImp #(T), GetImp #(T);
+  class Fifo #(type T = logic, int DEPTH = 1) implements PutImp #(T),
+                                                         GetImp #(T);
     T myFifo [$ : DEPTH - 1];
 
     virtual function void put(T a);
@@ -26,7 +27,8 @@ module top;
     endfunction
   endclass
 
-  class Stack #(type T = logic, int DEPTH = 1) implements PutImp#(T), GetImp#(T);
+  class Stack #(type T = logic, int DEPTH = 1) implements PutImp#(T),
+                                                          GetImp#(T);
     T myFifo [$ : DEPTH - 1];
 
     virtual function void put(T a);

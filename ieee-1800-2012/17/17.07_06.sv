@@ -6,8 +6,9 @@
 
 module top(input clock);
 
-  // If 'start_ev' is asserted then the value of 'out_data' at the next assertion
-  // of 'end_ev' has to be equal to the current value of 'in_data' at 'start_ev'.
+  // If 'start_ev' is asserted then the value of 'out_data'
+  // at the next assertion of 'end_ev' has to be equal to
+  // the current value of 'in_data' at 'start_ev'.
   //
   // It is assumed that 'in_data' and 'out_data' have the same size
   checker data_legal(start_ev, end_ev, in_data, out_data);

@@ -19,7 +19,8 @@ module top;
   logic [3:0] c, cc_out;
 
   initial begin
-    if (e matches (tagged Jmp .j) &&& j matches (tagged JmpC '{cc:.c, addr:.a})) begin
+    if (e matches (tagged Jmp .j) &&&
+        j matches (tagged JmpC '{cc:.c, addr:.a})) begin
       cc_out = c;
       addr_out = a;
     end

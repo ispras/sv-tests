@@ -28,14 +28,16 @@ module top;
       byte q[$];
       p_send = new;
       void'(p_send.randomize());
-      q = {<< byte{p_send.header, p_send.len, p_send.payload, p_send.crc}}; // pack
+      q = {<< byte{p_send.header, p_send.len,
+           p_send.payload, p_send.crc}}; // pack
       stream = {stream, q}; // append to 'stream'
     end
 
     begin // Receive packet, unpack, and remove
       byte q[$];
       p_recv = new;
-      {<< byte{ p_recv.header, p_recv.len, p_recv.payload with [0 +: p_recv.len], p_recv.crc }} = stream;
+      {<< byte{ p_recv.header, p_recv.len,
+                p_recv.payload with [0 +: p_recv.len], p_recv.crc }} = stream;
       stream = stream[ $bits(p_recv) / 8 : $ ]; // remove packet
     end
   end

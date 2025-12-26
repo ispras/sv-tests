@@ -31,7 +31,8 @@ module top;
         2'b11: result2 = 2'b10;
       endcase
 
-      // Example 3: Attributes with mixed assignment (one with value, one without)
+      // Example 3: Attributes with mixed
+      // assignment (one with value, one without)
       (* full_case, // no value assigned
         parallel_case=1 *)
       case (a)

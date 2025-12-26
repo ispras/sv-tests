@@ -14,6 +14,7 @@ property abc(a, b, c);
 endproperty
 
 env_prop:
-    assume property (@($global_clock) abc(req, gnt, rst)) else $error("Assumption failed.");
+    assume property (@($global_clock) abc(req, gnt, rst))
+      else $error("Assumption failed.");
 
 endmodule

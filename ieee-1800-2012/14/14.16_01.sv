@@ -14,12 +14,15 @@ module top(input clk);
   endclocking
 
   initial begin
-    bus.data[3:0] <= 4'h5; // drive 'data' in Re-NBA region of the current cycle
+    bus.data[3:0] <= 4'h5; // drive 'data' in Re-NBA region
+                           // of the current cycle
     ##1 bus.data <= 8'hz; // wait '1' default clocking cycle, then drive 'data'
     ##2; bus.data <= 2; // wait '2' default clocking cycles, then drive 'data'
-    bus.data <= ##2 r; // remember the value of 'r' and then drive 'data' '2' ('bus') cycles later
+    bus.data <= ##2 r; // remember the value of 'r' and
+                       // then drive 'data' '2' ('bus') cycles later
 `ifdef NEGATIVE_TEST
-    bus.data <= #4 r; // error: regular intra-assignment delay not allowed in synchronous drives
+    bus.data <= #4 r; // error: regular intra-assignment delay not allowed
+                      // in synchronous drives
 `endif
   end
 

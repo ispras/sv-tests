@@ -12,7 +12,8 @@ module top(input clock);
   initial begin
     begin
       areg = breg;
-      @(posedge clock) creg = areg; // assignment delayed until posedge on 'clock'
+      @(posedge clock) creg = areg; // assignment delayed until
+                                    // posedge on 'clock'
     end
   end
 

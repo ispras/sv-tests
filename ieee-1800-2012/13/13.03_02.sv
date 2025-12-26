@@ -17,7 +17,8 @@ module top(input logic v, w, output logic x, output logic y, z);
     e = c;
   endtask
 
-  // Or using the second form of a task declaration, the task could be defined as follows:
+  // Or using the second form of a task declaration,
+  // the task could be defined as follows:
   task my_task_eq(input a, b, inout c, output d, e);
     c = a;
     d = b;

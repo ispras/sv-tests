@@ -7,6 +7,7 @@
 module top;
 
   bit [3:0] nibble[]; // Dynamic array of 4-bit vectors
-  integer mem[2][]; // Fixed-size unpacked array composed of 2 dynamic subarrays of integers
+  integer mem[2][]; // Fixed-size unpacked array composed
+                    // of 2 dynamic subarrays of integers
 
 endmodule

@@ -1,7 +1,8 @@
 // IEEE Std 1800-2012
 //   10. Assignment statements
 //    10.10 Unpacked array concatenation
-//     10.10.1 Unpacked array concatenations compared with array assignment patterns
+//     10.10.1 Unpacked array concatenations compared with
+//             array assignment patterns
 
 // ! TYPE: VARYING
 
@@ -21,7 +22,8 @@ module top;
     A9 = '{9{1}}; // legal, gives A9='{1,1,1,1,1,1,1,1,1}
 `ifdef NEGATIVE_TEST
     A9 = {9{1}}; // illegal, no replication in unpacked array concatenation
-    A9 = {A3, {4, 5, 6, 7, 8, 9} }; // illegal, {...} is not self-determined here
+    A9 = {A3, {4, 5, 6, 7, 8, 9} }; // illegal, {...} is not
+                                    // self-determined here
     A9 = {A3, '{4, 5, 6, 7, 8, 9} }; // illegal, '{...} is not self-determined
 `endif
     A9 = {A3, 4, AI3'{5, 6, 7}, 8, 9}; // legal, A9='{1,2,3,4,5,6,7,8,9}

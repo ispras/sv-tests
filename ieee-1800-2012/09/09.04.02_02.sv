@@ -18,7 +18,8 @@ module top;
   byte stream[$]; // queue of bytes
 
   // waits for array to be allocated
-  initial wait(AOR.size() > 0) $display("Array allocated, size = %0d", AOR.size());
+  initial wait(AOR.size() > 0)
+    $display("Array allocated, size = %0d", AOR.size());
 
   // waits for total number of 'bits'
   // in stream greater than 60

@@ -12,7 +12,8 @@ module top;
     for (int i = 0; i < 4; i++) begin
       a = i;
 
-      // Example 1: 'full_case' attribute attached, 'parallel_case' not specified
+      // Example 1: 'full_case' attribute attached,
+      // 'parallel_case' not specified
       (* full_case *) // 'parallel_case' not specified
       case (a)
         2'b00: result1 = 2'b01;
@@ -21,7 +22,8 @@ module top;
         2'b11: result1 = 2'b00;
       endcase
 
-      // Example 2: full_case=1, parallel_case=0 (explicitly disabling 'parallel_case')
+      // Example 2: full_case=1, parallel_case=0
+      // (explicitly disabling 'parallel_case')
       (* full_case=1, parallel_case = 0 *)
       case (a)
         2'b00: result2 = 2'b11;

@@ -7,7 +7,8 @@
 
 module top;
 
-  bit [1:10] v1 [1:5]; // 1 to 10 varies most rapidly; compatible with memory arrays
+  bit [1:10] v1 [1:5]; // 1 to 10 varies most rapidly;
+                       // compatible with memory arrays
 
   bit v2 [1:5] [1:10]; // 1 to 10 varies most rapidly, compatible with C
 

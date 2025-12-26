@@ -26,7 +26,8 @@ module top;
 
   initial begin
     case (instr) matches
-      tagged Add '{reg2:.r2, regd:.rd, reg1:.r1} &&& (rd != 0): rf[rd] = rf[r1] + rf[r2];
+      tagged Add '{reg2:.r2, regd:.rd, reg1:.r1} &&&
+        (rd != 0): rf[rd] = rf[r1] + rf[r2];
       tagged Jmp (tagged JmpU .a) : pc = pc + a;
       tagged Jmp (tagged JmpC '{addr:.a, cc:.c}) : if (rf[c]) pc = a;
     endcase

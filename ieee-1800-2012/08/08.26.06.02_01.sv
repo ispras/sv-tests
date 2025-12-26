@@ -2,7 +2,8 @@
 //   8. Classes
 //    8.26 Interface classes
 //     8.26.6 Name conflicts and resolution
-//      8.26.6.2 Parameter and type declaration inheritance conflicts and resolution
+//      8.26.6.2 Parameter and type declaration inheritance
+//               conflicts and resolution
 
 // ! TYPE: POSITIVE
 

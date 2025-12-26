@@ -18,7 +18,8 @@ endsequence
 
 parameter my_delay=2;
 
-cover property (@($global_clock) delay_arg_example(4, my_delay, my_delay - 1, 3));
+cover property (@($global_clock)
+                delay_arg_example(4, my_delay, my_delay - 1, 3));
 
 // The cover property above is equivalent to the following:
 // cover property (x ##2 y[*3:$] ##1 z);

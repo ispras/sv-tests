@@ -11,7 +11,8 @@ input clk, rst, sig;
 
 global clocking sys @(posedge clk); endclocking
 
-a3: assert property (@clk disable iff (rst) $changing_gclk(sig) |-> $falling_gclk(clk))
-  else $display("sig is not stable");
+a3: assert property (@clk disable
+                    iff (rst) $changing_gclk(sig) |-> $falling_gclk(clk))
+                    else $display("sig is not stable");
 
 endmodule

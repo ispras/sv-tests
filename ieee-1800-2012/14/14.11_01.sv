@@ -13,7 +13,8 @@ module top(input clk);
 
   initial begin
     ##5; // wait '5' cycles (clocking events) using the default clocking
-    ##(j + 1); // wait 'j + 1' cycles (clocking events) using the default clocking
+    ##(j + 1); // wait 'j + 1' cycles (clocking events) using
+               // the default clocking
   end
 
 endmodule

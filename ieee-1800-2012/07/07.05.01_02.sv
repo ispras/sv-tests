@@ -15,11 +15,14 @@ module top;
     arr[0][0] = new [2]; // legal, 'arr[0][n]' created above for n = 0..3
 
 `ifdef NEGATIVE_TEST
-    arr[1][0] = new [2]; // illegal, 'arr[1]' not initialized so 'arr[1][0]' does not exist
+    arr[1][0] = new [2]; // illegal, 'arr[1]' not initialized
+                         // so 'arr[1][0]' does not exist
 
-    arr[0][] = new [2]; // illegal, syntax error - dimension without subscript on left hand side
+    arr[0][] = new [2]; // illegal, syntax error - dimension without
+                        // subscript on left hand side
 
-    arr[0][1][1] = new[2]; // illegal, 'arr[0][1][1]' is an int, not a dynamic array
+    arr[0][1][1] = new[2]; // illegal, 'arr[0][1][1]' is an int,
+                           // not a dynamic array
 `endif
   end
 

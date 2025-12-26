@@ -51,29 +51,33 @@ endsequence
 `ifdef NEGATIVE_TEST
 sequence s5;
   int x,y;
+  // illegal because 'y' is not in the intersection
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (y==data2); // illegal because 'y' is not in the intersection
+    or (d ##1 (`true, x = data) ##0 (e == x))) ##1 (y == data2);
 endsequence
 `endif
 
 sequence s6;
   int x,y;
+  // legal because 'x' is in the intersection
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    or (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2); // legal because 'x' is in the intersection
+    or (d ##1 (`true, x = data) ##0 (e == x))) ##1 (x == data2);
 endsequence
 
 `ifdef NEGATIVE_TEST
 sequence s7;
   int x,y;
+  // illegal because 'x' is common to both threads
   ((a ##1 (b, x = data, y = data1) ##1 c)
-    and (d ##1 (`true, x = data) ##0 (e==x))) ##1 (x==data2); // illegal because 'x' is common to both threads
+    and (d ##1 (`true, x = data) ##0 (e == x))) ##1 (x == data2);
 endsequence
 `endif
 
 sequence s8;
   int x,y;
+  // legal because 'y' is in the difference
   (a ##1 (b, x = data, y = data1) ##1 c)
-    and (d ##1 (`true, x = data) ##0 (e==x)) ##1 (y==data2); // legal because 'y' is in the difference
+    and (d ##1 (`true, x = data) ##0 (e == x)) ##1 (y == data2);
 endsequence
 
 endmodule

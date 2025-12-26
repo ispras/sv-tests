@@ -1,7 +1,8 @@
 // IEEE Std 1800-2012
 //   10. Assignment statements
 //    10.10 Unpacked array concatenation
-//     10.10.1 Unpacked array concatenations compared with array assignment patterns
+//     10.10.1 Unpacked array concatenations compared with
+//             array assignment patterns
 
 // ! TYPE: POSITIVE
 

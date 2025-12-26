@@ -9,8 +9,10 @@ module top;
 
   parameter y = 1;
 
-  bit unpackedbits [1:0] = '{1,1}; // no size warning required as 'bit' can be set to 1
-  int unpackedints [1:0] = '{1'b1, 1'b1}; // no size warning required as 'int' can be set to 1'b1
+  bit unpackedbits [1:0] = '{1,1}; // no size warning required as 'bit'
+                                   // can be set to 1
+  int unpackedints [1:0] = '{1'b1, 1'b1}; // no size warning required
+                                          // as 'int' can be set to 1'b1
 
   initial unpackedbits = '{2 {y}} ; // same as '{y, y}
   int n[1:2][1:3] = '{2{'{3{y}}}}; // same as '{'{y,y,y},'{y,y,y}}

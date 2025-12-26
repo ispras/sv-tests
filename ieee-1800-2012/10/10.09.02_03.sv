@@ -16,7 +16,10 @@ module top;
 
   sa s2;
 
-  initial s2 = '{int:1, default:0, string:""}; // set all to 0 except the array of bits to 1 and string to ""
+  initial
+    s2 = '{int:1, default:0, string:""}; // set all to 0 except
+                                         // the array of bits to 1
+                                         // and string to ""
 
   initial #10 s2 = '{default:'1, s : ""}; // set all to 1 except 's' to ""
 

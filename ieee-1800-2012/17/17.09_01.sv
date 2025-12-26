@@ -9,7 +9,8 @@ module top;
   typedef enum { cover_none, cover_all } coverage_level;
   checker assert_window1 (
     logic test_expr, // Expression to be true in the 'window'
-    untyped start_event, // 'window' opens at the completion of the 'start_event'
+    untyped start_event, // 'window' opens at the completion
+                         // of the 'start_event'
     untyped end_event, // 'window' closes at the completion of the 'end_event'
     event clock = $inferred_clock,
     logic reset = $inferred_disable,

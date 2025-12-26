@@ -32,7 +32,8 @@ program test(bus_A a, bus_B b);
 
   initial begin
     // program begins here
-    // user can access 'cd1.data', 'cd1.write', 'cd1.state', 'cd2.cmd', and 'cd2.en'
+    // user can access 'cd1.data', 'cd1.write', 'cd1.state',
+    // 'cd2.cmd' and 'cd2.en'
   end
 endprogram
 

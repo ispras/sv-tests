@@ -5,7 +5,8 @@
 
 // ! TYPE: POSITIVE
 
-module top(input logic sysclk, clk, reset, inst, a, b, c, reset1, branch_back, branch_back1);
+module top(input logic sysclk, clk, reset, inst, a, b, c,
+           reset1, branch_back, branch_back1);
 
   sequence e1;
     @(posedge sysclk) $rose(a) ##1 b ##1 c;

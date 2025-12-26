@@ -18,6 +18,7 @@ module top;
   packet1 p1; // initialization defined by the 'typedef'.
               // 'p1.crc' will use the default value for an 'int'
 
-  packet1 pi = '{1, 2, '{2, 3, 4, 5}}; // suppresses the 'typedef' initialization
+  packet1 pi = '{1, 2, '{2, 3, 4, 5}}; // suppresses the 'typedef'
+                                       // initialization
 
 endmodule

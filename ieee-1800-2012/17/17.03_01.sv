@@ -18,7 +18,8 @@ checker c1(event clk, logic[7:0] a, b);
   p3: assert #0 ($onehot(a));
 endchecker
 
-module top(input logic rst, clk, logic en, logic[7:0] in1, in2, in_array [20:0]);
+module top(input logic rst, clk, logic en,
+           logic[7:0] in1, in2, in_array [20:0]);
 
   c1 check_outside(posedge clk, in1, in2);
   always @(posedge clk) begin

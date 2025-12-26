@@ -6,7 +6,8 @@
 
 module top;
 
-  checker clocking_example (logic sig1, sig2, default_clk, rst, event e1, e2, e3);
+  checker clocking_example (logic sig1, sig2, default_clk, rst,
+                            event e1, e2, e3);
     bit local_sig;
     default clocking @(posedge default_clk); endclocking
 

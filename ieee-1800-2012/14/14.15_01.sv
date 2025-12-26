@@ -34,13 +34,16 @@ module top(input clk, ack_l, enable);
     @(negedge dom.sign[a]);
     // NOTE - The index 'a' is evaluated at run time.
 
-    // Wait for either the next positive edge of 'dom.sig1' or the next change of 'dom.sig2', whichever happens first
+    // Wait for either the next positive edge of 'dom.sig1' or
+    // the next change of 'dom.sig2', whichever happens first
     @(posedge dom.sig1 or dom.sig2);
 
-    // Wait for either the negative edge of 'dom.sig1' or the positive edge of 'dom.sig2', whichever happens first
+    // Wait for either the negative edge of 'dom.sig1' or the positive
+    // edge of 'dom.sig2', whichever happens first
     @(negedge dom.sig1 or posedge dom.sig2);
 
-    // Wait for the edge (either the negative edge or the positive edge, whichever happens first) of 'dom.sig1'.
+    // Wait for the edge (either the negative edge or the positive edge,
+    // whichever happens first) of 'dom.sig1'.
     @(edge dom.sig1);
 
     // Or equivalently

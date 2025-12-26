@@ -9,9 +9,11 @@ module top;
 
   int val;
   initial begin
-    // The function shall return an unsigned integer in the range of maxval ... minval.
+    // The function shall return an unsigned integer in the range
+    // of 'maxval ... minval'.
     val = $urandom_range(7,0);
-    // If minval is omitted, the function shall return a value in the range of maxval ... 0.
+    // If minval is omitted, the function shall return a value in the range
+    // of 'maxval ... 0'.
     val = $urandom_range(7);
     // If maxval is less than minval, the arguments are automatically reversed
     // so that the first argument is larger than the second argument.

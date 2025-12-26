@@ -15,7 +15,8 @@ module top;
   initial begin
     hello = "hello";
     S = {hello, " world"}; // string concatenation: "hello world"
-    SA = {hello, " world"}; // array concatenation: SA[0]="hello", SA[1]=" world"
+    SA = {hello, " world"}; // array concatenation:
+                            // SA[0]="hello", SA[1]=" world"
     B = {4'h6, 4'hf}; // vector concatenation: B=8'h6f
     BA = {4'h6, 4'hf}; // array concatenation: BA[0]=8'h06, BA[1]=8'h0f
   end

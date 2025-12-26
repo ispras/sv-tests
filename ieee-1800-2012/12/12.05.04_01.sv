@@ -18,7 +18,9 @@ module top(input clock);
   always @(posedge clock)
     priority case (status) inside
       1, 3 : task1; // matches 'b001 and 'b011
-      3'b0?0, [4:7]: task2; // matches 'b000 'b010 'b0x0 'b0z0 'b100 'b101 'b110 'b111
-    endcase // 'priority case' fails all other values including 'b00x 'b01x 'bxxx
+      3'b0?0, [4:7]: task2; // matches 'b000 'b010 'b0x0 'b0z0
+                            // 'b100 'b101 'b110 'b111
+    endcase // 'priority case' fails all other values including
+            // 'b00x 'b01x 'bxxx
 
 endmodule
