@@ -1,0 +1,12 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "top")
+  (DIVIDER /)
+  (CELL
+    (CELLTYPE "dut")
+    (INSTANCE u_dut)
+    (TIMINGCHECK
+      (SETUPHOLD data (COND !mode (posedge clk)) (3) (4))
+    )
+  )
+)

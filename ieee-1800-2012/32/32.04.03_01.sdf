@@ -1,0 +1,15 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "top")
+  (DIVIDER /)
+  (CELL
+    (CELLTYPE "clock")
+    (INSTANCE u_clk)
+    (LABEL
+      (ABSOLUTE
+        (dhigh 60)
+        (dlow 40)
+      )
+    )
+  )
+)
