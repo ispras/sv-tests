@@ -1,0 +1,10 @@
+// IEEE Std 1800-2012
+//   6. Data types
+//    6.6 Net types
+//     6.6.8 Generic interconnect
+
+// ! TYPE: POSITIVE
+
+package NetsPkg;
+  nettype real realNet;
+endpackage : NetsPkg

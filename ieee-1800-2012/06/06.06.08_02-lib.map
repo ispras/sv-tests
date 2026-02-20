@@ -1,0 +1,19 @@
+// IEEE Std 1800-2012
+//   6. Data types
+//    6.6 Net types
+//     6.6.8 Generic interconnect
+
+// ! TYPE: POSITIVE
+
+library realLib 06.06.08_02-*.svr;
+library logicLib 06.06.08_02-*.sv;
+
+config cfgReal;
+  design logicLib.top;
+  default liblist realLib logicLib;
+endconfig
+
+config cfgLogic;
+  design logicLib.top;
+  default liblist logicLib realLib;
+endconfig
