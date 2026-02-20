@@ -1,0 +1,16 @@
+// IEEE Std 1800-2012
+//   33. Configuring the contents of a design
+//    33.6 Configuration examples
+//     33.6.5 Using hierarchical config
+
+// ! TYPE: POSITIVE
+
+library rtlLib 33.06_01.v;
+library aLib 33.06_01_adder.v;
+library gateLib 33.06_01_adder.vg;
+
+config cfg5;
+  design aLib.adder;
+  default liblist gateLib aLib;
+  instance adder.f1 liblist rtlLib;
+endconfig

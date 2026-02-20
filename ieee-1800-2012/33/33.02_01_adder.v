@@ -1,0 +1,11 @@
+// IEEE Std 1800-2012
+//   33. Configuring the contents of a design
+//    33.2 Overview
+
+// ! TYPE: POSITIVE
+
+module adder();
+  // rtl 'adder'
+  // description
+  // ...
+endmodule

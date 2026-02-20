@@ -1,0 +1,8 @@
+// IEEE Std 1800-2012
+//   33. Configuring the contents of a design
+//    33.2 Overview
+
+// ! TYPE: POSITIVE
+
+library rtlLib 33.02_01_adder.v;
+library gateLib 33.02_01_adder.vg;

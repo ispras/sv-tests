@@ -1,0 +1,16 @@
+// IEEE Std 1800-2012
+//   33. Configuring the contents of a design
+//    33.6 Configuration examples
+//     33.6.4 Using instance clause
+
+// ! TYPE: POSITIVE
+
+library rtlLib 33.06_01.v;
+library aLib 33.06_01_adder.v;
+library gateLib 33.06_01_adder.vg;
+
+config cfg4;
+  design rtlLib.top;
+  default liblist gateLib rtlLib;
+  instance top.a2 liblist aLib;
+endconfig
