@@ -6,12 +6,12 @@
 
 module top();
 
-logic a;
-logic b;
-logic clk;
+  logic a;
+  logic b;
+  logic clk;
 
-property p3; @(posedge clk) not (a ##2 b); endproperty
+  property p3; @(posedge clk) not (a ##2 b); endproperty
 
-assert property (p3);
+  assert property (p3);
 
 endmodule

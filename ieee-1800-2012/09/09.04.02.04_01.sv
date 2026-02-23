@@ -16,8 +16,8 @@ module top;
 
   program test;
     initial begin
-      @ abc $display( "Saw a-b-c" );
-      L1: $display( "Saw L1" );
+      @ abc $display("Saw a-b-c");
+      L1: $display("Saw L1");
     end
   endprogram
 

@@ -3,116 +3,116 @@
 //    16.9 Sequence operations
 //     16.9.2 Repetition in sequences
 
-// ! TYPE: POSITIVE
+// ! TYPE: VARYING
 
 `define true 1'b1
 
 module top;
 
-reg a, b, c, e;
+  reg a, b, c, e;
 
-sequence seq1;
-  a ##1 b ##1 b ##1 b ##1 c;
-endsequence
+  sequence seq1;
+    a ##1 b ##1 b ##1 b ##1 c;
+  endsequence
 
-sequence seq2;
-  a ##1 b [*3] ##1 c;
-endsequence
+  sequence seq2;
+    a ##1 b [*3] ##1 c;
+  endsequence
 
-sequence seq3;
-  a [*3];
-endsequence
+  sequence seq3;
+    a [*3];
+  endsequence
 
-sequence seq4;
-  a ##1 a ##1 a;
-endsequence
+  sequence seq4;
+    a ##1 a ##1 a;
+  endsequence
 
-sequence seq5;
-  a [*0]; // Using '0' as the repetition number, an empty sequence results
-endsequence
+  sequence seq5;
+    a [*0]; // Using '0' as the repetition number, an empty sequence results
+  endsequence
 
-sequence seq6;
-  b ##1 ( a[*0] ##0 c);
-endsequence
+  sequence seq6;
+    b ##1 ( a[*0] ##0 c);
+  endsequence
 
-sequence seq7;
-  b ##1 a[*0:1] ##2 c;
-endsequence
+  sequence seq7;
+    b ##1 a[*0:1] ##2 c;
+  endsequence
 
-sequence seq8;
-  (b ##2 c) or (b ##1 a ##2 c);
-endsequence
+  sequence seq8;
+    (b ##2 c) or (b ##1 a ##2 c);
+  endsequence
 
-sequence seq9;
-  `true ##3 (a [*3]); // means `true ##1 `true ##1 `true ##1 a ##1 a ##1 a
-endsequence
+  sequence seq9;
+    `true ##3 (a [*3]); // means `true ##1 `true ##1 `true ##1 a ##1 a ##1 a
+  endsequence
 
-sequence seq10;
-  (`true ##2 a) [*3]; // means (`true ##2 a) ##1 (`true ##2 a) ##1
-                      // (`true ##2 a), which in turn means `true ##1 `true ##1;
-                      // a ##1 `true ##1 `true ##1 a ##1 `true ##1 `true ##1 a
-endsequence
+  sequence seq10;
+    (`true ##2 a) [*3]; // means (`true ##2 a) ##1 (`true ##2 a) ##1
+                        // (`true ##2 a), which in turn means `true ##1 `true ##1;
+                        // a ##1 `true ##1 `true ##1 a ##1 `true ##1 `true ##1 a
+  endsequence
 
-sequence seq11;
-  (a ##2 b) [*5];
-endsequence
+  sequence seq11;
+    (a ##2 b) [*5];
+  endsequence
 
-sequence seq12;
-  (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b);
-endsequence
+  sequence seq12;
+    (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b);
+  endsequence
 
-sequence seq13;
-  (a ##2 b)[*1:5];
-endsequence
+  sequence seq13;
+    (a ##2 b)[*1:5];
+  endsequence
 
-sequence seq14;
-  (a ##2 b)
-  or (a ##2 b ##1 a ##2 b)
-  or (a ##2 b ##1 a ##2 b ##1 a ##2 b)
-  or (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b)
-  or (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b);
-endsequence
+  sequence seq14;
+    (a ##2 b)
+    or (a ##2 b ##1 a ##2 b)
+    or (a ##2 b ##1 a ##2 b ##1 a ##2 b)
+    or (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b)
+    or (a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b ##1 a ##2 b);
+  endsequence
 
-sequence seq15;
-  (a[*0:3] ##1 b ##1 c);
-endsequence
+  sequence seq15;
+    (a[*0:3] ##1 b ##1 c);
+  endsequence
 
-sequence seq16;
-  (b ##1 c)
-  or (a ##1 b ##1 c)
-  or (a ##1 a ##1 b ##1 c)
-  or (a ##1 a ##1 a ##1 b ##1 c);
-endsequence
+  sequence seq16;
+    (b ##1 c)
+    or (a ##1 b ##1 c)
+    or (a ##1 a ##1 b ##1 c)
+    or (a ##1 a ##1 a ##1 b ##1 c);
+  endsequence
 
-sequence seq17;
-  a ##1 b [*1:$] ##1 c;
-endsequence
+  sequence seq17;
+    a ##1 b [*1:$] ##1 c;
+  endsequence
 
-sequence seq18;
-  a ##1 b [->2:10] ##1 c;
-endsequence
+  sequence seq18;
+    a ##1 b [->2:10] ##1 c;
+  endsequence
 
-sequence seq19;
-  a ##1 ((!b[*0:$] ##1 b) [*2:10]) ##1 c;
-endsequence
+  sequence seq19;
+    a ##1 ((!b[*0:$] ##1 b) [*2:10]) ##1 c;
+  endsequence
 
-sequence seq20;
-  a ##1 b [=2:10] ##1 c;
-endsequence
+  sequence seq20;
+    a ##1 b [=2:10] ##1 c;
+  endsequence
 
-sequence seq21;
-  a ##1 ((!b [*0:$] ##1 b) [*2:10]) ##1 !b[*0:$] ##1 c;
-endsequence
+  sequence seq21;
+    a ##1 ((!b [*0:$] ##1 b) [*2:10]) ##1 !b[*0:$] ##1 c;
+  endsequence
 
-sequence seq22;
-  bit v;
-  (b[->1], v = e)[*2];
-endsequence
+  sequence seq22;
+    bit v;
+    (b[->1], v = e)[*2];
+  endsequence
 
 `ifdef NEGATIVE_TEST
-sequence seq23;
-  (b, v = e)[->2]; // illegal:
-endsequence
+  sequence seq23;
+    (b, v = e)[->2]; // illegal:
+  endsequence
 `endif
 
 endmodule

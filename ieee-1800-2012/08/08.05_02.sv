@@ -10,10 +10,10 @@ module top;
   endclass
 
   vector #(3) v = new;
-  initial $display (vector #(3)::T'(3.45)); // Typecasting
+  initial $display(vector #(3)::T'(3.45)); // Typecasting
 `ifdef NEGATIVE_TEST
-  initial $display ((v.T)'(3.45)); // ILLEGAL
+  initial $display((v.T)'(3.45)); // ILLEGAL
 `endif
-  initial $display (v.width);
+  initial $display(v.width);
 
 endmodule

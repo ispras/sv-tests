@@ -7,12 +7,12 @@
 
 module top;
 
-property p3(p, bit b, abort);
-  (p and (1'b1 |=> p4(p, b, abort)));
-endproperty
+  property p3(p, bit b, abort);
+    (p and (1'b1 |=> p4(p, b, abort)));
+  endproperty
 
-property p4(p, bit b, abort);
-  accept_on(b) reject_on(abort) p3(p, b, abort);
-endproperty
+  property p4(p, bit b, abort);
+    accept_on(b) reject_on(abort) p3(p, b, abort);
+  endproperty
 
 endmodule

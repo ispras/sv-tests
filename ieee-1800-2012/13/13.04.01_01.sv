@@ -10,11 +10,11 @@ module top;
   logic [15:0] a, b;
   logic [7:0] c, d;
 
-  function [15:0] myfunc1 (input [7:0] x,y);
+  function [15:0] myfunc1 (input [7:0] x, y);
     myfunc1 = x * y - 1; // return value assigned to function name
   endfunction
 
-  function [15:0] myfunc2 (input [7:0] x,y);
+  function [15:0] myfunc2 (input [7:0] x, y);
     return x * y - 1; // return value is specified using return statement
   endfunction
 

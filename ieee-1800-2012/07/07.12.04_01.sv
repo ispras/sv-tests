@@ -12,7 +12,7 @@ module top;
 
   initial begin
     // find all items equal to their position ('index)
-    q = arr.find with ( item == item.index );
+    q = arr.find with (item == item.index);
   end
 
 endmodule

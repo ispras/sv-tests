@@ -7,10 +7,10 @@
 
 module top(irdy, trdy);
 
-input irdy, trdy;
+  input irdy, trdy;
 
-sequence rule1;
-  !trdy[*7] within ($fell(irdy) ##1 !irdy[*8]);
-endsequence
+  sequence rule1;
+    !trdy[*7] within ($fell(irdy) ##1 !irdy[*8]);
+  endsequence
 
 endmodule

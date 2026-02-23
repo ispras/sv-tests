@@ -7,22 +7,22 @@
 
 module top;
 
-reg a, b;
+  reg a, b;
 
-property p1;
-  a until b;
-endproperty
+  property p1;
+    a until b;
+  endproperty
 
-property p2;
-  a s_until b;
-endproperty
+  property p2;
+    a s_until b;
+  endproperty
 
-property p3;
-  a until_with b;
-endproperty
+  property p3;
+    a until_with b;
+  endproperty
 
-property p4;
-  a s_until_with b;
-endproperty
+  property p4;
+    a s_until_with b;
+  endproperty
 
 endmodule

@@ -11,10 +11,10 @@ module top;
   int map[string];
 
   initial begin
-    if (map.first( s ))
+    if (map.first(s))
       do
-        $display( "%s : %d\n", s, map[ s ] );
-      while (map.next( s ));
+        $display("%s : %d\n", s, map[s]);
+      while (map.next(s));
   end
 
 endmodule

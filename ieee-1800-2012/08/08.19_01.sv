@@ -9,8 +9,8 @@ module top;
   class Jumbo_Packet;
     const int max_size = 9 * 1024; // global constant
     byte payload [];
-    function new( int size );
-      payload = new[ size > max_size ? max_size : size ];
+    function new(int size);
+      payload = new[size > max_size ? max_size : size];
     endfunction
   endclass
 
@@ -19,7 +19,7 @@ module top;
     byte payload [];
     function new();
       size = $urandom % 4096; // one assignment in new -> ok
-      payload = new[ size ];
+      payload = new[size];
     endfunction
   endclass
 

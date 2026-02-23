@@ -2,7 +2,7 @@
 //  7. Aggregate data types
 //   7.7 Arrays as arguments to subroutines
 
-// ! TYPE: POSITIVE
+// ! TYPE: VARYING
 
 module top;
 

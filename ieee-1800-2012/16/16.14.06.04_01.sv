@@ -8,17 +8,17 @@
 
 module top(clk, bad_val, bad_val_ok);
 
-input clk;
-input bad_val;
-input bad_val_ok;
+  input clk;
+  input bad_val;
+  input bad_val_ok;
 
-default clocking @(posedge clk); endclocking
+  default clocking @(posedge clk); endclocking
 
-always @(bad_val or bad_val_ok) begin : b1
-  a1: assert property (bad_val) else $fatal(1, "Sorry");
-  if (bad_val_ok) begin
-    disable a1;
+  always @(bad_val or bad_val_ok) begin : b1
+    a1: assert property (bad_val) else $fatal(1, "Sorry");
+    if (bad_val_ok) begin
+      disable a1;
+    end
   end
-end
 
 endmodule

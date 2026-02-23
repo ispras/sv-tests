@@ -8,19 +8,19 @@
 
 module top(clk);
 
-input clk;
-wire w;
-reg [10:0] foo;
-reg [10:0] bar;
-reg my_activation_condition;
+  input clk;
+  wire w;
+  reg [10:0] foo;
+  reg [10:0] bar;
+  reg my_activation_condition;
 
-always @(posedge clk) begin : procedural_block_1
-  integer i;
-  if (my_activation_condition == 1) begin
-    for (i=0; i<2; i=i+1) begin
-      a7: assume property (foo[i] |=> bar[i] ##1 (w==1'b1));
+  always @(posedge clk) begin : procedural_block_1
+    integer i;
+    if (my_activation_condition == 1) begin
+      for (i = 0; i < 2; i = i + 1) begin
+        a7: assume property (foo[i] |=> bar[i] ##1 (w == 1'b1));
+      end
     end
   end
-end
 
 endmodule

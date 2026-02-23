@@ -6,7 +6,7 @@
 
 // ! TYPE: POSITIVE
 
-module top(.a({b,c}), f, .g(h[1]));
+module top(.a({b, c}), f, .g(h[1]));
 
   // Names 'b', 'c', 'f', 'h' are defined inside the module.
   // Names 'a', 'f', 'g' are defined for port connections.

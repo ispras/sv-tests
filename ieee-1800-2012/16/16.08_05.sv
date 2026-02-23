@@ -6,13 +6,13 @@
 
 module top(sysclk);
 
-input sysclk;
-reg start_trans, end_trans, trans;
-reg a, b, c;
+  input sysclk;
+  reg start_trans, end_trans, trans;
+  reg a, b, c;
 
-sequence rule;
-  @(posedge sysclk)
-  trans ##1 start_trans ##1 (a ##1 b ##1 c) ##1 end_trans ;
-endsequence
+  sequence rule;
+    @(posedge sysclk)
+    trans ##1 start_trans ##1 (a ##1 b ##1 c) ##1 end_trans ;
+  endsequence
 
 endmodule

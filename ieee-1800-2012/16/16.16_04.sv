@@ -6,14 +6,14 @@
 
 module top();
 
-logic a;
-logic b;
-logic clk;
+  logic a;
+  logic b;
+  logic clk;
 
-clocking master_clk @(posedge clk);
-  property p3; not (a ##2 b); endproperty
-endclocking
+  clocking master_clk @(posedge clk);
+    property p3; not (a ##2 b); endproperty
+  endclocking
 
-assert property (master_clk.p3);
+  assert property (master_clk.p3);
 
 endmodule

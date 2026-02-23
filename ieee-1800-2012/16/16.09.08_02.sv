@@ -7,14 +7,14 @@
 
 module top;
 
-reg a, b, c, d;
+  reg a, b, c, d;
 
-sequence t2;
-  (a ##[2:3] b) or (c ##[1:2] d);
-endsequence
+  sequence t2;
+    (a ##[2:3] b) or (c ##[1:2] d);
+  endsequence
 
-sequence ts2;
-  first_match(t2);
-endsequence
+  sequence ts2;
+    first_match(t2);
+  endsequence
 
 endmodule

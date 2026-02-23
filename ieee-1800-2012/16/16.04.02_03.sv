@@ -7,11 +7,11 @@
 
 module top;
 
-assign a = 0;
-assign b = 1;
-always_comb begin : b1
-  c1: cover (b != a);
-  c2: cover #0 (b != a);
-end
+  assign a = 0;
+  assign b = 1;
+  always_comb begin : b1
+    c1: cover (b != a);
+    c2: cover #0 (b != a);
+  end
 
 endmodule

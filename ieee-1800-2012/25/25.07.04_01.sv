@@ -17,7 +17,7 @@ interface simple_bus (input logic clk); // Define the interface
   extern forkjoin task Read (input logic [7:0] raddr);
   extern forkjoin task Write (input logic [7:0] waddr);
 
-  modport slave(input req,addr, mode, start, clk,
+  modport slave(input req, addr, mode, start, clk,
                 output gnt, rdy,
                 ref data, slaves,
                 export Read, Write, countSlaves);

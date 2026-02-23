@@ -17,7 +17,7 @@ module top;
 
   class xtndA extends baseA;
     rand int x;
-    constraint cst1 { x < 10; }
+    constraint cst1 {x < 10;}
   endclass
 
   function integer test;

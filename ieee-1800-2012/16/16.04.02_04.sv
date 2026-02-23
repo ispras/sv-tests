@@ -7,15 +7,15 @@
 
 module top(input b, c);
 
-reg a;
+  reg a;
 
-function f(bit v);
-  p: assert #0 (v);
-  // ...
-endfunction
+  function f(bit v);
+    p: assert #0 (v);
+    // ...
+  endfunction
 
-always_comb begin: myblk
-  a = b || f(c);
-end
+  always_comb begin: myblk
+    a = b || f(c);
+  end
 
 endmodule

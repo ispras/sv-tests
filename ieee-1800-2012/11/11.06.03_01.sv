@@ -14,12 +14,12 @@ module top;
   initial begin
     a = 4'hF;
     b = 6'hA;
-    $display("a*b=%h", a * b); // expression size is self-determined
+    $display("a * b = %h", a * b); // expression size is self-determined
     c = {a ** b}; // expression 'a ** b' is self-determined
                   // due to concatenation operator '{}'
-    $display("a**b=%h", c);
+    $display("a ** b = %h", c);
     c = a ** b; // expression size is determined by 'c'
-    $display("c=%h", c);
+    $display("c = %h", c);
   end
 
 endmodule

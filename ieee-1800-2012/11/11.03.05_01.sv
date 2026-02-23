@@ -7,12 +7,12 @@
 
 module top;
 
-  logic regA, regB, regC, result ;
+  logic regA, regB, regC, result;
 
   function logic myFunc(logic x);
     return x;
   endfunction
 
-  initial result = regA & (regB | myFunc(regC)) ;
+  initial result = regA & (regB | myFunc(regC));
 
 endmodule

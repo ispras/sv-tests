@@ -7,11 +7,11 @@
 
 module top;
 
-  int q[$] = { 2, 4, 8 };
+  int q[$] = {2, 4, 8};
 
   initial begin
     q = q[2:$]; // a new queue lacking the first two items
-    q = q[1:$-1]; // a new queue lacking the first and last items
+    q = q[1:$ - 1]; // a new queue lacking the first and last items
   end
 
 endmodule

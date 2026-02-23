@@ -7,13 +7,13 @@
 
 module top;
 
-  int map[ string ];
+  int map[string];
 
   initial begin
-    if ( map.exists( "hello" ))
-      map[ "hello" ] += 1;
+    if (map.exists("hello"))
+      map["hello"] += 1;
     else
-      map[ "hello" ] = 0;
+      map["hello"] = 0;
   end
 
 endmodule

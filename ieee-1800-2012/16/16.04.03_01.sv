@@ -5,6 +5,6 @@
 
 // ! TYPE: POSITIVE
 
-module top (input a, b);
+module top(input a, b);
   a1: assert #0 (a == b);
 endmodule

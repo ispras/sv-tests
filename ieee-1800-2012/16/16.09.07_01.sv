@@ -7,14 +7,14 @@
 
 module top;
 
-reg te1, te2, te3, te4, te5;
+  reg te1, te2, te3, te4, te5;
 
-sequence seq1;
-  (te1 ##2 te2) or (te3 ##2 te4 ##2 te5);
-endsequence
+  sequence seq1;
+    (te1 ##2 te2) or (te3 ##2 te4 ##2 te5);
+  endsequence
 
-sequence seq2;
-  (te1 ##[1:5] te2) or (te3 ##2 te4 ##2 te5);
-endsequence
+  sequence seq2;
+    (te1 ##[1:5] te2) or (te3 ##2 te4 ##2 te5);
+  endsequence
 
 endmodule

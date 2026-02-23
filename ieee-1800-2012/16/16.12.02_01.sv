@@ -7,10 +7,10 @@
 
 module top;
 
-reg clk, a, b;
+  reg clk, a, b;
 
-a1: assert property (@clk not a ##1 b);
+  a1: assert property (@clk not a ##1 b);
 
-a2: assert property (@clk not strong(a ##1 b));
+  a2: assert property (@clk not strong(a ##1 b));
 
 endmodule

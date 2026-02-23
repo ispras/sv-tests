@@ -5,7 +5,7 @@
 // ! TYPE: POSITIVE
 
 package pex_gen9_common_expressions;
-  let valid_arb(request, valid, override) = |(request & valid) || override;
+  let valid_arb(request, valid, override) = | (request & valid) || override;
 endpackage
 
 module top;

@@ -6,12 +6,12 @@
 
 module top(valid_in);
 
-input valid_in;
-integer pipe_in, pipe_out1;
+  input valid_in;
+  integer pipe_in, pipe_out1;
 
-property e;
-  int x;
-  (valid_in, x = pipe_in) |-> ##5 (pipe_out1 == (x+1));
-endproperty
+  property e;
+    int x;
+    (valid_in, x = pipe_in) |-> ##5 (pipe_out1 == (x + 1));
+  endproperty
 
 endmodule

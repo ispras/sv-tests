@@ -7,21 +7,21 @@
 
 module top(clk);
 
-reg x, y, z;
-input clk;
+  reg x, y, z;
+  input clk;
 
-global clocking sys @(posedge clk); endclocking
+  global clocking sys @(posedge clk); endclocking
 
-sequence delay_arg_example (max, shortint delay1, delay2, min);
-  x ##delay1 y[*min:max] ##delay2 z;
-endsequence
+  sequence delay_arg_example (max, shortint delay1, delay2, min);
+    x ##delay1 y[*min:max] ##delay2 z;
+  endsequence
 
-parameter my_delay=2;
+  parameter my_delay = 2;
 
-cover property (@($global_clock)
-                delay_arg_example(4, my_delay, my_delay - 1, 3));
+  cover property (@($global_clock)
+                  delay_arg_example(4, my_delay, my_delay - 1, 3));
 
-// The cover property above is equivalent to the following:
-// cover property (x ##2 y[*3:$] ##1 z);
+  // The cover property above is equivalent to the following:
+  // cover property (x ##2 y[*3:$] ##1 z);
 
 endmodule

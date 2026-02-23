@@ -7,12 +7,12 @@
 
 module top(mclk, irdy, trdy);
 
-input mclk, irdy, trdy;
-reg data_phase, stop;
+  input mclk, irdy, trdy;
+  reg data_phase, stop;
 
-property data_end;
-  @(posedge mclk)
-  $rose(data_phase) |-> ##[1:5] ((irdy==0) && ($fell(trdy) || $fell(stop)));
-endproperty
+  property data_end;
+    @(posedge mclk)
+    $rose(data_phase) |-> ##[1:5] ((irdy == 0) && ($fell(trdy) || $fell(stop)));
+  endproperty
 
 endmodule

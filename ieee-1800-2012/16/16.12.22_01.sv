@@ -7,8 +7,8 @@
 
 module top();
 
-sequence seq1;
-   (1'b1) intersect(1'b1 ##1 1'b1);
-endsequence
+  sequence seq1;
+    (1'b1) intersect(1'b1 ##1 1'b1);
+  endsequence
 
 endmodule

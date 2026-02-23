@@ -33,7 +33,7 @@ module a2_dat;
   buf #10000 (o2, in2);
 
   initial begin
-    file2=$fopen("a2.dat");
+    file2 = $fopen("a2.dat");
     #00000 $fmonitor(file2, "%m: %t in2=%d o2=%h", $realtime, in2, o2);
     #10000 in2 = 0;
     #10000 in2 = 1;

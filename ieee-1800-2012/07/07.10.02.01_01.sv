@@ -12,7 +12,7 @@ module top;
   element_t e;
   queue_t Q;
   initial begin
-    for ( int j = 0; j < Q.size; j++ ) $warning( Q[j] );
+    for (int j = 0; j < Q.size; j++) $warning(Q[j]);
   end
 
 endmodule

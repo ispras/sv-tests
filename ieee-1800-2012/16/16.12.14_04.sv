@@ -7,10 +7,10 @@
 
 module top;
 
-logic a, b, p1, p2;
+  logic a, b, p1, p2;
 
-property p;
-  (accept_on(a) p1) and (reject_on(b) p2);
-endproperty
+  property p;
+    (accept_on(a) p1) and (reject_on(b) p2);
+  endproperty
 
 endmodule

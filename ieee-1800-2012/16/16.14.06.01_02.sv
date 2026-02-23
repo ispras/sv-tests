@@ -8,17 +8,17 @@
 
 module top(input clk);
 
-reg [10:0] foo;
-reg [10:0] bar;
-genvar i;
+  reg [10:0] foo;
+  reg [10:0] bar;
+  genvar i;
 
-default clocking @(posedge clk); endclocking
+  default clocking @(posedge clk); endclocking
 
-generate for (i=0; i<10; i=i+1) begin
-  a1: assert property (foo[10] && bar[10]);
-  a2: assert property (foo[i] && bar[10]);
-  a3: assert property (foo[i] && bar[i]);
-end
-endgenerate
+  generate for (i = 0; i < 10; i = i + 1) begin
+    a1: assert property (foo[10] && bar[10]);
+    a2: assert property (foo[i] && bar[10]);
+    a3: assert property (foo[i] && bar[i]);
+  end
+  endgenerate
 
 endmodule

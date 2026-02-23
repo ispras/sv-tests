@@ -3,7 +3,7 @@
 //    31.4 Timing checks for clock and control signals
 //     31.4.4 $width
 
-// ! TYPE: POSITIVE
+// ! TYPE: VARYING
 
 module top(input clk, clr, thresh, output reg ntfr_reg);
   integer notif;

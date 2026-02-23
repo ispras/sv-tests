@@ -5,10 +5,10 @@
 
 // ! TYPE: POSITIVE
 
-module top (input a, b);
+module top(input a, b);
 
-always_comb begin
-  a1: assert #0 (a == b);
-end
+  always_comb begin
+    a1: assert #0 (a == b);
+  end
 
 endmodule

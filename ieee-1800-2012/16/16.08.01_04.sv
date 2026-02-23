@@ -7,16 +7,16 @@
 
 module top(clk);
 
-reg x, y, z;
-input clk;
+  reg x, y, z;
+  input clk;
 
-sequence event_arg_example (event ev);
-  @(ev) x ##1 y;
-endsequence
+  sequence event_arg_example(event ev);
+    @(ev) x ##1 y;
+  endsequence
 
-cover property (event_arg_example(posedge clk));
+  cover property (event_arg_example(posedge clk));
 
-// The cover property above is equivalent to the following:
-cover property (@(posedge clk) x ##1 y);
+  // The cover property above is equivalent to the following:
+  cover property (@(posedge clk) x ##1 y);
 
 endmodule

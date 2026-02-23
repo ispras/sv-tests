@@ -31,16 +31,16 @@ module top;
 
   initial begin
     // Create an 'Add' instruction with its 3 register fields
-    i1 = ( e
-      ? tagged Add '{ e1, 4, ed } // struct members by position
-      : tagged Add '{ reg2:e2, regd:3, reg1:19 }); // by name (order irrelevant)
+    i1 = (e
+      ? tagged Add '{e1, 4, ed} // struct members by position
+      : tagged Add '{reg2:e2, regd:3, reg1:19}); // by name (order irrelevant)
 
     // Create a 'Jump' instruction, with "unconditional" sub-opcode
     i1 = tagged Jmp (tagged JmpU 239);
 
     // Create a 'Jump' instruction, with "conditional" sub-opcode
-    i2 = tagged Jmp (tagged JmpC '{ 2, 83 }); // inner struct by position
-    i2 = tagged Jmp (tagged JmpC '{ cc:2, addr:83 }); // by name
+    i2 = tagged Jmp (tagged JmpC '{2, 83}); // inner struct by position
+    i2 = tagged Jmp (tagged JmpC '{cc:2, addr:83}); // by name
   end
 
 endmodule

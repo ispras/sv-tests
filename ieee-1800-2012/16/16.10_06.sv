@@ -6,14 +6,14 @@
 
 module top;
 
-reg a;
-integer MAX;
+  reg a;
+  integer MAX;
 
-sequence count_a_cycles;
-  int x;
-  ($rose(a), x = 1)
-  ##1 (a, x = x + 1)[*0:$]
-  ##1 !a && (x <= MAX);
-endsequence
+  sequence count_a_cycles;
+    int x;
+    ($rose(a), x = 1)
+    ##1 (a, x = x + 1)[*0:$]
+    ##1 !a && (x <= MAX);
+  endsequence
 
 endmodule

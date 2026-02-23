@@ -7,17 +7,17 @@
 
 module top(mclk, scanclk);
 
-input mclk, scanclk;
-reg q, d, d1;
+  input mclk, scanclk;
+  reg q, d, d1;
 
-property r1;
-  q != d;
-endproperty
+  property r1;
+    q != d;
+  endproperty
 
-always @(posedge mclk) begin
-  q <= d1;
-  r1_p1: assert property (r1);
-  r1_p2: assert property (@(posedge scanclk) r1);
-end
+  always @(posedge mclk) begin
+    q <= d1;
+    r1_p1: assert property (r1);
+    r1_p2: assert property (@(posedge scanclk) r1);
+  end
 
 endmodule

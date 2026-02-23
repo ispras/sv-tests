@@ -8,15 +8,15 @@
 
 module top;
 
-  int j = { "A", "B", "C", "D" };
-  bit [31:0] b1 = { >> {j}}; // generates stream "A" "B" "C" "D"
-  bit [31:0] b2 = { << byte {j}}; // generates stream "D" "C" "B" "A"
-                                  // (little endian)
-  bit [31:0] b3 = { << 16 {j}}; // generates stream "C" "D" "A" "B"
-  bit [7:0] b4 = { << { 8'b0011_0101 }}; // generates stream 'b1010_1100
-                                         // (bit reverse)
-  bit [5:0] b5 = { << 4 { 6'b11_0101 }}; // generates stream 'b0101_11
-  bit [5:0] b6 = { >> 4 { 6'b11_0101 }}; // generates stream 'b1101_01 (same)
-  bit [3:0] b7 = { << 2 { { << { 4'b1101 }} }}; // generates stream 'b1110
+  int j = {"A", "B", "C", "D"};
+  bit [31:0] b1 = {>> {j}}; // generates stream "A" "B" "C" "D"
+  bit [31:0] b2 = {<< byte {j}}; // generates stream "D" "C" "B" "A"
+                                 // (little endian)
+  bit [31:0] b3 = {<< 16 {j}}; // generates stream "C" "D" "A" "B"
+  bit [7:0] b4 = {<< {8'b0011_0101}}; // generates stream 'b1010_1100
+                                      // (bit reverse)
+  bit [5:0] b5 = {<< 4 {6'b11_0101}}; // generates stream 'b0101_11
+  bit [5:0] b6 = {>> 4 {6'b11_0101}}; // generates stream 'b1101_01 (same)
+  bit [3:0] b7 = {<< 2 {{<< { 4'b1101}}}}; // generates stream 'b1110
 
 endmodule

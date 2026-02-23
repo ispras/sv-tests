@@ -5,7 +5,6 @@
 
 // ! TYPE: POSITIVE
 
-
 library rtlLib 33.06_01.v;
 library aLib 33.06_01_adder.v;
 library gateLib 33.06_01_adder.vg;

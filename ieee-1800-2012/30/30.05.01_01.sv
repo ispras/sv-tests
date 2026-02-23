@@ -31,8 +31,8 @@ module top(input C, output Q);
     (C => Q) = (T01, T10, T0z, Tz1, T1z, Tz0);
 
     // twelve expressions specify all transition delays explicitly
-    specparam t02=10, t11=12, t2z=14, tz2=15, t3z=29, tz3=36,
-              t0x=14, tx1=15, t1x=15, tx0=14, txz=20, tzx=30;
+    specparam t02 = 10, t11 = 12, t2z = 14, tz2 = 15, t3z = 29, tz3 = 36,
+              t0x = 14, tx1 = 15, t1x = 15, tx0 = 14, txz = 20, tzx = 30;
     (C => Q) = (t02, t11, t2z, tz2, t3z, tz3, t0x, tx1, t1x, tx0, txz, tzx);
   endspecify
   endmodule

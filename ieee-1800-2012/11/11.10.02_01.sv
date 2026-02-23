@@ -7,7 +7,7 @@
 
 module top;
 
-  bit [8*10:1] s1, s2;
+  bit [8 * 10:1] s1, s2;
 
   initial begin
     s1 = "Hello";

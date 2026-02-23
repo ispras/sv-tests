@@ -7,10 +7,10 @@
 
 module top;
 
-logic a, b, p1;
+  logic a, b, p1;
 
-property p4;
-  accept_on(a) (reject_on(b) p1);
-endproperty
+  property p4;
+    accept_on(a) (reject_on(b) p1);
+  endproperty
 
 endmodule

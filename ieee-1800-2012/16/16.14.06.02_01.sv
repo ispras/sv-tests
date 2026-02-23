@@ -8,18 +8,18 @@
 
 module top(clk, a);
 
-input clk;
-input a;
-logic not_a;
+  input clk;
+  input a;
+  logic not_a;
 
-assign not_a = !a;
+  assign not_a = !a;
 
-default clocking @(posedge clk); endclocking
+  default clocking @(posedge clk); endclocking
 
-always_comb begin : b1
-  // Probably better to not use consts in this example
-  // ...but using them to illustrate effects of flushing method
-  a1: assert property (const'(not_a) != const'(a));
-end
+  always_comb begin : b1
+    // Probably better to not use consts in this example
+    // ...but using them to illustrate effects of flushing method
+    a1: assert property (const'(not_a) != const'(a));
+  end
 
 endmodule

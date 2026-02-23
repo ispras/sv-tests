@@ -7,8 +7,8 @@
 
 module top();
 
-sequence seq1;
-   1'b1[*0];
-endsequence
+  sequence seq1;
+    1'b1[*0];
+  endsequence
 
 endmodule

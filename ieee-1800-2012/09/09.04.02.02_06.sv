@@ -21,9 +21,9 @@ module top;
         else next[IDLE] = 1'b1;
 
       state[READ]:
-        next[DLY ] = 1'b1;
+        next[DLY] = 1'b1;
 
-      state[DLY ]:
+      state[DLY]:
         if (!ws) next[DONE] = 1'b1;
         else next[READ] = 1'b1;
 

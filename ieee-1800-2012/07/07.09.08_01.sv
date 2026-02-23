@@ -12,7 +12,7 @@ module top;
   int status;
 
   initial begin
-    aa[ 1000 ] = "a";
+    aa[1000] = "a";
     status = aa.first( ix );
     // 'status' is –1
     // 'ix' is 232 (least significant 8 bits of 1000)

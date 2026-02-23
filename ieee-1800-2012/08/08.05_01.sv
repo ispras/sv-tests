@@ -14,7 +14,7 @@ module top;
     integer time_issued;
     integer status;
 
-    typedef enum { ERR_OVERFLOW = 10, ERR_UNDERFLOW = 1123 } PCKT_TYPE;
+    typedef enum {ERR_OVERFLOW = 10, ERR_UNDERFLOW = 1123} PCKT_TYPE;
 
     const integer buffer_size = 100;
     const integer header_size;

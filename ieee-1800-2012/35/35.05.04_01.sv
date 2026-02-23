@@ -3,7 +3,7 @@
 //    35.5 Imported tasks and functions
 //     35.5.4 Import declarations
 
-// ! TYPE: POSITIVE
+// ! TYPE: VARYING
 
 import "DPI-C" function void myInit();
 
@@ -21,7 +21,7 @@ import "DPI-C" function chandle newQueue(input string name_of_queue);
 // implementation as the prior import, but has different SystemVerilog name
 // and provides a default value for the argument.
 `ifdef NEGATIVE_TEST
-import "DPI-C" newQueue=function chandle newAnonQueue(input string s =  null);
+import "DPI-C" newQueue = function chandle newAnonQueue(input string s = null);
 `endif
 import "DPI-C" function chandle newElem(bit [15:0]);
 import "DPI-C" function void enqueue(chandle queue, chandle elem);

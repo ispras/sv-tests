@@ -6,12 +6,12 @@
 
 module top;
 
-integer data, data_out;
-reg a, b, c;
+  integer data, data_out;
+  reg a, b, c;
 
-sequence rep_v;
-  int x = 0;
-  (a[->1], x = x + data)[*4] ##1 b ##1 c && (data_out == x);
-endsequence
+  sequence rep_v;
+    int x = 0;
+    (a[->1], x = x + data)[*4] ##1 b ##1 c && (data_out == x);
+  endsequence
 
 endmodule

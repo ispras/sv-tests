@@ -16,10 +16,10 @@ module top;
 
   initial begin
     repeat (50) begin
-      if ( bus.randomize() == 1 )
-        $display ("addr = %16h data = %h\n", bus.addr, bus.data);
+      if (bus.randomize() == 1)
+        $display("addr = %16h data = %h\n", bus.addr, bus.data);
       else
-        $display ("Randomization failed.\n");
+        $display("Randomization failed.\n");
     end
   end
 

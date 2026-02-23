@@ -22,8 +22,8 @@ module top;
       endcase
 
       // Example 2: Separate attribute instances with values
-      (* full_case=1 *)
-      (* parallel_case=1 *)
+      (* full_case = 1 *)
+      (* parallel_case = 1 *)
       case (a)
         2'b00: result2 = 2'b11;
         2'b01: result2 = 2'b00;
@@ -34,7 +34,7 @@ module top;
       // Example 3: Attributes with mixed
       // assignment (one with value, one without)
       (* full_case, // no value assigned
-        parallel_case=1 *)
+        parallel_case = 1 *)
       case (a)
         2'b00: result3 = 2'b10;
         2'b01: result3 = 2'b11;

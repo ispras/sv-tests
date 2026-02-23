@@ -15,7 +15,7 @@ module top;
   always_comb
   begin
     a = b & c;
-    A1:assert (a != e) else if (!disable_error) $error("failed");
+    A1: assert (a != e) else if (!disable_error) $error("failed");
   end
 
 endmodule

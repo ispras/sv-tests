@@ -13,7 +13,7 @@ module top;
     for (int count = 0; count < 3; count++)
       value = value + ((a[count]) * (count + 1));
     for (int count = 0, done = 0, j = 0; j * count < 125; j++, count++)
-      $display("Value j = %d\n", j );
+      $display("Value j = %d\n", j);
   end
 
 endmodule

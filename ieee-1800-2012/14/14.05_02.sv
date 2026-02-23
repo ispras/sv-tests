@@ -10,7 +10,7 @@ module top(input clock, input [5:0] instruction);
   reg [3:0] regB;
 
   clocking mem @(clock);
-    input instruction = { opcode, regA, regB[3:1] };
+    input instruction = {opcode, regA, regB[3:1]};
   endclocking
 
 endmodule

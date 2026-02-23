@@ -22,9 +22,9 @@ module top;
         2'b11: result1 = 2'b00;
       endcase
 
-      // Example 2: full_case=1, parallel_case=0
+      // Example 2: full_case = 1, parallel_case = 0
       // (explicitly disabling 'parallel_case')
-      (* full_case=1, parallel_case = 0 *)
+      (* full_case = 1, parallel_case = 0 *)
       case (a)
         2'b00: result2 = 2'b11;
         2'b01: result2 = 2'b00;

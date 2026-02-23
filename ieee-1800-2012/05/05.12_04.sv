@@ -20,7 +20,7 @@ module top(clk, in, out);
   input logic [3:0] in;
   output logic [3:0] out;
 
-  (* optimize_power=0 *)
+  (* optimize_power = 0 *)
   mod1 synth1 (
     .clk(clk),
     .in(in),

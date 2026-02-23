@@ -8,18 +8,18 @@
 
 module top(clk);
 
-input clk;
-reg [10:0] foo;
-reg [10:0] bar;
+  input clk;
+  reg [10:0] foo;
+  reg [10:0] bar;
 
-always @(posedge clk) begin
-  // variable declared in for statement is automatic (see 12.7.1)
-  integer i;
-  for (int i=0; i<10; i++) begin
-    a4: assert property (foo[i] && bar[i]);
-    a5: assert property (foo[const'(i)] && bar[i]);
-    a6: assert property (foo[const'(i)] && bar[const'(i)]);
+  always @(posedge clk) begin
+    // variable declared in for statement is automatic (see 12.7.1)
+    integer i;
+    for (int i = 0; i < 10; i++) begin
+      a4: assert property (foo[i] && bar[i]);
+      a5: assert property (foo[const'(i)] && bar[i]);
+      a6: assert property (foo[const'(i)] && bar[const'(i)]);
+    end
   end
-end
 
 endmodule

@@ -27,9 +27,9 @@ module top;
   initial begin
     case (instr) matches
     tagged Add .s: case (s) matches
-                  '{.*, .*, 0} : ; // no op
-                  '{.r1, .r2, .rd} : rf[rd] = rf[r1] + rf[r2];
-                endcase
+                     '{.*, .*, 0} : ; // no op
+                     '{.r1, .r2, .rd} : rf[rd] = rf[r1] + rf[r2];
+                   endcase
     tagged Jmp .j: case (j) matches
                      tagged JmpU .a : pc = pc + a;
                      tagged JmpC '{.c, .a} : if (rf[c]) pc = a;

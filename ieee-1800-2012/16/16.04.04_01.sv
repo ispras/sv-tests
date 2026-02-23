@@ -5,13 +5,13 @@
 
 // ! TYPE: POSITIVE
 
-module top (input bad_val, bad_val_ok);
+module top(input bad_val, bad_val_ok);
 
-always @(bad_val or bad_val_ok) begin : b1
-  a1: assert #0 (bad_val) else $fatal(1, "Sorry");
-  if (bad_val_ok) begin
-    disable a1;
+  always @(bad_val or bad_val_ok) begin : b1
+    a1: assert #0 (bad_val) else $fatal(1, "Sorry");
+    if (bad_val_ok) begin
+      disable a1;
+    end
   end
-end
 
 endmodule

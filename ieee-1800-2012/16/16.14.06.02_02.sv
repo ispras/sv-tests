@@ -8,27 +8,27 @@
 
 module top(clk, a, b);
 
-input clk;
-input a;
-input b;
+  input clk;
+  input a;
+  input b;
 
-class Reporter;
-  function new();
-  endfunction
-  function success(int id);
-  endfunction
-  function error(int id, logic a_v, logic b_v);
-  endfunction
-endclass
+  class Reporter;
+    function new();
+    endfunction
+    function success(int id);
+    endfunction
+    function error(int id, logic a_v, logic b_v);
+    endfunction
+  endclass
 
-Reporter r = new();
+  Reporter r = new();
 
-default clocking @(posedge clk); endclocking
+  default clocking @(posedge clk); endclocking
 
-always @(a or b) begin : b1
-  a2: assert property (a == b) r.success(0); else r.error(0, a, b);
-  #1;
-  a3: assert property (a == b) r.success(1); else r.error(1, a, b);
-end
+  always @(a or b) begin : b1
+    a2: assert property (a == b) r.success(0); else r.error(0, a, b);
+    #1;
+    a3: assert property (a == b) r.success(1); else r.error(1, a, b);
+  end
 
 endmodule

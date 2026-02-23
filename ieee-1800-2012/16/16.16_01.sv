@@ -6,14 +6,14 @@
 
 module top();
 
-logic a;
-logic b;
-logic clk;
+  logic a;
+  logic b;
+  logic clk;
 
-sequence s2; @(posedge clk) a ##2 b; endsequence
+  sequence s2; @(posedge clk) a ##2 b; endsequence
 
-property p2; not s2; endproperty
+  property p2; not s2; endproperty
 
-assert property (p2);
+  assert property (p2);
 
 endmodule

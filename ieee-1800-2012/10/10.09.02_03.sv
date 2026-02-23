@@ -21,6 +21,6 @@ module top;
                                          // the array of bits to 1
                                          // and string to ""
 
-  initial #10 s2 = '{default:'1, s : ""}; // set all to 1 except 's' to ""
+  initial #10 s2 = '{default:'1, s:""}; // set all to 1 except 's' to ""
 
 endmodule

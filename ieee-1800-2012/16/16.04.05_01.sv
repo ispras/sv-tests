@@ -5,27 +5,21 @@
 
 // ! TYPE: POSITIVE
 
-module top (input x, y, z, w);
+module top(input x, y, z, w);
 
-reg some_stuff, some_ok, some_fail;
-reg other_stuff, other_ok, other_fail;
+  reg some_stuff, some_ok, some_fail;
+  reg other_stuff, other_ok, other_fail;
 
+  function bit f(int a, int b);
+    a1: assert #0 (a == b);
+  endfunction
 
-function bit f (int a, int b);
-  // ...
-  a1: assert #0 (a == b);
-  // ...
-endfunction
-// ...
+  always_comb begin : b1
+    some_stuff = f(x, y) ? some_ok : some_fail;
+  end
 
-always_comb begin : b1
-  some_stuff = f(x,y) ? some_ok : some_fail;
-  // ...
-end
-
-always_comb begin : b2
-  other_stuff = f(z,w) ? other_ok : other_fail;
-  // ...
-end
+  always_comb begin : b2
+    other_stuff = f(z, w) ? other_ok : other_fail;
+  end
 
 endmodule

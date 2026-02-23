@@ -10,8 +10,8 @@
 module A (output logic y);
   initial begin
     y = 1'b0;
-    #1ps   y = 1'b1; // < 10ps
-    #0.01  y = 1'b0; // 0.01 ns = 10 ps
+    #1ps y = 1'b1; // < 10ps
+    #0.01 y = 1'b0; // 0.01 ns = 10 ps
   end
 endmodule
 
@@ -19,7 +19,7 @@ module B (output logic y);
   initial begin
     y = 1'b0;
     #0.005 y = 1'b1; // 0.005 ns = 5 ps
-    #0.50  y = 1'b0; // 0.50 ns = 500 ps
+    #0.50 y = 1'b0; // 0.50 ns = 500 ps
   end
 endmodule
 
@@ -27,8 +27,8 @@ endmodule
 module C (output logic y);
   initial begin
     y = 1'b0;
-    #1ps   y = 1'b1; // 1 ps
-    #10ps  y = 1'b0; // 10 ps
+    #1ps y = 1'b1; // 1 ps
+    #10ps y = 1'b0; // 10 ps
   end
 endmodule
 

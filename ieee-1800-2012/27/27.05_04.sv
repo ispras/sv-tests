@@ -13,7 +13,7 @@ module sms_08b216t0(clk, csb, cke, ba, addr, rasb,
   input [4:0] dev_id;
 
   task read_mem;
-    input  [31:0] address;
+    input [31:0] address;
     output [15:0] data;
   endtask
 endmodule

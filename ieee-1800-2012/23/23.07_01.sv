@@ -2,7 +2,7 @@
 //   23. Modules and hierarchy
 //    23.7 Member selects and hierarchical names
 
-// ! TYPE: POSITIVE
+// ! TYPE: VARYING
 
 package p;
   struct {int x;} s1;

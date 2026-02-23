@@ -4,18 +4,18 @@
 
 // ! TYPE: POSITIVE
 
-interface bus_A (input clk);
+interface bus_A(input clk);
   logic [15:0] data;
   logic write;
-  modport test (input data, output write);
-  modport dut (output data, input write);
+  modport test(input data, output write);
+  modport dut(output data, input write);
 endinterface
 
-interface bus_B (input clk);
+interface bus_B(input clk);
   logic [8:1] cmd;
   logic enable;
-  modport test (input enable);
-  modport dut (output enable);
+  modport test(input enable);
+  modport dut(output enable);
 endinterface
 
 program test(bus_A a, bus_B b);
@@ -47,10 +47,10 @@ endmodule
 module top;
   logic phi1, phi2;
 
-  bus_A a (phi1);
-  bus_B b (phi2);
+  bus_A a(phi1);
+  bus_B b(phi2);
 
-  test main (a, b);
-  cpu cpu (a);
-  mem mem (b);
+  test main(a, b);
+  cpu cpu(a);
+  mem mem(b);
 endmodule

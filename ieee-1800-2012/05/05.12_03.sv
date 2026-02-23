@@ -15,7 +15,7 @@ module mod1 (
   end
 endmodule
 
-(* optimize_power=1 *)
+(* optimize_power = 1 *)
 module mod2 (
   input logic clk,
   input logic [3:0] in,

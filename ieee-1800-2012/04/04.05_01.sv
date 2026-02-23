@@ -39,7 +39,7 @@ module simulation_engine;
 
   function bit some_time_slot_nonempty();
     return (queues[Preponed].size() > 0 || queues[PreActive].size() > 0 ||
-            queues[Active].size() > 0  || queues[PostObserved].size() > 0 ||
+            queues[Active].size() > 0 || queues[PostObserved].size() > 0 ||
             queues[Reactive].size() > 0 || queues[PostReNBA].size() > 0 ||
             queues[PrePostponed].size() > 0 || queues[Postponed].size() > 0);
   endfunction

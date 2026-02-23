@@ -13,7 +13,7 @@ module top;
   int arr2 [][] = new [4]; // 'arr2' sized to length 4; dynamic subarrays
                            // remain unsized and uninitialized
 `ifdef NEGATIVE_TEST
-  int arr3 [1][2][] = new [4]; // Error – arr3 is not a dynamic array, though
+  int arr3 [1][2][] = new [4]; // Error – 'arr3' is not a dynamic array, though
                                // it contains dynamic subarrays
 `endif
 

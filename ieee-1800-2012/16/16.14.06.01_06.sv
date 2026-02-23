@@ -8,25 +8,25 @@
 
 module top(clk, a, b, c);
 
-input clk;
-input a;
-input b;
-input c;
-logic en;
+  input clk;
+  input a;
+  input b;
+  input c;
+  logic en;
 
-property p1(logic a, logic b, logic c);
-  @(posedge clk) a |-> (b && c);
-endproperty
+  property p1(logic a, logic b, logic c);
+    @(posedge clk) a |-> (b && c);
+  endproperty
 
-always @(posedge clk) begin
-  en = (a && b);
-  if (en) begin
-    a9: assert property (p1(a,b,c));
+  always @(posedge clk) begin
+    en = (a && b);
+    if (en) begin
+      a9: assert property (p1(a, b, c));
+    end
+
+    if ($sampled(en)) begin
+      a10: assert property (p1(a, b, c));
+    end
   end
-
-  if ($sampled(en)) begin
-    a10: assert property (p1(a,b,c));
-  end
-end
 
 endmodule

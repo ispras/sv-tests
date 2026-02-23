@@ -9,7 +9,7 @@ module top;
 
   typedef union tagged {
     union tagged {
-      struct { logic [3:0] cc; logic [31:0] addr; } JmpC;
+      struct {logic [3:0] cc; logic [31:0] addr;} JmpC;
     } Jmp;
   } Instr;
 

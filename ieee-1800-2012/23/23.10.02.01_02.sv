@@ -14,5 +14,5 @@ endmodule
 
 module top;
   logic addr, data;
-  my_mem #(12, 16) m(addr,data);
+  my_mem #(12, 16) m(addr, data);
 endmodule

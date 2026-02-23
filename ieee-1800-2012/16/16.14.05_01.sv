@@ -7,12 +7,12 @@
 
 module top(input clk);
 
-reg a, b, c;
+  reg a, b, c;
 
-property rule3;
+  property rule3;
     @(posedge clk) a |-> b ##1 c;
-endproperty
+  endproperty
 
-a1: assert property (rule3);
+  a1: assert property (rule3);
 
 endmodule

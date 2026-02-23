@@ -11,7 +11,7 @@ module top;
     int a;
   endclass
 
-  IntClass address=new(), stack=new();
+  IntClass address = new(), stack = new();
 
   function automatic bit watch_for_zero(IntClass p);
     fork

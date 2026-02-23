@@ -15,7 +15,7 @@ module top;
     integer time_issued;
     integer status;
 
-    typedef enum { ERR_OVERFLOW= 10, ERR_UNDERFLOW = 1123 } PCKT_TYPE;
+    typedef enum {ERR_OVERFLOW = 10, ERR_UNDERFLOW = 1123} PCKT_TYPE;
 
     const integer buffer_size = 100;
     const integer header_size;
@@ -34,7 +34,7 @@ module top;
       command = 0; address = 0; master_id = 5'bx;
     endtask
 
-    task issue_request( int delay );
+    task issue_request(int delay);
       // send request to bus
     endtask
 

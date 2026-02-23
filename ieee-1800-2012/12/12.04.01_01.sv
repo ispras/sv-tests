@@ -20,19 +20,19 @@ module top;
   initial begin
     // test the index variable
     if (index < segment2) begin
-      instruction = segment_area [index + modify_seg1];
+      instruction = segment_area[index + modify_seg1];
       index = index + inc_seg1;
     end
     else if (index < segment3) begin
-      instruction = segment_area [index + modify_seg2];
+      instruction = segment_area[index + modify_seg2];
       index = index + inc_seg2;
     end
     else if (index < data) begin
-      instruction = segment_area [index + modify_seg3];
+      instruction = segment_area[index + modify_seg3];
       index = index + inc_seg3;
     end
     else
-      instruction = segment_area [index];
+      instruction = segment_area[index];
   end
 
 endmodule

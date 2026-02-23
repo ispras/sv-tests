@@ -8,24 +8,24 @@
 
 module top(clk, a, b, c, clear_b2);
 
-input clk;
-input a;
-input b;
-input [7:0] c;
-input clear_b2;
+  input clk;
+  input a;
+  input b;
+  input [7:0] c;
+  input clear_b2;
 
-default clocking @(posedge clk); endclocking
+  default clocking @(posedge clk); endclocking
 
-always @(a or b or c) begin : b2
-  if (c == 8'hff) begin
-    a2: assert property (a && b);
-  end else begin
-    a3: assert property (a || b);
+  always @(a or b or c) begin : b2
+    if (c == 8'hff) begin
+      a2: assert property (a && b);
+    end else begin
+      a3: assert property (a || b);
+    end
   end
-end
 
-always @(clear_b2) begin : b3
-  disable b2;
-end
+  always @(clear_b2) begin : b3
+    disable b2;
+  end
 
 endmodule

@@ -15,6 +15,6 @@ module top;
     return p + C::p;
   endfunction
 
-  initial $display("%0d %0d", C#()::f(),C#(5)::f()); // output is "2 10"
+  initial $display("%0d %0d", C#()::f(), C#(5)::f()); // output is "2 10"
 
 endmodule

@@ -7,7 +7,7 @@
 
 module top;
 
-  `define MACRO1(a = 5,b = "B", c) initial $display(a, , b, , c);
+  `define MACRO1(a = 5, b = "B", c) initial $display(a, , b, , c);
   `MACRO1 (, 2, 3) // argument 'a' omitted, replaced by default
                    // expands to '$display(5, , 2, , 3);'
   `MACRO1 (1, , 3) // argument 'b' omitted, replaced by default

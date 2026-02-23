@@ -6,13 +6,13 @@
 
 module top;
 
-  int a,b,c;
+  int a, b, c;
 
   function int f(input c);
     return c;
   endfunction
 
   initial begin
-    force a = b + f(c) ;
+    force a = b + f(c);
   end
 endmodule

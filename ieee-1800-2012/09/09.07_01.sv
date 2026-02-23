@@ -7,7 +7,7 @@
 module top;
 
   class process;
-    typedef enum { FINISHED, RUNNING, WAITING, SUSPENDED, KILLED } state;
+    typedef enum {FINISHED, RUNNING, WAITING, SUSPENDED, KILLED} state;
 
     static function process self();
     endfunction
@@ -29,7 +29,7 @@ module top;
     endfunction
   endclass
 
-  task automatic do_n_way( int N );
+  task automatic do_n_way(int N);
     process job[] = new [N];
 
     foreach (job[j])
@@ -39,12 +39,12 @@ module top;
         end
       join_none
     foreach (job[j]) // wait for all processes to start
-      wait( job[j] != null );
+      wait(job[j] != null);
 
     job[1].await(); // wait for first process to finish
 
     foreach (job[j]) begin
-      if ( job[j].status != process::FINISHED )
+      if (job[j].status != process::FINISHED)
         job[j].kill();
     end
   endtask

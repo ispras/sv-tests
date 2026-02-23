@@ -7,7 +7,7 @@
 module top;
 
   class Base;
-    typedef enum { bin, oct, dec, hex } radix;
+    typedef enum {bin, oct, dec, hex} radix;
     static task print(radix r, integer n);
     endtask
   endclass

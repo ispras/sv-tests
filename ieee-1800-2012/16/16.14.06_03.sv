@@ -7,19 +7,19 @@
 
 module top(clock, reset);
 
-input clock, reset;
-reg q, cnt, d, d1;
+  input clock, reset;
+  reg q, cnt, d, d1;
 
-property r3;
-  q != d;
-endproperty
+  property r3;
+    q != d;
+  endproperty
 
-always_ff @(clock iff reset == 0 or posedge reset) begin
-  cnt <= reset ? 0 : cnt + 1;
-  `ifdef NEGATIVE_TEST
+  always_ff @(clock iff reset == 0 or posedge reset) begin
+    cnt <= reset ? 0 : cnt + 1;
+`ifdef NEGATIVE_TEST
     q <= $past(d1); // no inferred clock
     r3_p: assert property (r3); // no inferred clock
-  `endif
-end
+`endif
+  end
 
 endmodule

@@ -7,14 +7,14 @@
 
 module top;
 
-reg te1, te2;
+  reg te1, te2;
 
-sequence t1;
-  te1 ## [2:5] te2;
-endsequence
+  sequence t1;
+    te1 ## [2:5] te2;
+  endsequence
 
-sequence ts1;
-  first_match(te1 ## [2:5] te2);
-endsequence
+  sequence ts1;
+    first_match(te1 ## [2:5] te2);
+  endsequence
 
 endmodule

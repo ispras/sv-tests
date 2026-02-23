@@ -10,11 +10,11 @@ module top(input clock);
   initial begin
     fork
       begin
-        $display( "First Block\n" );
+        $display("First Block\n");
         # 20ns;
       end
       begin
-        $display( "Second Block\n" );
+        $display("Second Block\n");
         @(posedge clock);
       end
     join

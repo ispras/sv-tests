@@ -21,10 +21,10 @@ module top(input clk);
     initial begin
       wait( abc.triggered || de.triggered );
       if( abc.triggered )
-        $display( "abc succeeded" );
+        $display("abc succeeded");
       if( de.triggered )
-        $display( "de succeeded" );
-      L2: $display( "L2" );
+        $display("de succeeded");
+      L2: $display("L2");
     end
   endprogram
 

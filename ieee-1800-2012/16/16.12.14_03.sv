@@ -7,9 +7,9 @@
 
 module top(clk);
 
-input clk;
-reg go, get, put, stop;
+  input clk;
+  reg go, get, put, stop;
 
-assert property (@(clk) go ##1 get[*2] |-> (!stop throughout put[->2]));
+  assert property (@(clk) go ##1 get[*2] |-> (!stop throughout put[->2]));
 
 endmodule

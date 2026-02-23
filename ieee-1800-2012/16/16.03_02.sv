@@ -6,18 +6,18 @@
 
 module top(clk, req1, req2);
 
-input clk, req1, req2;
-reg state, REQ;
-time t;
+  input clk, req1, req2;
+  reg state, REQ;
+  time t;
 
-always @(posedge clk) begin
-  if (state == REQ) begin
-    assert(req1 || req2);
+  always @(posedge clk) begin
+    if (state == REQ) begin
+      assert(req1 || req2);
+    end
+    else begin
+      t = $time;
+      #5 $display("assert failed at time %0t", t);
+    end
   end
-  else begin
-    t = $time;
-    #5 $display("assert failed at time %0t", t);
-  end
-end
 
 endmodule

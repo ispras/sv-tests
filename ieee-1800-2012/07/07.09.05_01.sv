@@ -7,13 +7,13 @@
 
 module top;
 
-  int map[ string ];
+  int map[string];
   string s = "hello";
 
   initial begin
-    map[ "hello" ] = 1;
-    if ( map.last( s ) )
-      $display( "Last entry is : map[ %s ] = %0d\n", s, map[s] );
+    map["hello"] = 1;
+    if (map.last(s))
+      $display("Last entry is : map[%s] = %0d\n", s, map[s]);
   end
 
 endmodule

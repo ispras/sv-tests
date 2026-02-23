@@ -16,7 +16,7 @@ module top;
     rand byte payload[];
     int crc;
 
-    constraint G { len > 1; payload.size == len ; }
+    constraint G {len > 1; payload.size == len;}
 
     function void post_randomize; crc = payload.sum; endfunction
   endclass
@@ -36,9 +36,9 @@ module top;
     begin // Receive packet, unpack, and remove
       byte q[$];
       p_recv = new;
-      {<< byte{ p_recv.header, p_recv.len,
-                p_recv.payload with [0 +: p_recv.len], p_recv.crc }} = stream;
-      stream = stream[ $bits(p_recv) / 8 : $ ]; // remove packet
+      {<< byte{p_recv.header, p_recv.len,
+               p_recv.payload with [0 +: p_recv.len], p_recv.crc}} = stream;
+      stream = stream[$bits(p_recv) / 8 : $]; // remove packet
     end
   end
 

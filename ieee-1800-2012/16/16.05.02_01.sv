@@ -5,7 +5,7 @@
 
 // ! TYPE: POSITIVE
 
-module top (input clk, a);
+module top(input clk, a);
 
 global clocking @clk; endclocking
 

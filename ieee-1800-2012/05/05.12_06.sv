@@ -10,7 +10,7 @@ module top(clk, b, c, a);
   output logic [7:0] a;
 
   always_ff @(posedge clk) begin
-    a = b + (* mode = "cla" *) c; // sets the value for the attribute mode
+    a = b + (* mode = "cla" *) c; // sets the value for the attribute 'mode'
                                   // to be the string "cla".
   end
 endmodule

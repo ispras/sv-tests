@@ -17,7 +17,7 @@ module top;
   initial begin
     a.randomize(); // random variables: 'x', 'y'; state variables: 'v', 'w'
     a.randomize(x); // random variables: 'x'; state variables: 'y', 'v', 'w'
-    a.randomize(v, w);  // random variables: 'v', 'w'; state variables: 'x', 'y'
+    a.randomize(v, w); // random variables: 'v', 'w'; state variables: 'x', 'y'
     a.randomize(w, x); // random variables: 'w', 'x'; state variables: 'y', 'v'
   end
 

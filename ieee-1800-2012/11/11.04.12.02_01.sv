@@ -11,13 +11,13 @@ module top;
   string hello = "hello";
   string s1;
   int n = 3;
-  string s2 = {n { "boo " }};
+  string s2 = {n{"boo "}};
 
   initial begin
-    s1 = { hello, " ", "world" };
-    $display( "%s\n", s1 );
-    s1 = { s1, " and goodbye" };
-    $display( "%s\n", s1 );
-    $display( "%s\n", s2 ); // displays 'boo boo boo '
+    s1 = {hello, " ", "world"};
+    $display( "%s\n", s1);
+    s1 = {s1, " and goodbye"};
+    $display("%s\n", s1);
+    $display("%s\n", s2); // displays 'boo boo boo '
   end
 endmodule

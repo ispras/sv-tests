@@ -15,7 +15,7 @@ module top;
   } ABC, DEF;
 
   initial begin
-    ABC = '{A:1, BC1:'{B:2, C:3}, BC2:'{B:4,C:5}};
+    ABC = '{A:1, BC1:'{B:2, C:3}, BC2:'{B:4, C:5}};
     DEF = '{default:10};
   end
 

@@ -7,13 +7,13 @@
 
 module top;
 
-  int map[ string ];
+  int map[string];
 
   initial begin
-    map[ "hello" ] = 1;
-    map[ "sad" ] = 2;
-    map[ "world" ] = 3;
-    map.delete( "sad" ); // remove entry whose index is "sad" from 'map'
+    map["hello"] = 1;
+    map["sad"] = 2;
+    map["world"] = 3;
+    map.delete("sad"); // remove entry whose index is "sad" from 'map'
     map.delete; // remove all entries from the associative array 'map'
   end
 

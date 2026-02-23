@@ -8,10 +8,10 @@
 module top;
 
   initial
-    for( int j = 1; j <= 3; ++j )
+    for(int j = 1; j <= 3; ++j)
       fork
         automatic int k = j; // local copy, 'k', for each value of 'j'
-        #k $write( "%0d", k );
+        #k $write("%0d", k);
         begin
           automatic int m = j; // the value of 'm' is undetermined
         end

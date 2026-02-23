@@ -8,7 +8,7 @@
 module top;
 
   typedef int T_QI[$];
-  T_QI jagged_array[$] = '{ {1}, T_QI'{2,3,4}, {5,6} };
+  T_QI jagged_array[$] = '{{1}, T_QI'{2, 3, 4}, {5, 6}};
 
   // jagged_array[0][0] = 1 -- jagged_array[0] is a queue of 1 int
   // jagged_array[1][0] = 2 -- jagged_array[1] is a queue of 3 ints

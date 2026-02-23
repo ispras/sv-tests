@@ -23,7 +23,7 @@ module top;
   initial '{a, b, c, d} = B;
 
   typedef logic [1:0] [3:0] T;
-  shortint result = shortint'({T'{1,2}, T'{3,4}}); // yields 16'sh1234
+  shortint result = shortint'({T'{1, 2}, T'{3, 4}}); // yields 16'sh1234
 
   typedef byte U[3];
   var U D = '{1, 2, 3};
@@ -31,7 +31,7 @@ module top;
 
   initial begin
     U'{e, f, g} = D;
-    U'{g, e, f} = '{e+1, f+1, g+1};
+    U'{g, e, f} = '{e + 1, f + 1, g + 1};
   end
 
 endmodule

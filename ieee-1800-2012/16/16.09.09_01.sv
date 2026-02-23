@@ -7,13 +7,13 @@
 
 module top(mclk, irdy, trdy);
 
-input mclk, irdy, trdy;
-reg burst_mode;
+  input mclk, irdy, trdy;
+  reg burst_mode;
 
-sequence burst_rule1;
-  @(posedge mclk)
-  $fell(burst_mode) ##0
-  ((!burst_mode) throughout (##2 ((trdy == 0) && (irdy == 0)) [*7]));
-endsequence
+  sequence burst_rule1;
+    @(posedge mclk)
+    $fell(burst_mode) ##0
+    ((!burst_mode) throughout (##2 ((trdy == 0) && (irdy == 0)) [*7]));
+  endsequence
 
 endmodule

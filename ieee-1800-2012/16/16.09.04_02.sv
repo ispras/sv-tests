@@ -7,11 +7,11 @@
 
 module top(clk, rst, sig);
 
-input clk, rst, sig;
+  input clk, rst, sig;
 
-global clocking sys @(posedge clk); endclocking
+  global clocking sys @(posedge clk); endclocking
 
-a1: assert property (@clk $changing_gclk(sig) |-> $falling_gclk(clk))
-  else $display("sig is not stable");
+  a1: assert property (@clk $changing_gclk(sig) |-> $falling_gclk(clk))
+    else $display("sig is not stable");
 
 endmodule

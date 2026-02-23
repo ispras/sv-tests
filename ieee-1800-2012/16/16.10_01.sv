@@ -6,11 +6,11 @@
 
 module top;
 
-reg a, b;
+  reg a, b;
 
-sequence s;
-  logic u, v = a, w = v || b;
-  w ##1 v;
-endsequence
+  sequence s;
+    logic u, v = a, w = v || b;
+    w ##1 v;
+  endsequence
 
 endmodule

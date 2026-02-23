@@ -21,13 +21,13 @@ package ComplexPkg;
 endpackage : ComplexPkg
 
 module top (
-  input  ComplexPkg::Complex a,
-  input  ComplexPkg::Complex b,
+  input ComplexPkg::Complex a,
+  input ComplexPkg::Complex b,
   output ComplexPkg::Complex sum
 );
   import ComplexPkg::*;
 
   always_comb begin
-    sum  = add(a, b);
+    sum = add(a, b);
   end
 endmodule

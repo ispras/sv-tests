@@ -7,11 +7,12 @@
 
 module top(clk, a, b);
 
-input clk, a, b;
-reg c;
+  input clk, a, b;
+  reg c;
 
-always @(posedge clk)
-  c <= b;
-  a1: assert #0 (!(a & c)) $display("Pass"); else $display("Fail");
-  a2: assert final (!(a & c)) $display("Pass"); else $display("Fail");
+  always @(posedge clk)
+    c <= b;
+    a1: assert #0 (!(a & c)) $display("Pass"); else $display("Fail");
+    a2: assert final (!(a & c)) $display("Pass"); else $display("Fail");
+
 endmodule

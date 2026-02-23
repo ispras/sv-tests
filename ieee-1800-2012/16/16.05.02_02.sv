@@ -5,14 +5,14 @@
 
 // ! TYPE: POSITIVE
 
-module top (input clk, rst, in1, in2);
+module top(input clk, rst, in1, in2);
 
-property cont_prop (logic rst, logic in1, logic in2);
-  @(posedge clk) disable iff (rst)
-    (in1 != in2);
-endproperty
+  property cont_prop (logic rst, logic in1, logic in2);
+    @(posedge clk) disable iff (rst)
+      (in1 != in2);
+  endproperty
 
-base_rule1: assert property (cont_prop(rst,in1,in2)) $display("%m, passing");
-            else $display("%m, failed");
+  base_rule1: assert property (cont_prop(rst, in1, in2)) $display("%m, passing");
+              else $display("%m, failed");
 
 endmodule

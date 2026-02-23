@@ -7,9 +7,9 @@
 
 module top(input clk, sig);
 
-global clocking sys @(posedge clk); endclocking
+  global clocking sys @(posedge clk); endclocking
 
-// In 'a5', there is no issue at cycle 0
-a5: assert property (@($global_clock) $steady_gclk(sig));
+  // In 'a5', there is no issue at cycle 0
+  a5: assert property (@($global_clock) $steady_gclk(sig));
 
 endmodule

@@ -7,7 +7,7 @@
 module top;
 
   class vector #(int size = 1);
-    bit [size-1:0] a;
+    bit [size - 1:0] a;
   endclass
 
   class stack #(type T = int);

@@ -9,7 +9,7 @@ module top;
   logic a, b, c, d;
   wire e;
 
-  and and1 (e, a, b, c);
+  and and1(e, a, b, c);
 
   initial begin
     $monitor("%d d=%b,e=%b", $stime, d, e);

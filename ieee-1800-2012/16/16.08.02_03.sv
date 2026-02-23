@@ -7,21 +7,21 @@
 
 module top;
 
-integer data_in, data_out, data, do1;
-reg a, b, c;
+  integer data_in, data_out, data, do1;
+  reg a, b, c;
 
-sequence sub_seq2(local inout int lv);
-  (a ##1 !a, lv = lv + data_in)
-  ##1 !b[*0:$] ##1 b && (data_out == lv);
-endsequence
+  sequence sub_seq2(local inout int lv);
+    (a ##1 !a, lv = lv + data_in)
+    ##1 !b[*0:$] ##1 b && (data_out == lv);
+  endsequence
 
-sequence seq2;
-  int v1;
-  (c, v1 = data)
-  ##1 sub_seq2(v1) // 'lv' is initialized by assigning it the value of 'v1';
-                   // when the instance 'sub_seq2(v1)' matches, 'v1' is
-                   // assigned the value of 'lv'
-  ##1 (do1 == v1);
-endsequence
+  sequence seq2;
+    int v1;
+    (c, v1 = data)
+    ##1 sub_seq2(v1) // 'lv' is initialized by assigning it the value of 'v1';
+                     // when the instance 'sub_seq2(v1)' matches, 'v1' is
+                     // assigned the value of 'lv'
+    ##1 (do1 == v1);
+  endsequence
 
 endmodule

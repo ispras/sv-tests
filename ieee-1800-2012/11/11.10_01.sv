@@ -6,7 +6,7 @@
 
 module top;
 
-  bit [8*14:1] stringvar;
+  bit [8 * 14:1] stringvar;
 
   initial begin
     stringvar = "Hello world";

@@ -7,15 +7,15 @@
 
 module top;
 
-  int map[ string ];
+  int map[string];
   string s = "hello";
 
   initial begin
-    map[ "hello" ] = 1;
-    if ( map.last( s ) )
+    map["hello"] = 1;
+    if (map.last(s))
       do
-        $display( "%s : %d\n", s, map[ s ] );
-      while ( map.prev( s ) );
+        $display("%s : %d\n", s, map[s]);
+      while (map.prev(s));
   end
 
 endmodule
