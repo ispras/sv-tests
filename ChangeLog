@@ -1,3 +1,10 @@
+2026-02-24 Ekaterina Ilyina <ilina.e@ispras.ru>
+
+The commit includes test suite that is based on IEEE 1800-2012 standard
+for SystemVerilog language.
+
+	* ieee-1800-2012/*: Created.
+
 2023-12-28 Sergey Smolov <smolov@ispras.ru>
 
 The commit includes test suite that is based on IEEE 1800-2012 standard

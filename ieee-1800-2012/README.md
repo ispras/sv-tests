@@ -1,7 +1,6 @@
 # SystemVerilog-2012 Test Suite
 
 This part of repository contains a test suite is based on examples from IEEE-1800-2012 SystemVerilog language standard.
-The test suite is incomplete and covers Chapter 16 (SystemVerilog Assertions) only.
 
 ## Repository Owner
 
